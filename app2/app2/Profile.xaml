@@ -37,22 +37,23 @@
         HorizontalOptions="Center"
         VerticalOptions="Center"
                    Margin="0,0,0,30"/>
-            <!-- Profile Image (Circular) -->
             <Frame HeightRequest="100"
-                   WidthRequest="100"
-                   BorderColor="White"
-                   CornerRadius="50"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Padding="0">
-                <Image Source="user1.png"
-                       HeightRequest="80"
-                       WidthRequest="80"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
+       WidthRequest="100"
+       BorderColor="White"
+       CornerRadius="50"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       Padding="0">
+                <!-- Test with a placeholder image URL to check visibility -->
+                <Image Source="https://via.placeholder.com/80"
+           HeightRequest="80"
+           WidthRequest="80"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
             </Frame>
 
-           
+
+
         </StackLayout>
 
         <!-- Profile Details Section -->
@@ -67,7 +68,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Image Source="user.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
-                <Label Text="Anna Avestisyan" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16"  />
+                <Label Text="Anna Avestisyan" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16" x:Name="name" />
             </Grid>
             <BoxView HeightRequest="1" BackgroundColor="#E0E0E0"/>
 
@@ -78,8 +79,8 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Image Source="calender.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
-                <Label Text="01-01-2000" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16"  />
+                <Image Source="calendar.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
+                <Label Text="01-01-2000" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16" x:Name="dateofbirth" />
             </Grid>
             <BoxView HeightRequest="1" BackgroundColor="#E0E0E0"/>
 
@@ -91,7 +92,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Image Source="telephone.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
-                <Label Text="+92 345 2345678" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16"  />
+                <Label Text="+92 345 2345678" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16" x:Name="phone"  />
             </Grid>
             <BoxView HeightRequest="1" BackgroundColor="#E0E0E0"/>
 
@@ -103,7 +104,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Image Source="instagram.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
-                <Label Text="anna_avetisyan" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16"  />
+                <Label Text="anna_avetisyan" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16" x:Name="insta" />
             </Grid>
             <BoxView HeightRequest="1" BackgroundColor="#E0E0E0"/>
 
@@ -115,7 +116,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Image Source="arroba.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
-                <Label Text="annaavetisyan@gmail.com" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16"  />
+                <Label Text="annaavetisyan@gmail.com" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16" x:Name="gmail" />
             </Grid>
             <BoxView HeightRequest="1" BackgroundColor="#E0E0E0"/>
 
@@ -124,11 +125,12 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <Image Source="hide.png" WidthRequest="20" HeightRequest="20" Grid.Column="0" Margin="0,0,10,0" />
                 <Label Text="***************" VerticalOptions="Center" Grid.Column="1" TextColor="Black" FontSize="16"  />
-                <ImageButton Source="loop.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent"/>
+                <ImageButton Source="loop.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent" Grid.Column="2" Margin="10,0,0,0"  Clicked="Button_Clicked"/>
 
             </Grid>
 
@@ -141,7 +143,9 @@
                     CornerRadius="20"
                     FontSize="16"
                     HeightRequest="50"
-                    HorizontalOptions="FillAndExpand"/>
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="EditProfile"
+                   />
         </StackLayout>
 
     </Grid>
