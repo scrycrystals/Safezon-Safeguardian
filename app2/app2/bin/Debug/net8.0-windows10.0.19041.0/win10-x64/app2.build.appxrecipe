@@ -40,6 +40,81 @@
     <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Black.ttf">
+      <PackagePath>Poppins-Black.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-BlackItalic.ttf">
+      <PackagePath>Poppins-BlackItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Bold.ttf">
+      <PackagePath>Poppins-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-BoldItalic.ttf">
+      <PackagePath>Poppins-BoldItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-ExtraBold.ttf">
+      <PackagePath>Poppins-ExtraBold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-ExtraBoldItalic.ttf">
+      <PackagePath>Poppins-ExtraBoldItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-ExtraLight.ttf">
+      <PackagePath>Poppins-ExtraLight.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-ExtraLightItalic.ttf">
+      <PackagePath>Poppins-ExtraLightItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Italic.ttf">
+      <PackagePath>Poppins-Italic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Light.ttf">
+      <PackagePath>Poppins-Light.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-LightItalic.ttf">
+      <PackagePath>Poppins-LightItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Medium.ttf">
+      <PackagePath>Poppins-Medium.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-MediumItalic.ttf">
+      <PackagePath>Poppins-MediumItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Regular.ttf">
+      <PackagePath>Poppins-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-SemiBold.ttf">
+      <PackagePath>Poppins-SemiBold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-SemiBoldItalic.ttf">
+      <PackagePath>Poppins-SemiBoldItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-Thin.ttf">
+      <PackagePath>Poppins-Thin.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Poppins-ThinItalic.ttf">
+      <PackagePath>Poppins-ThinItalic.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
@@ -54,6 +129,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow.scale-100.png">
+      <PackagePath>arrow.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
@@ -193,6 +271,87 @@
     <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user1.scale-100.png">
+      <PackagePath>user1.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png">
+      <PackagePath>user.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\telephone_pressed.scale-100.png">
+      <PackagePath>telephone_pressed.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\telephone.scale-100.png">
+      <PackagePath>telephone.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\policeman.scale-100.png">
+      <PackagePath>policeman.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\phone.scale-100.png">
+      <PackagePath>phone.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\loop.scale-100.png">
+      <PackagePath>loop.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+      <PackagePath>logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\instagram.scale-100.png">
+      <PackagePath>instagram.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-100.png">
+      <PackagePath>info.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\healthcare.scale-100.png">
+      <PackagePath>healthcare.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\evaluation.scale-100.png">
+      <PackagePath>evaluation.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar.scale-100.png">
+      <PackagePath>calendar.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arroba.scale-100.png">
+      <PackagePath>arroba.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\smartwatch.scale-100.png">
+      <PackagePath>smartwatch.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\setting.scale-100.png">
+      <PackagePath>setting.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\safezone_background2.scale-100.png">
+      <PackagePath>safezone_background2.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\safezone_background.scale-100.png">
+      <PackagePath>safezone_background.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pen.scale-100.png">
+      <PackagePath>pen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\menu.scale-100.png">
+      <PackagePath>menu.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\location.scale-100.png">
+      <PackagePath>location.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\insurance.scale-100.png">
+      <PackagePath>insurance.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
+      <PackagePath>home.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hide.scale-100.png">
+      <PackagePath>hide.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google_logo.scale-100.png">
+      <PackagePath>google_logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google.scale-100.png">
+      <PackagePath>google.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\background.scale-100.png">
+      <PackagePath>background.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Semester7\FYP\work\app2\app2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\app2.deps.json">
       <PackagePath>app2.deps.json</PackagePath>
     </AppxPackagedFile>
@@ -300,6 +459,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\plugin.mediamanager\1.2.2\lib\net7.0-windows10.0.19041\MediaManager.dll">
+      <PackagePath>MediaManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\xam.plugin.media\6.0.2\lib\net6.0-windows10.0.19041\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\xamarin.essentials\1.8.1\lib\netstandard2.0\Xamarin.Essentials.dll">
+      <PackagePath>Xamarin.Essentials.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.maui.controls.core\8.0.82\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -417,6 +585,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.maui.core\8.0.82\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\plugin.mediamanager\1.2.2\lib\net7.0-windows10.0.19041\MediaManager.pri">
+      <PackagePath>MediaManager.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
