@@ -36,6 +36,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = app2.Dashboard1.xaml
 build_metadata.AdditionalFiles.TargetPath = Dashboard1.xaml
 build_metadata.AdditionalFiles.RelativePath = Dashboard1.xaml
 
+[G:/Semester7/FYP/work/app2/app2/DefenseScore.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.DefenseScore.xaml
+build_metadata.AdditionalFiles.TargetPath = DefenseScore.xaml
+build_metadata.AdditionalFiles.RelativePath = DefenseScore.xaml
+
 [G:/Semester7/FYP/work/app2/app2/EditProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.EditProfilePage.xaml

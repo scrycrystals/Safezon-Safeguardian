@@ -128,8 +128,10 @@ namespace app2
         private void OnDefenseScoreClicked(object sender, EventArgs e)
         {
             // Handle Defense Score option click
-            DisplayAlert("Defense Score", "You selected Defense Score", "OK");
+            //DisplayAlert("Defense Score", "You selected Defense Score", "OK");
             DropdownMenu.IsVisible = false; // Hide the menu after selection
+            Navigation.PushAsync(new DefenseScore());
+
         }
 
         private void OnAboutClicked(object sender, EventArgs e)

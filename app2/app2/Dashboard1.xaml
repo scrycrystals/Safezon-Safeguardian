@@ -1,7 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app2.Dashboard1"
-             Title="Dashboard">
+             >
 
     <!-- Wrap everything inside an AbsoluteLayout -->
     <AbsoluteLayout>
@@ -164,18 +164,18 @@
         </Grid>
 
         <!-- Popup for Station/Hospital Details -->
-        <ContentView x:Name="DetailsPopup" IsVisible="False" BackgroundColor="Black" Opacity="0.8"
+        <ContentView x:Name="DetailsPopup" IsVisible="False" BackgroundColor="Black" Opacity="1" 
                      AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.5"
                      AbsoluteLayout.LayoutFlags="All"
                      Padding="10"
                      VerticalOptions="Center" HorizontalOptions="Center">
-            <Frame BorderColor="White" CornerRadius="5" Padding="10">
+            <Frame CornerRadius="5" Padding="10">
                 <StackLayout>
                     <Label x:Name="PopupTitle" FontSize="18" TextColor="Black"/>
                     <Label x:Name="PopupAddress" FontSize="14" TextColor="Gray"/>
                     <Label x:Name="PopupPhoneNumber" FontSize="14" TextColor="Gray" Margin="0,0,0,10"/>
-                    <Button Text="Call" Clicked="OnCallButtonClicked" Margin="0,0,0,10"/>
-                    <Button Text="Close" Clicked="OnClosePopupClicked"/>
+                    <Button Text="Call" Clicked="OnCallButtonClicked" Margin="0,0,0,10" BackgroundColor="#02F381" />
+                    <Button Text="Close" Clicked="OnClosePopupClicked" BackgroundColor="#02F381" />
                 </StackLayout>
             </Frame>
         </ContentView>

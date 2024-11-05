@@ -17,6 +17,9 @@
     <MauiXaml Update="Dashboard1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="DefenseScore.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="EditProfilePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
