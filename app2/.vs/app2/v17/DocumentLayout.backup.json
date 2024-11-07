@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\FYP\\Safezon-Safeguardian\\app2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\sliderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\sliderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\sliderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\sliderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +17,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\viewmodels\\sliderpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\viewmodels\\sliderpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\models\\sliderpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\models\\sliderpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 284,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Dashboard1.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Dashboard1.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\Dashboard1.xaml",
@@ -127,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\MauiProgram.cs",
               "RelativeDocumentMoniker": "app2\\MauiProgram.cs",
@@ -140,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\MainPage.xaml.cs",
@@ -149,18 +165,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T06:37:32.776Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\MainPage.xaml",
               "RelativeDocumentMoniker": "app2\\MainPage.xaml",
               "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\MainPage.xaml",
               "RelativeToolTip": "app2\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-16T06:19:00.609Z",
               "IsPinned": true,
@@ -168,46 +183,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "SliderPageViewModel.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\ViewModels\\SliderPageViewModel.cs",
+              "RelativeDocumentMoniker": "app2\\ViewModels\\SliderPageViewModel.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\ViewModels\\SliderPageViewModel.cs",
+              "RelativeToolTip": "app2\\ViewModels\\SliderPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:35:18.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SliderPageModel.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Models\\SliderPageModel.cs",
+              "RelativeDocumentMoniker": "app2\\Models\\SliderPageModel.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Models\\SliderPageModel.cs",
+              "RelativeToolTip": "app2\\Models\\SliderPageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:33:49.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\LoginPage.xaml.cs",
               "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\LoginPage.xaml.cs",
               "RelativeToolTip": "app2\\Views\\LoginPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T11:18:59.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "SliderPage.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\SliderPage.xaml.cs",
+              "RelativeDocumentMoniker": "app2\\Views\\SliderPage.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\SliderPage.xaml.cs",
+              "RelativeToolTip": "app2\\Views\\SliderPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T11:38:41.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SliderPage.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\SliderPage.xaml",
+              "RelativeDocumentMoniker": "app2\\Views\\SliderPage.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\SliderPage.xaml*",
+              "RelativeToolTip": "app2\\Views\\SliderPage.xaml*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T11:32:22.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\LoginPage.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\LoginPage.xaml",
               "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\LoginPage.xaml",
               "RelativeToolTip": "app2\\Views\\LoginPage.xaml",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAKAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-07T11:18:01.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "app2\\AppShell.xaml.cs",
               "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\AppShell.xaml.cs",
               "RelativeToolTip": "app2\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T09:10:03.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Xamarin.Android.Aapt2.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Aapt2.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Aapt2.targets",
@@ -217,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Register.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Register.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\Register.xaml.cs",
@@ -229,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\App.xaml.cs",
               "RelativeDocumentMoniker": "app2\\App.xaml.cs",
@@ -237,12 +304,11 @@
               "RelativeToolTip": "app2\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:45:23.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T06:45:23.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Dashboard1.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Dashboard1.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\Dashboard1.xaml.cs",
@@ -254,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "BottomBar.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\BottomBar.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\BottomBar.xaml.cs",
@@ -266,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Register.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Register.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\Register.xaml",
@@ -278,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "app2.csproj",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\app2.csproj",
               "RelativeDocumentMoniker": "app2\\app2.csproj",
@@ -290,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "DefenseScore.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\DefenseScore.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\DefenseScore.xaml",
@@ -302,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "DefenseScore.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\DefenseScore.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\DefenseScore.xaml.cs",
@@ -314,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "BottomBar.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\BottomBar.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\BottomBar.xaml",
@@ -326,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Profile.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Profile.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\Profile.xaml",
@@ -338,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "EditProfilePage.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\EditProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\EditProfilePage.xaml.cs",
@@ -350,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Profile.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Profile.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\Profile.xaml.cs",
@@ -362,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "ChangePasswordPage.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\ChangePasswordPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\ChangePasswordPage.xaml.cs",
@@ -374,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "EditProfilePage.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\EditProfilePage.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\EditProfilePage.xaml",
@@ -386,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\.nuget\\packages\\plugin.mediamanager\\1.2.2\\readme.txt",
               "ToolTip": "C:\\Users\\DELL\\.nuget\\packages\\plugin.mediamanager\\1.2.2\\readme.txt",
@@ -395,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.8.1\\readme.txt",
               "ToolTip": "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.8.1\\readme.txt",
@@ -404,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\.nuget\\packages\\xam.plugin.media\\6.0.2\\readme.txt",
               "ToolTip": "C:\\Users\\DELL\\.nuget\\packages\\xam.plugin.media\\6.0.2\\readme.txt",
@@ -413,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "ChangePasswordPage.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\ChangePasswordPage.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\ChangePasswordPage.xaml",
