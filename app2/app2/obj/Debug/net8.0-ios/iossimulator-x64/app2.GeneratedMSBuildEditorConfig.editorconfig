@@ -82,6 +82,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/MainHealthPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.MainHealthPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainHealthPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainHealthPage.xaml
+
 [E:/FYP/Safezon-Safeguardian/app2/app2/Views/Profile.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.Profile.xaml
@@ -99,3 +105,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.SliderPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\SliderPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\SliderPage.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/TopBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.TopBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TopBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TopBar.xaml

@@ -29,6 +29,9 @@
     <MauiXaml Update="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\MainHealthPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Profile.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -36,6 +39,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\SliderPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\TopBar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
