@@ -8,72 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = app2
-build_property.ProjectDir = G:\Semester7\FYP\work\app2\app2\
+build_property.ProjectDir = E:\FYP\Safezon-Safeguardian\app2\app2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
 
-[G:/Semester7/FYP/work/app2/app2/App.xaml]
+[E:/FYP/Safezon-Safeguardian/app2/app2/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[G:/Semester7/FYP/work/app2/app2/AppShell.xaml]
+[E:/FYP/Safezon-Safeguardian/app2/app2/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[G:/Semester7/FYP/work/app2/app2/ChangePasswordPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = app2.ChangePasswordPage.xaml
-build_metadata.AdditionalFiles.TargetPath = ChangePasswordPage.xaml
-build_metadata.AdditionalFiles.RelativePath = ChangePasswordPage.xaml
-
-[G:/Semester7/FYP/work/app2/app2/Dashboard1.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = app2.Dashboard1.xaml
-build_metadata.AdditionalFiles.TargetPath = Dashboard1.xaml
-build_metadata.AdditionalFiles.RelativePath = Dashboard1.xaml
-
-[G:/Semester7/FYP/work/app2/app2/DefenseScore.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = app2.DefenseScore.xaml
-build_metadata.AdditionalFiles.TargetPath = DefenseScore.xaml
-build_metadata.AdditionalFiles.RelativePath = DefenseScore.xaml
-
-[G:/Semester7/FYP/work/app2/app2/EditProfilePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = app2.EditProfilePage.xaml
-build_metadata.AdditionalFiles.TargetPath = EditProfilePage.xaml
-build_metadata.AdditionalFiles.RelativePath = EditProfilePage.xaml
-
-[G:/Semester7/FYP/work/app2/app2/MainPage.xaml]
+[E:/FYP/Safezon-Safeguardian/app2/app2/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[G:/Semester7/FYP/work/app2/app2/Profile.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = app2.Profile.xaml
-build_metadata.AdditionalFiles.TargetPath = Profile.xaml
-build_metadata.AdditionalFiles.RelativePath = Profile.xaml
-
-[G:/Semester7/FYP/work/app2/app2/Register.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = app2.Register.xaml
-build_metadata.AdditionalFiles.TargetPath = Register.xaml
-build_metadata.AdditionalFiles.RelativePath = Register.xaml
-
-[G:/Semester7/FYP/work/app2/app2/Resources/Styles/Colors.xaml]
+[E:/FYP/Safezon-Safeguardian/app2/app2/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[G:/Semester7/FYP/work/app2/app2/Resources/Styles/Styles.xaml]
+[E:/FYP/Safezon-Safeguardian/app2/app2/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/BottomBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.BottomBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BottomBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BottomBar.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/ChangePasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.ChangePasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ChangePasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ChangePasswordPage.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/Dashboard1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.Dashboard1.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Dashboard1.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Dashboard1.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/DefenseScore.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.DefenseScore.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DefenseScore.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DefenseScore.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/EditProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.EditProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditProfilePage.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/Profile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.Profile.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Profile.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Profile.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/Register.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.Register.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Register.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Register.xaml

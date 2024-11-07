@@ -3,30 +3,33 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel 5 - API 34 (Android 14.0 - API 34)</ActiveDebugProfile>
+    <ActiveDebugProfile>Pixel 6 Pro - API 34 (Android 14.0 - API 34)</ActiveDebugProfile>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>pixel_5_-_api_34</DefaultDevice>
+    <DefaultDevice>pixel_6_pro_-_api_34</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="ChangePasswordPage.xaml">
+    <MauiXaml Update="Views\BottomBar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Dashboard1.xaml">
+    <MauiXaml Update="Views\ChangePasswordPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="DefenseScore.xaml">
+    <MauiXaml Update="Views\Dashboard1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="EditProfilePage.xaml">
+    <MauiXaml Update="Views\DefenseScore.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Profile.xaml">
+    <MauiXaml Update="Views\EditProfilePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Register.xaml">
+    <MauiXaml Update="Views\Profile.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Register.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
