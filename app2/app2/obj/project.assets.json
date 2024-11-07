@@ -2,6 +2,59 @@
   "version": 3,
   "targets": {
     "net8.0-android34.0": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -487,21 +540,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -514,7 +567,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -531,14 +584,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -552,10 +619,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -568,76 +635,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -650,10 +717,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -667,10 +734,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -683,10 +750,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -699,10 +766,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -715,10 +782,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -2584,6 +2651,59 @@
       }
     },
     "net8.0-android34.0/android-arm": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -3069,21 +3189,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -3096,7 +3216,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -3113,14 +3233,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -3134,10 +3268,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -3150,76 +3284,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -3232,10 +3366,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -3249,10 +3383,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -3265,10 +3399,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -3281,10 +3415,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -3297,10 +3431,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -5166,6 +5300,59 @@
       }
     },
     "net8.0-android34.0/android-arm64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -5651,21 +5838,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -5678,7 +5865,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -5695,14 +5882,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -5716,10 +5917,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -5732,76 +5933,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -5814,10 +6015,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -5831,10 +6032,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -5847,10 +6048,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -5863,10 +6064,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -5879,10 +6080,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -7748,6 +7949,59 @@
       }
     },
     "net8.0-android34.0/android-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -8233,21 +8487,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -8260,7 +8514,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -8277,14 +8531,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -8298,10 +8566,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -8314,76 +8582,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -8396,10 +8664,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -8413,10 +8681,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -8429,10 +8697,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -8445,10 +8713,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -8461,10 +8729,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -10330,6 +10598,59 @@
       }
     },
     "net8.0-android34.0/android-x86": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -10815,21 +11136,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -10842,7 +11163,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -10859,14 +11180,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -10880,10 +11215,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -10896,76 +11231,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -10978,10 +11313,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -10995,10 +11330,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -11011,10 +11346,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -11027,10 +11362,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -11043,10 +11378,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -12912,6 +13247,59 @@
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -13397,21 +13785,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -13424,7 +13812,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -13441,14 +13829,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -13462,10 +13864,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -13478,76 +13880,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -13560,10 +13962,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -13577,10 +13979,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -13593,10 +13995,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -13609,10 +14011,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -13625,10 +14027,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -15494,6 +15896,59 @@
       }
     },
     "net8.0-android34.0/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -15979,21 +16434,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -16006,7 +16461,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -16023,14 +16478,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -16044,10 +16513,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -16060,76 +16529,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -16142,10 +16611,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -16159,10 +16628,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -16175,10 +16644,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -16191,10 +16660,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -16207,10 +16676,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -18076,6 +18545,59 @@
       }
     },
     "net8.0-android34.0/win10-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71",
+          "Xam.Plugins.Android.ExoPlayer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -18561,21 +19083,21 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Dash": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Hls": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.UI": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Rtsp": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Transformer": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.dll": {
@@ -18588,7 +19110,7 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.4.0",
@@ -18605,14 +19127,28 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/ExoPlayer.Container.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Container": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.DataSource": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Extractor": "2.19.1",
           "Xamarin.AndroidX.Core": "1.8.0.1"
         },
         "compile": {
@@ -18626,10 +19162,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Dash.dll": {
@@ -18642,76 +19178,76 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Database.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Database": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Database": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.DataSource.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Decoder.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
-          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
+          "Xam.Plugins.Android.ExoPlayer.Decoder": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/net7.0-android33.0/ExoPlayer.Extractor.dll": {
-            "related": ".aar;.pdb;.xml"
+            "related": ".pdb;.xml"
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Hls.dll": {
@@ -18724,10 +19260,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Common": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Common": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1"
         },
         "compile": {
@@ -18741,10 +19277,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll": {
@@ -18757,10 +19293,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll": {
@@ -18773,10 +19309,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11"
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1"
         },
         "compile": {
           "lib/net7.0-android33.0/ExoPlayer.Transformer.dll": {
@@ -18789,10 +19325,10 @@
           }
         }
       },
-      "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
+      "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
         "type": "package",
         "dependencies": {
-          "Xam.Plugins.Android.ExoPlayer.Core": "2.18.11",
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.19.1",
           "Xamarin.AndroidX.Media": "1.6.0.1",
           "Xamarin.AndroidX.RecyclerView": "1.2.1.7"
         },
@@ -20658,6 +21194,56 @@
       }
     },
     "net8.0-ios18.0": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21141,6 +21727,56 @@
       }
     },
     "net8.0-ios18.0/android-arm": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -21624,6 +22260,56 @@
       }
     },
     "net8.0-ios18.0/android-arm64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22107,6 +22793,56 @@
       }
     },
     "net8.0-ios18.0/android-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -22590,6 +23326,56 @@
       }
     },
     "net8.0-ios18.0/android-x86": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23073,6 +23859,56 @@
       }
     },
     "net8.0-ios18.0/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -23556,6 +24392,56 @@
       }
     },
     "net8.0-ios18.0/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -24039,6 +24925,56 @@
       }
     },
     "net8.0-ios18.0/win10-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -24522,6 +25458,56 @@
       }
     },
     "net8.0-maccatalyst18.0": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25005,6 +25991,56 @@
       }
     },
     "net8.0-maccatalyst18.0/android-arm": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25488,6 +26524,56 @@
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -25971,6 +27057,56 @@
       }
     },
     "net8.0-maccatalyst18.0/android-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26454,6 +27590,56 @@
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -26937,6 +28123,56 @@
       }
     },
     "net8.0-maccatalyst18.0/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -27420,6 +28656,56 @@
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -27903,6 +29189,56 @@
       }
     },
     "net8.0-maccatalyst18.0/win10-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -28386,6 +29722,57 @@
       }
     },
     "net8.0-windows10.0.19041": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -29000,6 +30387,24 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "Xam.Plugin.Media/6.0.2": {
         "type": "package",
         "compile": {
@@ -29031,6 +30436,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -29603,6 +31059,18 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xam.Plugin.Media/6.0.2": {
@@ -29636,6 +31104,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -30208,6 +31727,18 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xam.Plugin.Media/6.0.2": {
@@ -30241,6 +31772,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -30813,6 +32395,18 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xam.Plugin.Media/6.0.2": {
@@ -30846,6 +32440,57 @@
       }
     },
     "net8.0-windows10.0.19041/android-x86": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -31418,6 +33063,18 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xam.Plugin.Media/6.0.2": {
@@ -31451,6 +33108,57 @@
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -32023,6 +33731,18 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Xam.Plugin.Media/6.0.2": {
@@ -32056,6 +33776,57 @@
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -32630,6 +34401,18 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Xam.Plugin.Media/6.0.2": {
         "type": "package",
         "compile": {
@@ -32661,6 +34444,57 @@
       }
     },
     "net8.0-windows10.0.19041/win10-x64": {
+      "CommunityToolkit.Maui/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.1.0",
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.71",
+          "Microsoft.Maui.Essentials": "8.0.71",
+          "System.Speech": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.MediaElement/4.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "8.0.71"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -33241,6 +35075,18 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Speech/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Speech.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Xam.Plugin.Media/6.0.2": {
         "type": "package",
         "compile": {
@@ -33273,6 +35119,87 @@
     }
   },
   "libraries": {
+    "CommunityToolkit.Maui/9.1.0": {
+      "sha512": "lIFWonOHrHSMLrU8Oc58cmA+oPCi5F/EmD4/Zqc2yryv8upH0tdaeU+SloG1zEFWjNlVeOT9wUfPk3qPMI0iOQ==",
+      "type": "package",
+      "path": "communitytoolkit.maui/9.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
+        "communitytoolkit.maui.9.1.0.nupkg.sha512",
+        "communitytoolkit.maui.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-ios18.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.xml",
+        "lib/net8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0/CommunityToolkit.Maui.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.Core/9.1.0": {
+      "sha512": "aPVPB06syj/nrSkmiFwtFQkOGE2KkUYYjp8VbdyxhafcdSZgehEhQUtJ/R3ogBvL8f3a7bjj0ercHKuUEHrkcQ==",
+      "type": "package",
+      "path": "communitytoolkit.maui.core/9.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.9.1.0.nupkg.sha512",
+        "communitytoolkit.maui.core.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0/CommunityToolkit.Maui.Core.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.MediaElement/4.1.2": {
+      "sha512": "ejt3VnllmmsqbVn1sWYczUS4m78Mz5yre0+SpFyBkPMoz9oegAOR5xq8JOoA5H341NUono9l6lqtPipnJZxodQ==",
+      "type": "package",
+      "path": "communitytoolkit.maui.mediaelement/4.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.MediaElement.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.MediaElement.Analyzers.dll",
+        "communitytoolkit.maui.mediaelement.4.1.2.nupkg.sha512",
+        "communitytoolkit.maui.mediaelement.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.aar",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.MediaElement.xml",
+        "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.dll",
+        "lib/net8.0-ios18.0/CommunityToolkit.Maui.MediaElement.xml",
+        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.dll",
+        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.MediaElement.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.MediaElement.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.MediaElement.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.MediaElement.xml",
+        "lib/net8.0/CommunityToolkit.Maui.MediaElement.dll",
+        "lib/net8.0/CommunityToolkit.Maui.MediaElement.xml"
+      ]
+    },
     "GoogleGson/2.10.1.4": {
       "sha512": "L1vdbwbQzvKUoUGiMpMoJG5fqfLXaP6zMy1a26AYJQJSQKUO7Ojr2U5BAmgQoRxQ8J2GDjBfnfgnrsnorb4y5Q==",
       "type": "package",
@@ -35513,6 +37440,32 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Speech/8.0.0": {
+      "sha512": "CNuiA6vb95Oe5PRjClZEBiaju31vwB8OIeCgeSBXyZL6+MS4RVVB2X/C11z0xCkooHE3Vy91nM2z76emIzR+sg==",
+      "type": "package",
+      "path": "system.speech/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Speech.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.Speech.dll",
+        "lib/net7.0/System.Speech.dll",
+        "lib/net8.0/System.Speech.dll",
+        "lib/netstandard2.0/System.Speech.dll",
+        "runtimes/win/lib/net6.0/System.Speech.dll",
+        "runtimes/win/lib/net7.0/System.Speech.dll",
+        "runtimes/win/lib/net8.0/System.Speech.dll",
+        "system.speech.8.0.0.nupkg.sha512",
+        "system.speech.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Xam.Plugin.Media/6.0.2": {
       "sha512": "QLl5CXxSDF92+E154djfDKOoPSjvGkQSxYmLY0Fitnb6P4B103JQDU7lZlH0ez67GtzZDa8kWvS0Go0Yv1w9og==",
       "type": "package",
@@ -35553,18 +37506,15 @@
         "xam.plugin.media.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer/2.18.11": {
-      "sha512": "75looygHfDklQkCAgv5kuzBdC2g6t5TU1Xcs7SxjfBuax7roI/hA27+uq/Q+POl5PFI9QXSCtdWsCMdFhp59Dw==",
+    "Xam.Plugins.Android.ExoPlayer/2.19.1": {
+      "sha512": "R8BPNe/dSLsnpfS2rHuTyEHOnZojQoJ84C86mEVtHmAUhg4C9o4VoC5Aky2eM5r099AUCG1MAJCwSsnejGTmLg==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer/2.18.11",
+      "path": "xam.plugins.android.exoplayer/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.dll",
-        "lib/net6.0-android32.0/ExoPlayer.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.xml",
         "lib/net6.0-android33.0/ExoPlayer.dll",
         "lib/net6.0-android33.0/ExoPlayer.pdb",
         "lib/net6.0-android33.0/ExoPlayer.xml",
@@ -35574,370 +37524,337 @@
         "lib/net7.0-android33.0/ExoPlayer.xml",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Common/2.18.11": {
-      "sha512": "nZcseT0Y9bbJCkoisZsC35xLfvWITMcPbkIF2EljCN7TI8MAcAM0Ua3iJMKJ1mo/RKwXViNyfXuK9n/Ii17FIg==",
+    "Xam.Plugins.Android.ExoPlayer.Common/2.19.1": {
+      "sha512": "eMfVFwZpaw/i9ha6ry8UtKvVnq+9CpLOv4CH1iu3tSV3hZLRcQeKn1hSpWmw9kH/3yhcT1FZqa1o7rPdhk/9Wg==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.common/2.18.11",
+      "path": "xam.plugins.android.exoplayer.common/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Common.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Common.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Common.xml",
-        "lib/net6.0-android32.0/exoplayer-common-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Common.dll",
         "lib/net6.0-android33.0/ExoPlayer.Common.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Common.xml",
-        "lib/net6.0-android33.0/exoplayer-common-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-common-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Common.dll",
         "lib/net7.0-android33.0/ExoPlayer.Common.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Common.xml",
-        "lib/net7.0-android33.0/exoplayer-common-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-common-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.common.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.common.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.common.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Core/2.18.11": {
-      "sha512": "WiBW4ZNBLKI+pkBss9gIwXNpJalnCUZDe8Feyav5o3pr6TnBdjesZBmx8hrXYqAMWm1ExkxTRL+I0g87v9sGog==",
+    "Xam.Plugins.Android.ExoPlayer.Container/2.19.1": {
+      "sha512": "8inLi1/tfXM1ovGbMzXsH4Q2/2RJXcxt94z6a/HWhyEx8Crtn8gYrW5gJgNbaNltvgOj2DBJqYXVIeDhziyouQ==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.core/2.18.11",
+      "path": "xam.plugins.android.exoplayer.container/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Core.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Core.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Core.xml",
-        "lib/net6.0-android32.0/exoplayer-core-2.18.3.aar",
+        "lib/net6.0-android33.0/ExoPlayer.Container.dll",
+        "lib/net6.0-android33.0/ExoPlayer.Container.pdb",
+        "lib/net6.0-android33.0/ExoPlayer.Container.xml",
+        "lib/net6.0-android33.0/exoplayer-container-2.19.1.aar",
+        "lib/net7.0-android33.0/ExoPlayer.Container.dll",
+        "lib/net7.0-android33.0/ExoPlayer.Container.pdb",
+        "lib/net7.0-android33.0/ExoPlayer.Container.xml",
+        "lib/net7.0-android33.0/exoplayer-container-2.19.1.aar",
+        "readme.md",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.container.2.19.1.nupkg.sha512",
+        "xam.plugins.android.exoplayer.container.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.Core/2.19.1": {
+      "sha512": "XuJFac85VZxd4ZLuUdcM/rKG9GF/9srzu4T2PIGTT6DqNC/z0D3RulrwQLNs29+K5E3JUv30QTrxKDHfuh7G4g==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.core/2.19.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
         "lib/net6.0-android33.0/ExoPlayer.Core.dll",
         "lib/net6.0-android33.0/ExoPlayer.Core.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Core.xml",
-        "lib/net6.0-android33.0/exoplayer-core-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-core-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Core.aar",
         "lib/net7.0-android33.0/ExoPlayer.Core.dll",
         "lib/net7.0-android33.0/ExoPlayer.Core.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Core.xml",
-        "lib/net7.0-android33.0/exoplayer-core-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-core-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.core.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.core.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.core.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Dash/2.18.11": {
-      "sha512": "8N7d/4LW9aoSyJrff8RA4SnuIbXq9Emb+6LTXjpuvBxE9TmJ6EybiDqg7aAGNf00AxUOk8UhOGh7ugXOihQG2g==",
+    "Xam.Plugins.Android.ExoPlayer.Dash/2.19.1": {
+      "sha512": "x/qwwOr0ahsXKVoFngiPwYhWISZVkW1fv6CkJg2qHA/2wkWvJPUcyg4qHEImNPxwur3bOS/jxC+wWfxPFe7R0A==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.dash/2.18.11",
+      "path": "xam.plugins.android.exoplayer.dash/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Dash.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Dash.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Dash.xml",
-        "lib/net6.0-android32.0/exoplayer-dash-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Dash.dll",
         "lib/net6.0-android33.0/ExoPlayer.Dash.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Dash.xml",
-        "lib/net6.0-android33.0/exoplayer-dash-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-dash-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Dash.aar",
         "lib/net7.0-android33.0/ExoPlayer.Dash.dll",
         "lib/net7.0-android33.0/ExoPlayer.Dash.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Dash.xml",
-        "lib/net7.0-android33.0/exoplayer-dash-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-dash-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.dash.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.dash.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.dash.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Database/2.18.11": {
-      "sha512": "jJnamy25ypvv3nhCrE1jG45Em3xW42rabcBLQlm4LHRhFbnEbbx7VjMvj7kdOb0uX1IsTpM7m9Wy7I/STYbbpg==",
+    "Xam.Plugins.Android.ExoPlayer.Database/2.19.1": {
+      "sha512": "5aUrU3eEc4gHOrNlzRvBGfNpeRZi2MVThg3pNsBP9756tAdSe5UuPLlE//dQhCuo1BLpXnWMrK2DkAHOqJlMiQ==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.database/2.18.11",
+      "path": "xam.plugins.android.exoplayer.database/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Database.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Database.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Database.xml",
-        "lib/net6.0-android32.0/exoplayer-database-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Database.dll",
         "lib/net6.0-android33.0/ExoPlayer.Database.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Database.xml",
-        "lib/net6.0-android33.0/exoplayer-database-2.18.3.aar",
-        "lib/net7.0-android33.0/ExoPlayer.Database.aar",
+        "lib/net6.0-android33.0/exoplayer-database-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Database.dll",
         "lib/net7.0-android33.0/ExoPlayer.Database.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Database.xml",
-        "lib/net7.0-android33.0/exoplayer-database-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-database-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.database.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.database.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.database.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.DataSource/2.18.11": {
-      "sha512": "IF4MvurWx+EhPQ+2RkvSNoQYriKPmYm2sn6olov4SlGkHUutszR6pL8oma4uoGiBmpIKsK8IOyBr0T15vFZ8Lg==",
+    "Xam.Plugins.Android.ExoPlayer.DataSource/2.19.1": {
+      "sha512": "eklowDdEP5P9J10wdIDsc9OBxwzTp8b6j+iRHnO+aGE2mT8j2U5q5j11wuQjJ71zK6tlYwYOSwaGBCtk6TWWoQ==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.datasource/2.18.11",
+      "path": "xam.plugins.android.exoplayer.datasource/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.DataSource.dll",
-        "lib/net6.0-android32.0/ExoPlayer.DataSource.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.DataSource.xml",
-        "lib/net6.0-android32.0/exoplayer-datasource-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.DataSource.dll",
         "lib/net6.0-android33.0/ExoPlayer.DataSource.pdb",
         "lib/net6.0-android33.0/ExoPlayer.DataSource.xml",
-        "lib/net6.0-android33.0/exoplayer-datasource-2.18.3.aar",
-        "lib/net7.0-android33.0/ExoPlayer.DataSource.aar",
+        "lib/net6.0-android33.0/exoplayer-datasource-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.DataSource.dll",
         "lib/net7.0-android33.0/ExoPlayer.DataSource.pdb",
         "lib/net7.0-android33.0/ExoPlayer.DataSource.xml",
-        "lib/net7.0-android33.0/exoplayer-datasource-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-datasource-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.datasource.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.datasource.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.datasource.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Decoder/2.18.11": {
-      "sha512": "yeAQ2kuFq98lJOGKim9pe5VrijBkowU7SkbteGgt93+ZM1hUMKMFHtSS0jcMXvfkSNWU67GP+n9fSD35H2oMgQ==",
+    "Xam.Plugins.Android.ExoPlayer.Decoder/2.19.1": {
+      "sha512": "jH9bhPSwvPkWbCj5fnI1hLCc9F/fQvBPBsDhO48Rub7axmTPRtuRaePXKfwLygvFFrwKHMZLi/jjmD8Rop0kfw==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.decoder/2.18.11",
+      "path": "xam.plugins.android.exoplayer.decoder/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Decoder.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Decoder.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Decoder.xml",
-        "lib/net6.0-android32.0/exoplayer-decoder-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Decoder.dll",
         "lib/net6.0-android33.0/ExoPlayer.Decoder.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Decoder.xml",
-        "lib/net6.0-android33.0/exoplayer-decoder-2.18.3.aar",
-        "lib/net7.0-android33.0/ExoPlayer.Decoder.aar",
+        "lib/net6.0-android33.0/exoplayer-decoder-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Decoder.dll",
         "lib/net7.0-android33.0/ExoPlayer.Decoder.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Decoder.xml",
-        "lib/net7.0-android33.0/exoplayer-decoder-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-decoder-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.decoder.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.decoder.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.decoder.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Extractor/2.18.11": {
-      "sha512": "Gw8d0WlRPPg+YUHNaf0vZl4qMkN4c8UhEa4kxSlaJGhUgWFNb9RTiwt6OCT59f9e5hZgOq1qSBg6hjRfQs1Yyg==",
+    "Xam.Plugins.Android.ExoPlayer.Extractor/2.19.1": {
+      "sha512": "b5sVqYoiXD1F3O/6+kahonRg3STuwQLy2kjtPX3/dRQfwS3YWes/HUA2oNkfFQK85aRdbE23+pUZk5kG348fGA==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.extractor/2.18.11",
+      "path": "xam.plugins.android.exoplayer.extractor/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Extractor.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Extractor.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Extractor.xml",
-        "lib/net6.0-android32.0/exoplayer-extractor-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Extractor.dll",
         "lib/net6.0-android33.0/ExoPlayer.Extractor.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Extractor.xml",
-        "lib/net6.0-android33.0/exoplayer-extractor-2.18.3.aar",
-        "lib/net7.0-android33.0/ExoPlayer.Extractor.aar",
+        "lib/net6.0-android33.0/exoplayer-extractor-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Extractor.dll",
         "lib/net7.0-android33.0/ExoPlayer.Extractor.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Extractor.xml",
-        "lib/net7.0-android33.0/exoplayer-extractor-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-extractor-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.extractor.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.extractor.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.extractor.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Hls/2.18.11": {
-      "sha512": "XGEE/G6DUhj9xgAkppgKdI1JKIipamCQr1PodgflvsmVbSOdUDydXVPqHrQ+ztyvyczcAdT3ZMAqmZumOfJcjg==",
+    "Xam.Plugins.Android.ExoPlayer.Hls/2.19.1": {
+      "sha512": "a7spBjuVe88/njtn0VYBE19n29N/n7qSyd1KMkD0mJtCB6OsqgbXZs4jgaPn5FcgbqX4LJeinovl9jL4+mt1SQ==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.hls/2.18.11",
+      "path": "xam.plugins.android.exoplayer.hls/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Hls.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Hls.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Hls.xml",
-        "lib/net6.0-android32.0/exoplayer-hls-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Hls.dll",
         "lib/net6.0-android33.0/ExoPlayer.Hls.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Hls.xml",
-        "lib/net6.0-android33.0/exoplayer-hls-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-hls-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Hls.aar",
         "lib/net7.0-android33.0/ExoPlayer.Hls.dll",
         "lib/net7.0-android33.0/ExoPlayer.Hls.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Hls.xml",
-        "lib/net7.0-android33.0/exoplayer-hls-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-hls-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.hls.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.hls.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.hls.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.MediaSession/2.18.11": {
-      "sha512": "6U1IN7HBNTgUHfdWtVDg7j6Y8CQeovK69QiJxLe4YamoN7zncuHJkuWUEhlBpXO4qZ5w3Bb1u4AU8bkrjWF94Q==",
+    "Xam.Plugins.Android.ExoPlayer.MediaSession/2.19.1": {
+      "sha512": "7jeN9O6ctNIAoG8fdfsEIofbeDxKAwwj5fbencDqKXzTuDIm4RlsGLNnLm/gOIBpZJMT7QR4v22RvL7uZ5MUtA==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.mediasession/2.18.11",
+      "path": "xam.plugins.android.exoplayer.mediasession/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Ext.MediaSession.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Ext.MediaSession.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Ext.MediaSession.xml",
-        "lib/net6.0-android32.0/extension-mediasession-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Ext.MediaSession.dll",
         "lib/net6.0-android33.0/ExoPlayer.Ext.MediaSession.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Ext.MediaSession.xml",
-        "lib/net6.0-android33.0/extension-mediasession-2.18.3.aar",
+        "lib/net6.0-android33.0/extension-mediasession-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Ext.MediaSession.aar",
         "lib/net7.0-android33.0/ExoPlayer.Ext.MediaSession.dll",
         "lib/net7.0-android33.0/ExoPlayer.Ext.MediaSession.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Ext.MediaSession.xml",
-        "lib/net7.0-android33.0/extension-mediasession-2.18.3.aar",
+        "lib/net7.0-android33.0/extension-mediasession-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.mediasession.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.mediasession.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.mediasession.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Rtsp/2.18.11": {
-      "sha512": "GmmgUeZcUvoq64IbSKP5xxIfd3qO4nSAWR78S+M9WpwOWyZ//oO0NA5HxjZ8/oFSz/APQB8buETWNhJj6X4w8g==",
+    "Xam.Plugins.Android.ExoPlayer.Rtsp/2.19.1": {
+      "sha512": "QJOFy5RQGOx/iaGbuFyzstyICIGljjDQ8dW9+S2r0xW7/+md90bpMpyJEagRo5LfrK5BZRuwzINnawdUu9C+FA==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.rtsp/2.18.11",
+      "path": "xam.plugins.android.exoplayer.rtsp/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Rtsp.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Rtsp.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Rtsp.xml",
-        "lib/net6.0-android32.0/exoplayer-rtsp-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Rtsp.dll",
         "lib/net6.0-android33.0/ExoPlayer.Rtsp.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Rtsp.xml",
-        "lib/net6.0-android33.0/exoplayer-rtsp-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-rtsp-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Rtsp.aar",
         "lib/net7.0-android33.0/ExoPlayer.Rtsp.dll",
         "lib/net7.0-android33.0/ExoPlayer.Rtsp.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Rtsp.xml",
-        "lib/net7.0-android33.0/exoplayer-rtsp-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-rtsp-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.rtsp.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.rtsp.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.rtsp.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.18.11": {
-      "sha512": "CqaH/Fu9n1dTi8d8Ok+tiJJ2a7m0LaTjnQCxgwc9tqGJlIKs/K3GzB0LQSpogLW9h+zRn+7iKHtZDIz6cMxKJw==",
+    "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.19.1": {
+      "sha512": "Nczt4fU6zCbZdjYEvYOBZpi9Se5VsqW7A7Vq4gUdL1vRV5+/bYy3hYkWOrrrtMCAtvAFReuN+PQEkq6d1sApwg==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.smoothstreaming/2.18.11",
+      "path": "xam.plugins.android.exoplayer.smoothstreaming/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.SmoothStreaming.dll",
-        "lib/net6.0-android32.0/ExoPlayer.SmoothStreaming.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.SmoothStreaming.xml",
-        "lib/net6.0-android32.0/exoplayer-smoothstreaming-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.SmoothStreaming.dll",
         "lib/net6.0-android33.0/ExoPlayer.SmoothStreaming.pdb",
         "lib/net6.0-android33.0/ExoPlayer.SmoothStreaming.xml",
-        "lib/net6.0-android33.0/exoplayer-smoothstreaming-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-smoothstreaming-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.aar",
         "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.dll",
         "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.pdb",
         "lib/net7.0-android33.0/ExoPlayer.SmoothStreaming.xml",
-        "lib/net7.0-android33.0/exoplayer-smoothstreaming-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-smoothstreaming-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.smoothstreaming.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.smoothstreaming.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.smoothstreaming.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.Transformer/2.18.11": {
-      "sha512": "esgTwH/k0QUFCaPADxZP2I9C2xgOZiBLIFllHFwdFBftOlkPl5RMGeP0RRVbwNQqpypEZKXlVo3uM+xC9lPe/w==",
+    "Xam.Plugins.Android.ExoPlayer.Transformer/2.19.1": {
+      "sha512": "JozBQ14MxZT2IPfb7jCvO7CpPTeWAymy6va26bBUmUnQfdF79BuUQWA/2kSsfDwsK+nYAGK6mVfjO710/0u1Ww==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.transformer/2.18.11",
+      "path": "xam.plugins.android.exoplayer.transformer/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.Transformer.dll",
-        "lib/net6.0-android32.0/ExoPlayer.Transformer.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.Transformer.xml",
-        "lib/net6.0-android32.0/exoplayer-transformer-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.Transformer.dll",
         "lib/net6.0-android33.0/ExoPlayer.Transformer.pdb",
         "lib/net6.0-android33.0/ExoPlayer.Transformer.xml",
-        "lib/net6.0-android33.0/exoplayer-transformer-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-transformer-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.Transformer.aar",
         "lib/net7.0-android33.0/ExoPlayer.Transformer.dll",
         "lib/net7.0-android33.0/ExoPlayer.Transformer.pdb",
         "lib/net7.0-android33.0/ExoPlayer.Transformer.xml",
-        "lib/net7.0-android33.0/exoplayer-transformer-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-transformer-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.transformer.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.transformer.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.transformer.nuspec"
       ]
     },
-    "Xam.Plugins.Android.ExoPlayer.UI/2.18.11": {
-      "sha512": "IEK1XEjBfGVt6QIfCWi65hMoVTWHM4u/AfPoJqW5+LAIHXikLOk6F6sZ9YwEGEyUcUuHVfS1eGEAbOgipeJvtQ==",
+    "Xam.Plugins.Android.ExoPlayer.UI/2.19.1": {
+      "sha512": "L/e9GWl7tG3uk29XMYBzlvB2NkzpUUenMTPx2IJLVip8WAWBD+KZarCgIScVoo2vL/8cFp4nKhKGTDXq5bLmWA==",
       "type": "package",
-      "path": "xam.plugins.android.exoplayer.ui/2.18.11",
+      "path": "xam.plugins.android.exoplayer.ui/2.19.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "icon.png",
-        "lib/net6.0-android32.0/ExoPlayer.UI.dll",
-        "lib/net6.0-android32.0/ExoPlayer.UI.pdb",
-        "lib/net6.0-android32.0/ExoPlayer.UI.xml",
-        "lib/net6.0-android32.0/exoplayer-ui-2.18.3.aar",
         "lib/net6.0-android33.0/ExoPlayer.UI.dll",
         "lib/net6.0-android33.0/ExoPlayer.UI.pdb",
         "lib/net6.0-android33.0/ExoPlayer.UI.xml",
-        "lib/net6.0-android33.0/exoplayer-ui-2.18.3.aar",
+        "lib/net6.0-android33.0/exoplayer-ui-2.19.1.aar",
         "lib/net7.0-android33.0/ExoPlayer.UI.aar",
         "lib/net7.0-android33.0/ExoPlayer.UI.dll",
         "lib/net7.0-android33.0/ExoPlayer.UI.pdb",
         "lib/net7.0-android33.0/ExoPlayer.UI.xml",
-        "lib/net7.0-android33.0/exoplayer-ui-2.18.3.aar",
+        "lib/net7.0-android33.0/exoplayer-ui-2.19.1.aar",
         "readme.md",
         "readme.txt",
-        "xam.plugins.android.exoplayer.ui.2.18.11.nupkg.sha512",
+        "xam.plugins.android.exoplayer.ui.2.19.1.nupkg.sha512",
         "xam.plugins.android.exoplayer.ui.nuspec"
       ]
     },
@@ -38123,6 +40040,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
+      "CommunityToolkit.Maui >= 9.1.0",
+      "CommunityToolkit.Maui.MediaElement >= 4.1.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
@@ -38132,6 +40051,8 @@
       "Xamarin.Essentials >= 1.8.1"
     ],
     "net8.0-ios18.0": [
+      "CommunityToolkit.Maui >= 9.1.0",
+      "CommunityToolkit.Maui.MediaElement >= 4.1.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
@@ -38141,6 +40062,8 @@
       "Xamarin.Essentials >= 1.8.1"
     ],
     "net8.0-maccatalyst18.0": [
+      "CommunityToolkit.Maui >= 9.1.0",
+      "CommunityToolkit.Maui.MediaElement >= 4.1.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
@@ -38150,6 +40073,8 @@
       "Xamarin.Essentials >= 1.8.1"
     ],
     "net8.0-windows10.0.19041": [
+      "CommunityToolkit.Maui >= 9.1.0",
+      "CommunityToolkit.Maui.MediaElement >= 4.1.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
@@ -38224,6 +40149,14 @@
       "net8.0-android34.0": {
         "targetAlias": "net8.0-android",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          },
+          "CommunityToolkit.Maui.MediaElement": {
+            "target": "Package",
+            "version": "[4.1.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -38279,6 +40212,14 @@
       "net8.0-ios18.0": {
         "targetAlias": "net8.0-ios",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          },
+          "CommunityToolkit.Maui.MediaElement": {
+            "target": "Package",
+            "version": "[4.1.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -38334,6 +40275,14 @@
       "net8.0-maccatalyst18.0": {
         "targetAlias": "net8.0-maccatalyst",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          },
+          "CommunityToolkit.Maui.MediaElement": {
+            "target": "Package",
+            "version": "[4.1.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -38390,6 +40339,14 @@
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          },
+          "CommunityToolkit.Maui.MediaElement": {
+            "target": "Package",
+            "version": "[4.1.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"

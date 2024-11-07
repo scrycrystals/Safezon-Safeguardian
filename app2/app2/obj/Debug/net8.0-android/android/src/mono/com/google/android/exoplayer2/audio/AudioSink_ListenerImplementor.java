@@ -14,6 +14,7 @@ public class AudioSink_ListenerImplementor
 			"n_onPositionDiscontinuity:()V:GetOnPositionDiscontinuityHandler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListenerInvoker, ExoPlayer.Core\n" +
 			"n_onSkipSilenceEnabledChanged:(Z)V:GetOnSkipSilenceEnabledChanged_ZHandler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListenerInvoker, ExoPlayer.Core\n" +
 			"n_onUnderrun:(IJJ)V:GetOnUnderrun_IJJHandler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListenerInvoker, ExoPlayer.Core\n" +
+			"n_onAudioCapabilitiesChanged:()V:GetOnAudioCapabilitiesChangedHandler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListener, ExoPlayer.Core\n" +
 			"n_onAudioSinkError:(Ljava/lang/Exception;)V:GetOnAudioSinkError_Ljava_lang_Exception_Handler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListener, ExoPlayer.Core\n" +
 			"n_onOffloadBufferEmptying:()V:GetOnOffloadBufferEmptyingHandler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListener, ExoPlayer.Core\n" +
 			"n_onOffloadBufferFull:()V:GetOnOffloadBufferFullHandler:Com.Google.Android.Exoplayer2.Audio.IAudioSink/IListener, ExoPlayer.Core\n" +
@@ -54,6 +55,14 @@ public class AudioSink_ListenerImplementor
 	}
 
 	private native void n_onUnderrun (int p0, long p1, long p2);
+
+
+	public void onAudioCapabilitiesChanged ()
+	{
+		n_onAudioCapabilitiesChanged ();
+	}
+
+	private native void n_onAudioCapabilitiesChanged ();
 
 
 	public void onAudioSinkError (java.lang.Exception p0)

@@ -25,10 +25,6 @@ public class AnalyticsListenerImplementor
 			"n_onAvailableCommandsChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;Lcom/google/android/exoplayer2/Player$Commands;)V:GetOnAvailableCommandsChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_Lcom_google_android_exoplayer2_Player_Commands_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onBandwidthEstimate:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;IJJ)V:GetOnBandwidthEstimate_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_IJJHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onCues:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;Lcom/google/android/exoplayer2/text/CueGroup;)V:GetOnCues_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_Lcom_google_android_exoplayer2_text_CueGroup_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
-			"n_onDecoderDisabled:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;ILcom/google/android/exoplayer2/decoder/DecoderCounters;)V:GetOnDecoderDisabled_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_ILcom_google_android_exoplayer2_decoder_DecoderCounters_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
-			"n_onDecoderEnabled:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;ILcom/google/android/exoplayer2/decoder/DecoderCounters;)V:GetOnDecoderEnabled_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_ILcom_google_android_exoplayer2_decoder_DecoderCounters_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
-			"n_onDecoderInitialized:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;ILjava/lang/String;J)V:GetOnDecoderInitialized_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_ILjava_lang_String_JHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
-			"n_onDecoderInputFormatChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;ILcom/google/android/exoplayer2/Format;)V:GetOnDecoderInputFormatChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_ILcom_google_android_exoplayer2_Format_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onDeviceInfoChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;Lcom/google/android/exoplayer2/DeviceInfo;)V:GetOnDeviceInfoChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_Lcom_google_android_exoplayer2_DeviceInfo_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onDeviceVolumeChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;IZ)V:GetOnDeviceVolumeChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_IZHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onDownstreamFormatChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;Lcom/google/android/exoplayer2/source/MediaLoadData;)V:GetOnDownstreamFormatChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_Lcom_google_android_exoplayer2_source_MediaLoadData_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
@@ -65,7 +61,6 @@ public class AnalyticsListenerImplementor
 			"n_onRepeatModeChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;I)V:GetOnRepeatModeChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_IHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onSeekBackIncrementChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;J)V:GetOnSeekBackIncrementChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_JHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onSeekForwardIncrementChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;J)V:GetOnSeekForwardIncrementChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_JHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
-			"n_onSeekProcessed:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;)V:GetOnSeekProcessed_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onSeekStarted:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;)V:GetOnSeekStarted_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_Handler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onShuffleModeChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;Z)V:GetOnShuffleModeChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_ZHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
 			"n_onSkipSilenceEnabledChanged:(Lcom/google/android/exoplayer2/analytics/AnalyticsListener$EventTime;Z)V:GetOnSkipSilenceEnabledChanged_Lcom_google_android_exoplayer2_analytics_AnalyticsListener_EventTime_ZHandler:Com.Google.Android.Exoplayer2.Analytics.IAnalyticsListener, ExoPlayer.Core\n" +
@@ -207,38 +202,6 @@ public class AnalyticsListenerImplementor
 	}
 
 	private native void n_onCues (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, com.google.android.exoplayer2.text.CueGroup p1);
-
-
-	public void onDecoderDisabled (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, com.google.android.exoplayer2.decoder.DecoderCounters p2)
-	{
-		n_onDecoderDisabled (p0, p1, p2);
-	}
-
-	private native void n_onDecoderDisabled (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, com.google.android.exoplayer2.decoder.DecoderCounters p2);
-
-
-	public void onDecoderEnabled (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, com.google.android.exoplayer2.decoder.DecoderCounters p2)
-	{
-		n_onDecoderEnabled (p0, p1, p2);
-	}
-
-	private native void n_onDecoderEnabled (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, com.google.android.exoplayer2.decoder.DecoderCounters p2);
-
-
-	public void onDecoderInitialized (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, java.lang.String p2, long p3)
-	{
-		n_onDecoderInitialized (p0, p1, p2, p3);
-	}
-
-	private native void n_onDecoderInitialized (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, java.lang.String p2, long p3);
-
-
-	public void onDecoderInputFormatChanged (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, com.google.android.exoplayer2.Format p2)
-	{
-		n_onDecoderInputFormatChanged (p0, p1, p2);
-	}
-
-	private native void n_onDecoderInputFormatChanged (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, int p1, com.google.android.exoplayer2.Format p2);
 
 
 	public void onDeviceInfoChanged (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, com.google.android.exoplayer2.DeviceInfo p1)
@@ -527,14 +490,6 @@ public class AnalyticsListenerImplementor
 	}
 
 	private native void n_onSeekForwardIncrementChanged (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0, long p1);
-
-
-	public void onSeekProcessed (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0)
-	{
-		n_onSeekProcessed (p0);
-	}
-
-	private native void n_onSeekProcessed (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0);
 
 
 	public void onSeekStarted (com.google.android.exoplayer2.analytics.AnalyticsListener.EventTime p0)

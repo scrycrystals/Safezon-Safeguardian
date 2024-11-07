@@ -3,6 +3,9 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "app2.dll" comes first in this list. */
 		"app2.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
+		"CommunityToolkit.Maui.MediaElement.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -23,6 +26,7 @@ public class MonoPackageManager_Resources {
 		"Plugin.Media.dll",
 		"ExoPlayer.dll",
 		"ExoPlayer.Common.dll",
+		"ExoPlayer.Container.dll",
 		"ExoPlayer.Core.dll",
 		"ExoPlayer.Dash.dll",
 		"ExoPlayer.Database.dll",

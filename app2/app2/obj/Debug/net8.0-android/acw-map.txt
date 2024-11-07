@@ -4,6 +4,39 @@ app2.MainActivity;crc644bd9de0c82d1edc1.MainActivity
 app2.MainApplication, app2;crc644bd9de0c82d1edc1.MainApplication
 app2.MainApplication;crc644bd9de0c82d1edc1.MainApplication
 app2.MainApplication;crc644bd9de0c82d1edc1.MainApplication
+CommunityToolkit.Maui.Behaviors.TouchBehavior+AccessibilityListener, CommunityToolkit.Maui;crc640fd0ddb16fe433d4.TouchBehavior_AccessibilityListener
+CommunityToolkit.Maui.Behaviors.TouchBehavior.AccessibilityListener;crc640fd0ddb16fe433d4.TouchBehavior_AccessibilityListener
+communitytoolkit.maui.behaviors.TouchBehavior_AccessibilityListener;crc640fd0ddb16fe433d4.TouchBehavior_AccessibilityListener
+CommunityToolkit.Maui.Alerts.Snackbar+SnackbarCallback, CommunityToolkit.Maui;crc648fc34c62be8fbbff.Snackbar_SnackbarCallback
+CommunityToolkit.Maui.Alerts.Snackbar.SnackbarCallback;crc648fc34c62be8fbbff.Snackbar_SnackbarCallback
+communitytoolkit.maui.alerts.Snackbar_SnackbarCallback;crc648fc34c62be8fbbff.Snackbar_SnackbarCallback
+CommunityToolkit.Maui.Media.SpeechToTextImplementation+SpeechRecognitionListener, CommunityToolkit.Maui.Core;crc64d6358e7bf64fbac4.SpeechToTextImplementation_SpeechRecognitionListener
+CommunityToolkit.Maui.Media.SpeechToTextImplementation.SpeechRecognitionListener;crc64d6358e7bf64fbac4.SpeechToTextImplementation_SpeechRecognitionListener
+communitytoolkit.maui.media.SpeechToTextImplementation_SpeechRecognitionListener;crc64d6358e7bf64fbac4.SpeechToTextImplementation_SpeechRecognitionListener
+CommunityToolkit.Maui.Core.Views.MauiDrawingView, CommunityToolkit.Maui.Core;crc64159f3caeb1269279.MauiDrawingView
+CommunityToolkit.Maui.Core.Views.MauiDrawingView;crc64159f3caeb1269279.MauiDrawingView
+communitytoolkit.maui.core.views.MauiDrawingView;crc64159f3caeb1269279.MauiDrawingView
+CommunityToolkit.Maui.Core.Views.MauiPopup, CommunityToolkit.Maui.Core;crc64159f3caeb1269279.MauiPopup
+CommunityToolkit.Maui.Core.Views.MauiPopup;crc64159f3caeb1269279.MauiPopup
+communitytoolkit.maui.core.views.MauiPopup;crc64159f3caeb1269279.MauiPopup
+CommunityToolkit.Maui.Core.Views.MauiSemanticOrderView, CommunityToolkit.Maui.Core;crc64159f3caeb1269279.MauiSemanticOrderView
+CommunityToolkit.Maui.Core.Views.MauiSemanticOrderView;crc64159f3caeb1269279.MauiSemanticOrderView
+communitytoolkit.maui.core.views.MauiSemanticOrderView;crc64159f3caeb1269279.MauiSemanticOrderView
+CommunityToolkit.Maui.Media.Services.MediaControlsService, CommunityToolkit.Maui.MediaElement;communityToolkit.maui.media.services
+CommunityToolkit.Maui.Media.Services.MediaControlsService;communityToolkit.maui.media.services
+communityToolkit.maui.media.services;communityToolkit.maui.media.services
+CommunityToolkit.Maui.Media.Services.ReceiveUpdates, CommunityToolkit.Maui.MediaElement;crc64945cd749a3cf0abd.ReceiveUpdates
+CommunityToolkit.Maui.Media.Services.ReceiveUpdates;crc64945cd749a3cf0abd.ReceiveUpdates
+communitytoolkit.maui.media.services.ReceiveUpdates;crc64945cd749a3cf0abd.ReceiveUpdates
+CommunityToolkit.Maui.Core.Views.MauiMediaElement, CommunityToolkit.Maui.MediaElement;crc64ceb75e76f4b66147.MauiMediaElement
+CommunityToolkit.Maui.Core.Views.MauiMediaElement;crc64ceb75e76f4b66147.MauiMediaElement
+communitytoolkit.maui.core.views.MauiMediaElement;crc64ceb75e76f4b66147.MauiMediaElement
+CommunityToolkit.Maui.Core.Views.MediaManager, CommunityToolkit.Maui.MediaElement;crc64ceb75e76f4b66147.MediaManager
+CommunityToolkit.Maui.Core.Views.MediaManager;crc64ceb75e76f4b66147.MediaManager
+communitytoolkit.maui.core.views.MediaManager;crc64ceb75e76f4b66147.MediaManager
+CommunityToolkit.Maui.Core.Views.MediaManager+UIUpdateReceiver, CommunityToolkit.Maui.MediaElement;crc64ceb75e76f4b66147.MediaManager_UIUpdateReceiver
+CommunityToolkit.Maui.Core.Views.MediaManager.UIUpdateReceiver;crc64ceb75e76f4b66147.MediaManager_UIUpdateReceiver
+communitytoolkit.maui.core.views.MediaManager_UIUpdateReceiver;crc64ceb75e76f4b66147.MediaManager_UIUpdateReceiver
 GoogleGson.IExclusionStrategy, GoogleGson;com.google.gson.ExclusionStrategy
 GoogleGson.IExclusionStrategy;com.google.gson.ExclusionStrategy
 com.google.gson.ExclusionStrategy;com.google.gson.ExclusionStrategy
@@ -1171,6 +1204,9 @@ com.google.android.exoplayer2.C$VideoOutputMode;com.google.android.exoplayer2.C$
 Com.Google.Android.Exoplayer2.C+IVideoScalingMode, ExoPlayer.Common;com.google.android.exoplayer2.C$VideoScalingMode
 Com.Google.Android.Exoplayer2.C.IVideoScalingMode;com.google.android.exoplayer2.C$VideoScalingMode
 com.google.android.exoplayer2.C$VideoScalingMode;com.google.android.exoplayer2.C$VideoScalingMode
+Com.Google.Android.Exoplayer2.C+IVolumeFlags, ExoPlayer.Common;com.google.android.exoplayer2.C$VolumeFlags
+Com.Google.Android.Exoplayer2.C.IVolumeFlags;com.google.android.exoplayer2.C$VolumeFlags
+com.google.android.exoplayer2.C$VolumeFlags;com.google.android.exoplayer2.C$VolumeFlags
 Com.Google.Android.Exoplayer2.C+IWakeMode, ExoPlayer.Common;com.google.android.exoplayer2.C$WakeMode
 Com.Google.Android.Exoplayer2.C.IWakeMode;com.google.android.exoplayer2.C$WakeMode
 com.google.android.exoplayer2.C$WakeMode;com.google.android.exoplayer2.C$WakeMode
@@ -1246,6 +1282,9 @@ mono.com.google.android.exoplayer2.util.EGLSurfaceTexture_TextureImageListenerIm
 Com.Google.Android.Exoplayer2.Util.FileTypes+IType, ExoPlayer.Common;com.google.android.exoplayer2.util.FileTypes$Type
 Com.Google.Android.Exoplayer2.Util.FileTypes.IType;com.google.android.exoplayer2.util.FileTypes$Type
 com.google.android.exoplayer2.util.FileTypes$Type;com.google.android.exoplayer2.util.FileTypes$Type
+Com.Google.Android.Exoplayer2.Util.IBitmapLoader, ExoPlayer.Common;com.google.android.exoplayer2.util.BitmapLoader
+Com.Google.Android.Exoplayer2.Util.IBitmapLoader;com.google.android.exoplayer2.util.BitmapLoader
+com.google.android.exoplayer2.util.BitmapLoader;com.google.android.exoplayer2.util.BitmapLoader
 Com.Google.Android.Exoplayer2.Util.IClock, ExoPlayer.Common;com.google.android.exoplayer2.util.Clock
 Com.Google.Android.Exoplayer2.Util.IClock;com.google.android.exoplayer2.util.Clock
 com.google.android.exoplayer2.util.Clock;com.google.android.exoplayer2.util.Clock
@@ -1261,18 +1300,9 @@ com.google.android.exoplayer2.util.Effect;com.google.android.exoplayer2.util.Eff
 Com.Google.Android.Exoplayer2.Util.IErrorMessageProvider, ExoPlayer.Common;com.google.android.exoplayer2.util.ErrorMessageProvider
 Com.Google.Android.Exoplayer2.Util.IErrorMessageProvider;com.google.android.exoplayer2.util.ErrorMessageProvider
 com.google.android.exoplayer2.util.ErrorMessageProvider;com.google.android.exoplayer2.util.ErrorMessageProvider
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor, ExoPlayer.Common;com.google.android.exoplayer2.util.FrameProcessor
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor;com.google.android.exoplayer2.util.FrameProcessor
-com.google.android.exoplayer2.util.FrameProcessor;com.google.android.exoplayer2.util.FrameProcessor
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor+IFactory, ExoPlayer.Common;com.google.android.exoplayer2.util.FrameProcessor$Factory
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor.IFactory;com.google.android.exoplayer2.util.FrameProcessor$Factory
-com.google.android.exoplayer2.util.FrameProcessor$Factory;com.google.android.exoplayer2.util.FrameProcessor$Factory
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor+IListener, ExoPlayer.Common;com.google.android.exoplayer2.util.FrameProcessor$Listener
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor.IListener;com.google.android.exoplayer2.util.FrameProcessor$Listener
-com.google.android.exoplayer2.util.FrameProcessor$Listener;com.google.android.exoplayer2.util.FrameProcessor$Listener
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor+IListenerImplementor, ExoPlayer.Common;mono.com.google.android.exoplayer2.util.FrameProcessor_ListenerImplementor
-Com.Google.Android.Exoplayer2.Util.IFrameProcessor.IListenerImplementor;mono.com.google.android.exoplayer2.util.FrameProcessor_ListenerImplementor
-mono.com.google.android.exoplayer2.util.FrameProcessor_ListenerImplementor;mono.com.google.android.exoplayer2.util.FrameProcessor_ListenerImplementor
+Com.Google.Android.Exoplayer2.Util.IGlObjectsProvider, ExoPlayer.Common;com.google.android.exoplayer2.util.GlObjectsProvider
+Com.Google.Android.Exoplayer2.Util.IGlObjectsProvider;com.google.android.exoplayer2.util.GlObjectsProvider
+com.google.android.exoplayer2.util.GlObjectsProvider;com.google.android.exoplayer2.util.GlObjectsProvider
 Com.Google.Android.Exoplayer2.Util.IHandlerWrapper, ExoPlayer.Common;com.google.android.exoplayer2.util.HandlerWrapper
 Com.Google.Android.Exoplayer2.Util.IHandlerWrapper;com.google.android.exoplayer2.util.HandlerWrapper
 com.google.android.exoplayer2.util.HandlerWrapper;com.google.android.exoplayer2.util.HandlerWrapper
@@ -1282,9 +1312,30 @@ com.google.android.exoplayer2.util.HandlerWrapper$Message;com.google.android.exo
 Com.Google.Android.Exoplayer2.Util.INonNullApi, ExoPlayer.Common;com.google.android.exoplayer2.util.NonNullApi
 Com.Google.Android.Exoplayer2.Util.INonNullApi;com.google.android.exoplayer2.util.NonNullApi
 com.google.android.exoplayer2.util.NonNullApi;com.google.android.exoplayer2.util.NonNullApi
+Com.Google.Android.Exoplayer2.Util.IOnInputFrameProcessedListener, ExoPlayer.Common;com.google.android.exoplayer2.util.OnInputFrameProcessedListener
+Com.Google.Android.Exoplayer2.Util.IOnInputFrameProcessedListener;com.google.android.exoplayer2.util.OnInputFrameProcessedListener
+com.google.android.exoplayer2.util.OnInputFrameProcessedListener;com.google.android.exoplayer2.util.OnInputFrameProcessedListener
+Com.Google.Android.Exoplayer2.Util.IOnInputFrameProcessedListenerImplementor, ExoPlayer.Common;mono.com.google.android.exoplayer2.util.OnInputFrameProcessedListenerImplementor
+Com.Google.Android.Exoplayer2.Util.IOnInputFrameProcessedListenerImplementor;mono.com.google.android.exoplayer2.util.OnInputFrameProcessedListenerImplementor
+mono.com.google.android.exoplayer2.util.OnInputFrameProcessedListenerImplementor;mono.com.google.android.exoplayer2.util.OnInputFrameProcessedListenerImplementor
 Com.Google.Android.Exoplayer2.Util.IUnknownNull, ExoPlayer.Common;com.google.android.exoplayer2.util.UnknownNull
 Com.Google.Android.Exoplayer2.Util.IUnknownNull;com.google.android.exoplayer2.util.UnknownNull
 com.google.android.exoplayer2.util.UnknownNull;com.google.android.exoplayer2.util.UnknownNull
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor, ExoPlayer.Common;com.google.android.exoplayer2.util.VideoFrameProcessor
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor;com.google.android.exoplayer2.util.VideoFrameProcessor
+com.google.android.exoplayer2.util.VideoFrameProcessor;com.google.android.exoplayer2.util.VideoFrameProcessor
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor+IFactory, ExoPlayer.Common;com.google.android.exoplayer2.util.VideoFrameProcessor$Factory
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor.IFactory;com.google.android.exoplayer2.util.VideoFrameProcessor$Factory
+com.google.android.exoplayer2.util.VideoFrameProcessor$Factory;com.google.android.exoplayer2.util.VideoFrameProcessor$Factory
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor+IInputType, ExoPlayer.Common;com.google.android.exoplayer2.util.VideoFrameProcessor$InputType
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor.IInputType;com.google.android.exoplayer2.util.VideoFrameProcessor$InputType
+com.google.android.exoplayer2.util.VideoFrameProcessor$InputType;com.google.android.exoplayer2.util.VideoFrameProcessor$InputType
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor+IListener, ExoPlayer.Common;com.google.android.exoplayer2.util.VideoFrameProcessor$Listener
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor.IListener;com.google.android.exoplayer2.util.VideoFrameProcessor$Listener
+com.google.android.exoplayer2.util.VideoFrameProcessor$Listener;com.google.android.exoplayer2.util.VideoFrameProcessor$Listener
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor+IListenerImplementor, ExoPlayer.Common;mono.com.google.android.exoplayer2.util.VideoFrameProcessor_ListenerImplementor
+Com.Google.Android.Exoplayer2.Util.IVideoFrameProcessor.IListenerImplementor;mono.com.google.android.exoplayer2.util.VideoFrameProcessor_ListenerImplementor
+mono.com.google.android.exoplayer2.util.VideoFrameProcessor_ListenerImplementor;mono.com.google.android.exoplayer2.util.VideoFrameProcessor_ListenerImplementor
 Com.Google.Android.Exoplayer2.Util.ListenerSet+IEvent, ExoPlayer.Common;com.google.android.exoplayer2.util.ListenerSet$Event
 Com.Google.Android.Exoplayer2.Util.ListenerSet.IEvent;com.google.android.exoplayer2.util.ListenerSet$Event
 com.google.android.exoplayer2.util.ListenerSet$Event;com.google.android.exoplayer2.util.ListenerSet$Event
@@ -1423,6 +1474,12 @@ com.google.android.exoplayer2.RendererCapabilities$FormatSupport;com.google.andr
 Com.Google.Android.Exoplayer2.IRendererCapabilities+IHardwareAccelerationSupport, ExoPlayer.Core;com.google.android.exoplayer2.RendererCapabilities$HardwareAccelerationSupport
 Com.Google.Android.Exoplayer2.IRendererCapabilities.IHardwareAccelerationSupport;com.google.android.exoplayer2.RendererCapabilities$HardwareAccelerationSupport
 com.google.android.exoplayer2.RendererCapabilities$HardwareAccelerationSupport;com.google.android.exoplayer2.RendererCapabilities$HardwareAccelerationSupport
+Com.Google.Android.Exoplayer2.IRendererCapabilities+IListener, ExoPlayer.Core;com.google.android.exoplayer2.RendererCapabilities$Listener
+Com.Google.Android.Exoplayer2.IRendererCapabilities.IListener;com.google.android.exoplayer2.RendererCapabilities$Listener
+com.google.android.exoplayer2.RendererCapabilities$Listener;com.google.android.exoplayer2.RendererCapabilities$Listener
+Com.Google.Android.Exoplayer2.IRendererCapabilities+IListenerImplementor, ExoPlayer.Core;mono.com.google.android.exoplayer2.RendererCapabilities_ListenerImplementor
+Com.Google.Android.Exoplayer2.IRendererCapabilities.IListenerImplementor;mono.com.google.android.exoplayer2.RendererCapabilities_ListenerImplementor
+mono.com.google.android.exoplayer2.RendererCapabilities_ListenerImplementor;mono.com.google.android.exoplayer2.RendererCapabilities_ListenerImplementor
 Com.Google.Android.Exoplayer2.IRendererCapabilities+ITunnelingSupport, ExoPlayer.Core;com.google.android.exoplayer2.RendererCapabilities$TunnelingSupport
 Com.Google.Android.Exoplayer2.IRendererCapabilities.ITunnelingSupport;com.google.android.exoplayer2.RendererCapabilities$TunnelingSupport
 com.google.android.exoplayer2.RendererCapabilities$TunnelingSupport;com.google.android.exoplayer2.RendererCapabilities$TunnelingSupport
@@ -1468,6 +1525,27 @@ com.google.android.exoplayer2.util.MediaClock;com.google.android.exoplayer2.util
 Com.Google.Android.Exoplayer2.Util.SntpClient+IInitializationCallback, ExoPlayer.Core;com.google.android.exoplayer2.util.SntpClient$InitializationCallback
 Com.Google.Android.Exoplayer2.Util.SntpClient.IInitializationCallback;com.google.android.exoplayer2.util.SntpClient$InitializationCallback
 com.google.android.exoplayer2.util.SntpClient$InitializationCallback;com.google.android.exoplayer2.util.SntpClient$InitializationCallback
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration+ICmcdKey, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdConfiguration$CmcdKey
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration.ICmcdKey;com.google.android.exoplayer2.upstream.CmcdConfiguration$CmcdKey
+com.google.android.exoplayer2.upstream.CmcdConfiguration$CmcdKey;com.google.android.exoplayer2.upstream.CmcdConfiguration$CmcdKey
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration+IFactory, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdConfiguration$Factory
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration.IFactory;com.google.android.exoplayer2.upstream.CmcdConfiguration$Factory
+com.google.android.exoplayer2.upstream.CmcdConfiguration$Factory;com.google.android.exoplayer2.upstream.CmcdConfiguration$Factory
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration+IHeaderKey, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdConfiguration$HeaderKey
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration.IHeaderKey;com.google.android.exoplayer2.upstream.CmcdConfiguration$HeaderKey
+com.google.android.exoplayer2.upstream.CmcdConfiguration$HeaderKey;com.google.android.exoplayer2.upstream.CmcdConfiguration$HeaderKey
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration+IRequestConfig, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdConfiguration$RequestConfig
+Com.Google.Android.Exoplayer2.Upstream.CmcdConfiguration.IRequestConfig;com.google.android.exoplayer2.upstream.CmcdConfiguration$RequestConfig
+com.google.android.exoplayer2.upstream.CmcdConfiguration$RequestConfig;com.google.android.exoplayer2.upstream.CmcdConfiguration$RequestConfig
+Com.Google.Android.Exoplayer2.Upstream.CmcdHeadersFactory+IObjectType, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$ObjectType
+Com.Google.Android.Exoplayer2.Upstream.CmcdHeadersFactory.IObjectType;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$ObjectType
+com.google.android.exoplayer2.upstream.CmcdHeadersFactory$ObjectType;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$ObjectType
+Com.Google.Android.Exoplayer2.Upstream.CmcdHeadersFactory+IStreamingFormat, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamingFormat
+Com.Google.Android.Exoplayer2.Upstream.CmcdHeadersFactory.IStreamingFormat;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamingFormat
+com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamingFormat;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamingFormat
+Com.Google.Android.Exoplayer2.Upstream.CmcdHeadersFactory+IStreamType, ExoPlayer.Core;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamType
+Com.Google.Android.Exoplayer2.Upstream.CmcdHeadersFactory.IStreamType;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamType
+com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamType;com.google.android.exoplayer2.upstream.CmcdHeadersFactory$StreamType
 Com.Google.Android.Exoplayer2.Upstream.IAllocator, ExoPlayer.Core;com.google.android.exoplayer2.upstream.Allocator
 Com.Google.Android.Exoplayer2.Upstream.IAllocator;com.google.android.exoplayer2.upstream.Allocator
 com.google.android.exoplayer2.upstream.Allocator;com.google.android.exoplayer2.upstream.Allocator
@@ -1507,6 +1585,15 @@ com.google.android.exoplayer2.upstream.Loader$ReleaseCallback;com.google.android
 Com.Google.Android.Exoplayer2.Upstream.ParsingLoadable+IParser, ExoPlayer.Core;com.google.android.exoplayer2.upstream.ParsingLoadable$Parser
 Com.Google.Android.Exoplayer2.Upstream.ParsingLoadable.IParser;com.google.android.exoplayer2.upstream.ParsingLoadable$Parser
 com.google.android.exoplayer2.upstream.ParsingLoadable$Parser;com.google.android.exoplayer2.upstream.ParsingLoadable$Parser
+Com.Google.Android.Exoplayer2.Upstream.Experimental.IBandwidthEstimator, ExoPlayer.Core;com.google.android.exoplayer2.upstream.experimental.BandwidthEstimator
+Com.Google.Android.Exoplayer2.Upstream.Experimental.IBandwidthEstimator;com.google.android.exoplayer2.upstream.experimental.BandwidthEstimator
+com.google.android.exoplayer2.upstream.experimental.BandwidthEstimator;com.google.android.exoplayer2.upstream.experimental.BandwidthEstimator
+Com.Google.Android.Exoplayer2.Upstream.Experimental.IBandwidthStatistic, ExoPlayer.Core;com.google.android.exoplayer2.upstream.experimental.BandwidthStatistic
+Com.Google.Android.Exoplayer2.Upstream.Experimental.IBandwidthStatistic;com.google.android.exoplayer2.upstream.experimental.BandwidthStatistic
+com.google.android.exoplayer2.upstream.experimental.BandwidthStatistic;com.google.android.exoplayer2.upstream.experimental.BandwidthStatistic
+Com.Google.Android.Exoplayer2.Upstream.Experimental.SlidingWeightedAverageBandwidthStatistic+ISampleEvictionFunction, ExoPlayer.Core;com.google.android.exoplayer2.upstream.experimental.SlidingWeightedAverageBandwidthStatistic$SampleEvictionFunction
+Com.Google.Android.Exoplayer2.Upstream.Experimental.SlidingWeightedAverageBandwidthStatistic.ISampleEvictionFunction;com.google.android.exoplayer2.upstream.experimental.SlidingWeightedAverageBandwidthStatistic$SampleEvictionFunction
+com.google.android.exoplayer2.upstream.experimental.SlidingWeightedAverageBandwidthStatistic$SampleEvictionFunction;com.google.android.exoplayer2.upstream.experimental.SlidingWeightedAverageBandwidthStatistic$SampleEvictionFunction
 Com.Google.Android.Exoplayer2.Trackselection.IExoTrackSelection, ExoPlayer.Core;com.google.android.exoplayer2.trackselection.ExoTrackSelection
 Com.Google.Android.Exoplayer2.Trackselection.IExoTrackSelection;com.google.android.exoplayer2.trackselection.ExoTrackSelection
 com.google.android.exoplayer2.trackselection.ExoTrackSelection;com.google.android.exoplayer2.trackselection.ExoTrackSelection
@@ -2134,6 +2221,27 @@ com.google.android.exoplayer2.source.smoothstreaming.SsChunkSource;com.google.an
 Com.Google.Android.Exoplayer2.Source.Smoothstreaming.ISsChunkSource+IFactory, ExoPlayer.SmoothStreaming;com.google.android.exoplayer2.source.smoothstreaming.SsChunkSource$Factory
 Com.Google.Android.Exoplayer2.Source.Smoothstreaming.ISsChunkSource.IFactory;com.google.android.exoplayer2.source.smoothstreaming.SsChunkSource$Factory
 com.google.android.exoplayer2.source.smoothstreaming.SsChunkSource$Factory;com.google.android.exoplayer2.source.smoothstreaming.SsChunkSource$Factory
+Com.Google.Android.Exoplayer2.Transformer.ExportException+IErrorCode, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.ExportException$ErrorCode
+Com.Google.Android.Exoplayer2.Transformer.ExportException.IErrorCode;com.google.android.exoplayer2.transformer.ExportException$ErrorCode
+com.google.android.exoplayer2.transformer.ExportException$ErrorCode;com.google.android.exoplayer2.transformer.ExportException$ErrorCode
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.AssetLoader
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader;com.google.android.exoplayer2.transformer.AssetLoader
+com.google.android.exoplayer2.transformer.AssetLoader;com.google.android.exoplayer2.transformer.AssetLoader
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader+IFactory, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.AssetLoader$Factory
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader.IFactory;com.google.android.exoplayer2.transformer.AssetLoader$Factory
+com.google.android.exoplayer2.transformer.AssetLoader$Factory;com.google.android.exoplayer2.transformer.AssetLoader$Factory
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader+IListener, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.AssetLoader$Listener
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader.IListener;com.google.android.exoplayer2.transformer.AssetLoader$Listener
+com.google.android.exoplayer2.transformer.AssetLoader$Listener;com.google.android.exoplayer2.transformer.AssetLoader$Listener
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader+IListenerImplementor, ExoPlayer.Transformer;mono.com.google.android.exoplayer2.transformer.AssetLoader_ListenerImplementor
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader.IListenerImplementor;mono.com.google.android.exoplayer2.transformer.AssetLoader_ListenerImplementor
+mono.com.google.android.exoplayer2.transformer.AssetLoader_ListenerImplementor;mono.com.google.android.exoplayer2.transformer.AssetLoader_ListenerImplementor
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader+ISupportedOutputTypes, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.AssetLoader$SupportedOutputTypes
+Com.Google.Android.Exoplayer2.Transformer.IAssetLoader.ISupportedOutputTypes;com.google.android.exoplayer2.transformer.AssetLoader$SupportedOutputTypes
+com.google.android.exoplayer2.transformer.AssetLoader$SupportedOutputTypes;com.google.android.exoplayer2.transformer.AssetLoader$SupportedOutputTypes
+Com.Google.Android.Exoplayer2.Transformer.IAudioMixer, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.AudioMixer
+Com.Google.Android.Exoplayer2.Transformer.IAudioMixer;com.google.android.exoplayer2.transformer.AudioMixer
+com.google.android.exoplayer2.transformer.AudioMixer;com.google.android.exoplayer2.transformer.AudioMixer
 Com.Google.Android.Exoplayer2.Transformer.ICodec, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.Codec
 Com.Google.Android.Exoplayer2.Transformer.ICodec;com.google.android.exoplayer2.transformer.Codec
 com.google.android.exoplayer2.transformer.Codec;com.google.android.exoplayer2.transformer.Codec
@@ -2143,9 +2251,6 @@ com.google.android.exoplayer2.transformer.Codec$DecoderFactory;com.google.androi
 Com.Google.Android.Exoplayer2.Transformer.ICodec+IEncoderFactory, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.Codec$EncoderFactory
 Com.Google.Android.Exoplayer2.Transformer.ICodec.IEncoderFactory;com.google.android.exoplayer2.transformer.Codec$EncoderFactory
 com.google.android.exoplayer2.transformer.Codec$EncoderFactory;com.google.android.exoplayer2.transformer.Codec$EncoderFactory
-Com.Google.Android.Exoplayer2.Transformer.IEncoderBitrateProvider, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.EncoderBitrateProvider
-Com.Google.Android.Exoplayer2.Transformer.IEncoderBitrateProvider;com.google.android.exoplayer2.transformer.EncoderBitrateProvider
-com.google.android.exoplayer2.transformer.EncoderBitrateProvider;com.google.android.exoplayer2.transformer.EncoderBitrateProvider
 Com.Google.Android.Exoplayer2.Transformer.IEncoderSelector, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.EncoderSelector
 Com.Google.Android.Exoplayer2.Transformer.IEncoderSelector;com.google.android.exoplayer2.transformer.EncoderSelector
 com.google.android.exoplayer2.transformer.EncoderSelector;com.google.android.exoplayer2.transformer.EncoderSelector
@@ -2155,9 +2260,18 @@ com.google.android.exoplayer2.transformer.Muxer;com.google.android.exoplayer2.tr
 Com.Google.Android.Exoplayer2.Transformer.IMuxer+IFactory, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.Muxer$Factory
 Com.Google.Android.Exoplayer2.Transformer.IMuxer.IFactory;com.google.android.exoplayer2.transformer.Muxer$Factory
 com.google.android.exoplayer2.transformer.Muxer$Factory;com.google.android.exoplayer2.transformer.Muxer$Factory
+Com.Google.Android.Exoplayer2.Transformer.InAppMuxer+IMetadataProvider, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.InAppMuxer$MetadataProvider
+Com.Google.Android.Exoplayer2.Transformer.InAppMuxer.IMetadataProvider;com.google.android.exoplayer2.transformer.InAppMuxer$MetadataProvider
+com.google.android.exoplayer2.transformer.InAppMuxer$MetadataProvider;com.google.android.exoplayer2.transformer.InAppMuxer$MetadataProvider
+Com.Google.Android.Exoplayer2.Transformer.ISampleConsumer, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.SampleConsumer
+Com.Google.Android.Exoplayer2.Transformer.ISampleConsumer;com.google.android.exoplayer2.transformer.SampleConsumer
+com.google.android.exoplayer2.transformer.SampleConsumer;com.google.android.exoplayer2.transformer.SampleConsumer
 Com.Google.Android.Exoplayer2.Transformer.TransformationException+IErrorCode, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.TransformationException$ErrorCode
 Com.Google.Android.Exoplayer2.Transformer.TransformationException.IErrorCode;com.google.android.exoplayer2.transformer.TransformationException$ErrorCode
 com.google.android.exoplayer2.transformer.TransformationException$ErrorCode;com.google.android.exoplayer2.transformer.TransformationException$ErrorCode
+Com.Google.Android.Exoplayer2.Transformer.TransformationRequest+IHdrMode, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.TransformationRequest$HdrMode
+Com.Google.Android.Exoplayer2.Transformer.TransformationRequest.IHdrMode;com.google.android.exoplayer2.transformer.TransformationRequest$HdrMode
+com.google.android.exoplayer2.transformer.TransformationRequest$HdrMode;com.google.android.exoplayer2.transformer.TransformationRequest$HdrMode
 Com.Google.Android.Exoplayer2.Transformer.Transformer+IListener, ExoPlayer.Transformer;com.google.android.exoplayer2.transformer.Transformer$Listener
 Com.Google.Android.Exoplayer2.Transformer.Transformer.IListener;com.google.android.exoplayer2.transformer.Transformer$Listener
 com.google.android.exoplayer2.transformer.Transformer$Listener;com.google.android.exoplayer2.transformer.Transformer$Listener
@@ -2245,6 +2359,9 @@ com.google.android.exoplayer2.ui.StyledPlayerControlView$VisibilityListener;com.
 Com.Google.Android.Exoplayer2.UI.StyledPlayerControlView+IVisibilityListenerImplementor, ExoPlayer.UI;mono.com.google.android.exoplayer2.ui.StyledPlayerControlView_VisibilityListenerImplementor
 Com.Google.Android.Exoplayer2.UI.StyledPlayerControlView.IVisibilityListenerImplementor;mono.com.google.android.exoplayer2.ui.StyledPlayerControlView_VisibilityListenerImplementor
 mono.com.google.android.exoplayer2.ui.StyledPlayerControlView_VisibilityListenerImplementor;mono.com.google.android.exoplayer2.ui.StyledPlayerControlView_VisibilityListenerImplementor
+Com.Google.Android.Exoplayer2.UI.StyledPlayerView+IArtworkDisplayMode, ExoPlayer.UI;com.google.android.exoplayer2.ui.StyledPlayerView$ArtworkDisplayMode
+Com.Google.Android.Exoplayer2.UI.StyledPlayerView.IArtworkDisplayMode;com.google.android.exoplayer2.ui.StyledPlayerView$ArtworkDisplayMode
+com.google.android.exoplayer2.ui.StyledPlayerView$ArtworkDisplayMode;com.google.android.exoplayer2.ui.StyledPlayerView$ArtworkDisplayMode
 Com.Google.Android.Exoplayer2.UI.StyledPlayerView+IControllerVisibilityListener, ExoPlayer.UI;com.google.android.exoplayer2.ui.StyledPlayerView$ControllerVisibilityListener
 Com.Google.Android.Exoplayer2.UI.StyledPlayerView.IControllerVisibilityListener;com.google.android.exoplayer2.ui.StyledPlayerView$ControllerVisibilityListener
 com.google.android.exoplayer2.ui.StyledPlayerView$ControllerVisibilityListener;com.google.android.exoplayer2.ui.StyledPlayerView$ControllerVisibilityListener
