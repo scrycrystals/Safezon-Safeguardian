@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.Views.MainHealthPage"
+             xmlns:local="clr-namespace:app2.Views"
+             Shell.NavBarIsVisible="False">
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Source="healthbg.png"
+               Aspect="AspectFill"
+               Grid.RowSpan="3"/>
+
+        <local:TopBar />
+
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button Text="Health Chart"
+                        x:Name="HealthChartBtn"
+                        ImageSource="h1.png"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#21F490"
+                        WidthRequest="360"
+                        CornerRadius="13"
+                        FontSize="17"
+                        BorderColor="#079D56"
+                        BorderWidth="3"
+                        HeightRequest="50"
+                        Margin="0,0,0,0"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="HealthChartBtn_Clicked" />
+
+                <Button Text="Health Risk Analysis"
+                        Grid.Row="1"
+                        ImageSource="h2.png"
+                        x:Name="HealthRiskAnalysis"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#21F490"
+                        WidthRequest="360"
+                        CornerRadius="13"
+                        FontSize="17"
+                        BorderColor="#079D56"
+                        BorderWidth="3"
+                        HeightRequest="50"
+                        Margin="0,0,0,0"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="HealthRiskAnalysis_Clicked" />
+
+                <Button Text="Health Alerts"
+                        ImageSource="h3.png"
+                        Grid.Row="2"
+                        x:Name="HealthAlerts"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#21F490"
+                        WidthRequest="360"
+                        CornerRadius="13"
+                        FontSize="17"
+                        BorderColor="#079D56"
+                        BorderWidth="3"
+                        HeightRequest="50"
+                        Margin="0,0,0,0"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="HealthAlerts_Clicked" />
+
+                <Button Text="Health Score"
+                        Grid.Row="3"
+                        ImageSource="h4.png"
+                        x:Name="HealthScore"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="#21F490"
+                        WidthRequest="360"
+                        CornerRadius="13"
+                        FontSize="17"
+                        BorderColor="#079D56"
+                        BorderWidth="3"
+                        HeightRequest="50"
+                        Margin="0,0,0,0"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="HealthScore_Clicked" />
+
+            </Grid>
+            
+        </Grid>
+
+        <local:BottomBar Grid.Row="2" />
+    </Grid>
+</ContentPage>

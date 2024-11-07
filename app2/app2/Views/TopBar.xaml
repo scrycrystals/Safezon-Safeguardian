@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.Views.TopBar"
+             xmlns:local="clr-namespace:app2.Views"
+             Shell.NavBarIsVisible="False">
+    <!-- Navigation Bar -->
+    <Frame HasShadow="True"
+           CornerRadius="5"
+           Padding="0"
+           BackgroundColor="Transparent">
+        <Grid BackgroundColor="White"
+              Grid.Row="0"
+              Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Dropdown Menu Button -->
+            <ImageButton Source="menu.png"
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Start"
+                         WidthRequest="30"
+                         HeightRequest="30"
+                         Clicked="OnMenuClicked" />
+
+            <!-- Watch Icon Button -->
+            <ImageButton Source="smartwatch.png"
+                         Grid.Column="2"
+                         HorizontalOptions="End"
+                         WidthRequest="30"
+                         HeightRequest="30"
+                         BackgroundColor="Transparent" />
+        </Grid>
+    </Frame>
+</ContentView>

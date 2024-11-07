@@ -6,6 +6,11 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\evaluation.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\google.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\google_logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\gs1.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\h1.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\h2.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\h3.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\h4.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\healthbg.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\healthcare.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\hide.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
