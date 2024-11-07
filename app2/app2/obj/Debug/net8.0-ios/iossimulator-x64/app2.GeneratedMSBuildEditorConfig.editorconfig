@@ -93,3 +93,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.Register.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Register.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Register.xaml
+
+[E:/FYP/Safezon-Safeguardian/app2/app2/Views/SliderPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = app2.Views.SliderPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SliderPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SliderPage.xaml

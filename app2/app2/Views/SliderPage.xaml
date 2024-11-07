@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:app2.ViewModels"
+             xmlns:models="clr-namespace:app2.Models"
+             x:Class="app2.Views.SliderPage"
+             x:DataType="viewModels:SliderPageViewModel"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False">
+    <StackLayout>
+
+        <CarouselView IndicatorView="indicatorView"
+                      Loop="False"
+                      ItemsSource="{Binding SliderScreens}"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand">
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="models:SliderPageModel">
+                    <Image Source="{Binding SliderImage}"
+                           Aspect="AspectFill" />
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <StackLayout Padding="0,0,0,0"
+                     BackgroundColor="#088248"
+                     Orientation="Horizontal">
+            <!-- Indicator for the CarouselView -->
+            <IndicatorView x:Name="indicatorView"
+                           IndicatorSize="15"
+                           Margin="30,0,0,0"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="Center"
+                           IndicatorColor="White"
+                           SelectedIndicatorColor="Black" />
+
+            <Button VerticalOptions="Center"
+                    x:Name="NextBtn"
+                    Clicked="NextBtn_Clicked"
+                    Text="Next"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HorizontalOptions="EndAndExpand"
+                    Margin="0,0,0,0"
+                    BackgroundColor="Transparent"
+                    ImageSource="next.png"
+                    WidthRequest="130"
+                    HeightRequest="50" />
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>
