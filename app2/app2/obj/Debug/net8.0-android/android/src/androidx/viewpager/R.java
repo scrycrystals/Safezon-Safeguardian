@@ -9,17 +9,17 @@ package androidx.viewpager;
 public final class R {
 	public static final class attr {
 		public static final int alpha = 0x7f040032;
-		public static final int font = 0x7f04020d;
-		public static final int fontProviderAuthority = 0x7f04020f;
-		public static final int fontProviderCerts = 0x7f040210;
-		public static final int fontProviderFetchStrategy = 0x7f040211;
-		public static final int fontProviderFetchTimeout = 0x7f040212;
-		public static final int fontProviderPackage = 0x7f040213;
-		public static final int fontProviderQuery = 0x7f040214;
-		public static final int fontStyle = 0x7f040216;
-		public static final int fontVariationSettings = 0x7f040217;
-		public static final int fontWeight = 0x7f040218;
-		public static final int ttcIndex = 0x7f0404f9;
+		public static final int font = 0x7f04020e;
+		public static final int fontProviderAuthority = 0x7f040210;
+		public static final int fontProviderCerts = 0x7f040211;
+		public static final int fontProviderFetchStrategy = 0x7f040212;
+		public static final int fontProviderFetchTimeout = 0x7f040213;
+		public static final int fontProviderPackage = 0x7f040214;
+		public static final int fontProviderQuery = 0x7f040215;
+		public static final int fontStyle = 0x7f040217;
+		public static final int fontVariationSettings = 0x7f040218;
+		public static final int fontWeight = 0x7f040219;
+		public static final int ttcIndex = 0x7f0404fa;
 	}
 	public static final class color {
 		public static final int notification_action_color_filter = 0x7f0602df;
@@ -119,18 +119,18 @@ public final class R {
 		public static final int Widget_Compat_NotificationActionText = 0x7f120352;
 	}
 	public static final class styleable {
-		public static final int[] ColorStateListItem = new int[] { 0x010101a5, 0x0101031f, 0x01010647, 0x7f040032, 0x7f040278 };
+		public static final int[] ColorStateListItem = new int[] { 0x010101a5, 0x0101031f, 0x01010647, 0x7f040032, 0x7f040279 };
 		public static final int ColorStateListItem_alpha = 3;
 		public static final int ColorStateListItem_android_alpha = 1;
 		public static final int ColorStateListItem_android_color = 0;
-		public static final int[] FontFamily = new int[] { 0x7f04020f, 0x7f040210, 0x7f040211, 0x7f040212, 0x7f040213, 0x7f040214, 0x7f040215 };
+		public static final int[] FontFamily = new int[] { 0x7f040210, 0x7f040211, 0x7f040212, 0x7f040213, 0x7f040214, 0x7f040215, 0x7f040216 };
 		public static final int FontFamily_fontProviderAuthority = 0;
 		public static final int FontFamily_fontProviderCerts = 1;
 		public static final int FontFamily_fontProviderFetchStrategy = 2;
 		public static final int FontFamily_fontProviderFetchTimeout = 3;
 		public static final int FontFamily_fontProviderPackage = 4;
 		public static final int FontFamily_fontProviderQuery = 5;
-		public static final int[] FontFamilyFont = new int[] { 0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 0x01010570, 0x7f04020d, 0x7f040216, 0x7f040217, 0x7f040218, 0x7f0404f9 };
+		public static final int[] FontFamilyFont = new int[] { 0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 0x01010570, 0x7f04020e, 0x7f040217, 0x7f040218, 0x7f040219, 0x7f0404fa };
 		public static final int FontFamilyFont_android_font = 0;
 		public static final int FontFamilyFont_android_fontStyle = 2;
 		public static final int FontFamilyFont_android_fontVariationSettings = 4;

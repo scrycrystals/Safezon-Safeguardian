@@ -38,7 +38,6 @@ public class Player_ListenerImplementor
 			"n_onRepeatModeChanged:(I)V:GetOnRepeatModeChanged_IHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
 			"n_onSeekBackIncrementChanged:(J)V:GetOnSeekBackIncrementChanged_JHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
 			"n_onSeekForwardIncrementChanged:(J)V:GetOnSeekForwardIncrementChanged_JHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
-			"n_onSeekProcessed:()V:GetOnSeekProcessedHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
 			"n_onShuffleModeEnabledChanged:(Z)V:GetOnShuffleModeEnabledChanged_ZHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
 			"n_onSkipSilenceEnabledChanged:(Z)V:GetOnSkipSilenceEnabledChanged_ZHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
 			"n_onSurfaceSizeChanged:(II)V:GetOnSurfaceSizeChanged_IIHandler:Com.Google.Android.Exoplayer2.IPlayer/IListenerInvoker, ExoPlayer.Common\n" +
@@ -275,14 +274,6 @@ public class Player_ListenerImplementor
 	}
 
 	private native void n_onSeekForwardIncrementChanged (long p0);
-
-
-	public void onSeekProcessed ()
-	{
-		n_onSeekProcessed ();
-	}
-
-	private native void n_onSeekProcessed ();
 
 
 	public void onShuffleModeEnabledChanged (boolean p0)
