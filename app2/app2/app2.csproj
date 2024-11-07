@@ -66,24 +66,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ChangePasswordPage.xaml">
+	  <MauiXaml Update="Views\BottomBar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Dashboard1.xaml">
+	  <MauiXaml Update="Views\ChangePasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DefenseScore.xaml">
+	  <MauiXaml Update="Views\Dashboard1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="EditProfilePage.xaml">
+	  <MauiXaml Update="Views\DefenseScore.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Profile.xaml">
+	  <MauiXaml Update="Views\EditProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Register.xaml">
+	  <MauiXaml Update="Views\Profile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Register.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
 </Project>
