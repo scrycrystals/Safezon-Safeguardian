@@ -2448,3 +2448,11 @@ E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\stamp\_ConvertRes
 E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\gs1.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\loginbg.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\next.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\slider1.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\slider2.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\slider3.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\slider4.png
+E:\FYP\Safezon-Safeguardian\app2\app2\obj\Debug\net8.0-android\resizetizer\r\drawable\welcomesilder.png
