@@ -1,2 +1,6 @@
+<<<<<<< Updated upstream
 AdbTarget=-s 10275333AN001932
+=======
+AdbTarget=-s 0656137172105672
+>>>>>>> Stashed changes
 AdbOptions=

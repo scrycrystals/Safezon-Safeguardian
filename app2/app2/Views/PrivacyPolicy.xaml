@@ -1,0 +1,40 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.Views.PrivacyPolicy"
+             xmlns:local="clr-namespace:app2.Views"
+             Title="Privacy Policy">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#82E3A8" Offset="0.0" />
+            <GradientStop Color="#02EA7C" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <!-- Header -->
+            <Label Text="Privacy Policy"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontFamily="PoppinsExtraBold" />
+
+            <!-- Policy Content -->
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Label Text="Your privacy is important to us. SafeZone collects personal information to enhance your safety experience. All data is securely stored and only used for safety-related purposes, such as notifying your emergency contacts or displaying location-based safety information. We do not share your data with third parties without your consent."
+                       FontSize="16"
+                       TextColor="#4D4D4D"
+                       LineHeight="1.5" />
+            </Frame>
+
+            <!-- Data Usage -->
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="10" HasShadow="True">
+                <Label Text="Data Collected:&#xA; Location Data&#xA; Emergency Contacts &#xA; Device Information&#xA;&#xA;By using SafeZone, you agree to this Privacy Policy. For more information, contact support@safezoneapp.com."
+                       FontSize="16"
+                       TextColor="#4D4D4D"
+                       LineHeight="1.5" />
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

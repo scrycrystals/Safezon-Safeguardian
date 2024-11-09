@@ -3,14 +3,17 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Pixel 6 Pro - API 34 (Android 14.0 - API 34)</ActiveDebugProfile>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <DefaultDevice>pixel_6_pro_-_api_34</DefaultDevice>
+    <ActiveDebugProfile>TECNO MOBILE LIMITED TECNO KF6p (Android 11.0 - API 30)</ActiveDebugProfile>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <DefaultDevice>pixel_5_-_api_34</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="Views\About.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\BottomBar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -30,6 +33,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\MainHealthPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\PrivacyPolicy.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Profile.xaml">

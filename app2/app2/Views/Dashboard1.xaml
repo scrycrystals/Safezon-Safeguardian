@@ -4,8 +4,14 @@
              xmlns:local="clr-namespace:app2.Views"
              >
 
-    
+
     <Grid>
+
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="OnPageTapped" />
+        </Grid.GestureRecognizers>
+
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <!-- Main content -->
@@ -129,13 +135,13 @@
             <ContentView x:Name="DetailsPopup"
                          IsVisible="False"
                          BackgroundColor="Black"
-                         Opacity="0.8"
+                         Opacity="1"
                          AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.5"
                          AbsoluteLayout.LayoutFlags="All"
                          Padding="10"
                          VerticalOptions="Center"
                          HorizontalOptions="Center">
-                <Frame BorderColor="White"
+                <Frame BorderColor="Transparent"
                        CornerRadius="5"
                        Padding="10">
                     <StackLayout>
@@ -151,9 +157,11 @@
                                Margin="0,0,0,10" />
                         <Button Text="Call"
                                 Clicked="OnCallButtonClicked"
-                                Margin="0,0,0,10" />
+                                Margin="0,0,0,10"
+                                BackgroundColor="#82E3A8"/>
                         <Button Text="Close"
-                                Clicked="OnClosePopupClicked" />
+                                Clicked="OnClosePopupClicked"
+                                BackgroundColor="#82E3A8"/>
                     </StackLayout>
                 </Frame>
             </ContentView>
@@ -276,6 +284,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
 
                     <Image Source="setting.png"
@@ -287,11 +296,93 @@
                            VerticalOptions="Center"
                            Grid.Column="1"
                            TextColor="Black" />
-
-                    <Grid.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnSettingsClicked" />
-                    </Grid.GestureRecognizers>
+                    <ImageButton Source="arrow_right.png"
+                           Grid.Column="2"
+                           VerticalOptions="Center"
+                           WidthRequest="20"
+                           HeightRequest="20"
+                           BackgroundColor="Transparent"
+                           Clicked="OnSettingsArrowClicked" />
                 </Grid>
+                <!-- Dropdown Menu for Settings -->
+                <StackLayout x:Name="SettingsDropdownMenu"
+             IsVisible="False"
+             Padding="10"
+             Margin="20,0,0,0"
+             BackgroundColor="White"
+             VerticalOptions="Start"
+             HorizontalOptions="Start">
+
+                    <!-- Option 1: Dark Mode -->
+                    <!-- Option 1: Dark Mode with Switch -->
+                    <Grid Padding="10" BackgroundColor="Transparent">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Dark Mode Icon -->
+                        <Image Source="moon.png"
+           WidthRequest="20"
+           HeightRequest="20"
+           Grid.Column="0"
+           Margin="0,0,10,0" />
+
+                        <!-- Dark Mode Label -->
+                        <Label Text="Dark Mode"
+           VerticalOptions="Center"
+           Grid.Column="1"
+           TextColor="Black" />
+
+                        <!-- Dark Mode Switch -->
+                        <Switch IsToggled="False"
+            Toggled="OnDarkModeToggled"
+            Grid.Column="2"
+            VerticalOptions="Center" />
+                    </Grid>
+
+
+                    <!-- Option 2: Offline Mode -->
+                    <Grid Padding="10" BackgroundColor="Transparent">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="offline_mode.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               Grid.Column="0"
+               Margin="0,0,10,0" />
+                        <Label Text="Offline Mode"
+               VerticalOptions="Center"
+               Grid.Column="1"
+               TextColor="Black" />
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnOfflineModeTapped" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+
+                    <!-- Option 3: Delete Account -->
+                    <Grid Padding="10" BackgroundColor="Transparent">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="delete_account.png"
+               WidthRequest="20"
+               HeightRequest="20"
+               Grid.Column="0"
+               Margin="0,0,10,0" />
+                        <Label Text="Delete Account"
+               VerticalOptions="Center"
+               Grid.Column="1"
+               TextColor="Black" />
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDeleteAccountTapped" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </StackLayout>
             </StackLayout>
         </Grid>
 
