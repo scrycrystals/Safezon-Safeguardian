@@ -67,7 +67,7 @@ public partial class BottomBar : ContentView
         }
         ResetButtonColors();
         ResetOtherButtons(LocationButton, HomeButton, GuardButton, ContactButton);
-        await Navigation.PushAsync(new MainHealthPage());
+        // await Navigation.PushAsync(new HealthPage());
     }
 
     private async void OnHomeButtonClicked(object sender, EventArgs e)
@@ -78,7 +78,7 @@ public partial class BottomBar : ContentView
         }
         ResetButtonColors();
         ResetOtherButtons(LocationButton, HealthButton, GuardButton, ContactButton);
-        await Navigation.PushAsync(new Dashboard1());
+        // await Navigation.PushAsync(new HomePage());
     }
 
     private async void OnPoliceButtonClicked(object sender, EventArgs e)

@@ -1,9 +1,8 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\Semester7\\FYP\\work\\app2\\",
+  "WorkspaceRootPath": "E:\\FYP\\Safezon-Safeguardian\\app2\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\sliderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\sliderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -77,112 +76,16 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\dashboard1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\dashboard1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\dashboard1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\dashboard1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\bottombar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\bottombar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\privacypolicy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\privacypolicy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\mainhealthpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\mainhealthpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\privacypolicy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\privacypolicy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\defensescore.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\defensescore.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\topbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\topbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\bottombar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\bottombar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\topbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\topbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\sliderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\sliderpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\sliderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\sliderpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\viewmodels\\sliderpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\viewmodels\\sliderpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\models\\sliderpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\models\\sliderpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Aapt2.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\bottombar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\bottombar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -196,37 +99,30 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\defensescore.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\app2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\app2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\defensescore.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\defensescore.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\profile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\editprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\editprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\editprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\editprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\editprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\editprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\changepasswordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -239,11 +135,11 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\.nuget\\packages\\plugin.mediamanager\\1.2.2\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\changepasswordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|g:\\semester7\\fyp\\work\\app2\\app2\\views\\mainhealthpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|e:\\fyp\\safezon-safeguardian\\app2\\app2\\views\\mainhealthpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC629D3C-B227-4663-BEFA-4B57BC9C9975}|app2\\app2.csproj|solutionrelative:app2\\views\\mainhealthpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -254,63 +150,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 284,
-<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 9,
-=======
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
->>>>>>> Stashed changes
               "Title": "MainHealthPage.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\MainHealthPage.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\MainHealthPage.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\MainHealthPage.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\MainHealthPage.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\MainHealthPage.xaml",
               "RelativeToolTip": "app2\\Views\\MainHealthPage.xaml",
-<<<<<<< Updated upstream
               "ViewState": "AgIAADkAAAAAAAAAAAAAADkAAAATAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAwAAAAAMjMzMzMbwFoAAAAnAAAAAAAAAA==",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-07T16:51:01.017Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 11,
-=======
-              "DocumentIndex": 0,
->>>>>>> Stashed changes
               "Title": "Dashboard1.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Dashboard1.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Dashboard1.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\Dashboard1.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Dashboard1.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Dashboard1.xaml",
               "RelativeToolTip": "app2\\Views\\Dashboard1.xaml",
-              "ViewState": "AgIAABQAAACAMzMzMzMrwCkAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAAACsBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-17T05:31:20.291Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 15,
-=======
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
               "Title": "Dashboard1.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Dashboard1.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Dashboard1.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\Dashboard1.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Dashboard1.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Dashboard1.xaml.cs",
               "RelativeToolTip": "app2\\Views\\Dashboard1.xaml.cs",
-              "ViewState": "AgIAAGIAAABAZmZmZqY6wKUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T05:57:34.596Z",
               "IsPinned": true
@@ -331,147 +207,11 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 17,
-=======
-              "DocumentIndex": 2,
-              "Title": "BottomBar.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\BottomBar.xaml.cs",
-              "RelativeDocumentMoniker": "app2\\Views\\BottomBar.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\BottomBar.xaml.cs",
-              "RelativeToolTip": "app2\\Views\\BottomBar.xaml.cs",
-              "ViewState": "AgIAADkAAAAAmJmZmZkJwEkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T03:25:51.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PrivacyPolicy.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\PrivacyPolicy.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\PrivacyPolicy.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\PrivacyPolicy.xaml",
-              "RelativeToolTip": "app2\\Views\\PrivacyPolicy.xaml",
-              "ViewState": "AgIAABYAAACgmZmZmZkwwCAAAAB6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-08T06:54:48.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "About.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\About.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\About.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\About.xaml",
-              "RelativeToolTip": "app2\\Views\\About.xaml",
-              "ViewState": "AgIAABgAAACAAAAAAAAhwB8AAADPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-08T07:02:06.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PrivacyPolicy.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\PrivacyPolicy.xaml.cs",
-              "RelativeDocumentMoniker": "app2\\Views\\PrivacyPolicy.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\PrivacyPolicy.xaml.cs",
-              "RelativeToolTip": "app2\\Views\\PrivacyPolicy.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T07:00:39.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TopBar.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\TopBar.xaml.cs",
-              "RelativeDocumentMoniker": "app2\\Views\\TopBar.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\TopBar.xaml.cs",
-              "RelativeToolTip": "app2\\Views\\TopBar.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:36:27.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DefenseScore.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\DefenseScore.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\DefenseScore.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\DefenseScore.xaml",
-              "RelativeToolTip": "app2\\Views\\DefenseScore.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-04T15:02:26.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BottomBar.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\BottomBar.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\BottomBar.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\BottomBar.xaml",
-              "RelativeToolTip": "app2\\Views\\BottomBar.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T03:23:17.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "app2\\AppShell.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\AppShell.xaml.cs",
-              "RelativeToolTip": "app2\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T09:10:03.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\App.xaml.cs",
-              "RelativeDocumentMoniker": "app2\\App.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\App.xaml.cs",
-              "RelativeToolTip": "app2\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:45:23.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TopBar.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\TopBar.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\TopBar.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\TopBar.xaml",
-              "RelativeToolTip": "app2\\Views\\TopBar.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T17:34:00.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\MainPage.xaml",
-              "RelativeDocumentMoniker": "app2\\MainPage.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\MainPage.xaml",
-              "RelativeToolTip": "app2\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-16T06:19:00.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
->>>>>>> Stashed changes
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\MainPage.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\MainPage.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\MainPage.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\MainPage.xaml.cs",
               "RelativeToolTip": "app2\\MainPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -479,44 +219,15 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 12,
-=======
-              "DocumentIndex": 17,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\LoginPage.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\LoginPage.xaml",
-              "RelativeToolTip": "app2\\Views\\LoginPage.xaml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAIAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T11:18:01.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "app2\\MauiProgram.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\MauiProgram.cs",
-              "RelativeToolTip": "app2\\MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T07:29:05.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
->>>>>>> Stashed changes
               "Title": "AppShell.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\AppShell.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\AppShell.xaml",
               "RelativeDocumentMoniker": "app2\\AppShell.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\AppShell.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\AppShell.xaml",
               "RelativeToolTip": "app2\\AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-07T16:56:45.933Z"
-<<<<<<< Updated upstream
             },
             {
               "$type": "Document",
@@ -657,28 +368,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
-=======
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SliderPage.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\SliderPage.xaml",
-              "RelativeDocumentMoniker": "app2\\Views\\SliderPage.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\SliderPage.xaml",
-              "RelativeToolTip": "app2\\Views\\SliderPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T11:32:22.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
->>>>>>> Stashed changes
               "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\LoginPage.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\LoginPage.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\LoginPage.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\LoginPage.xaml.cs",
               "RelativeToolTip": "app2\\Views\\LoginPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -686,70 +379,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 35,
               "Title": "MainHealthPage.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\MainHealthPage.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\MainHealthPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\MainHealthPage.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\MainHealthPage.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\MainHealthPage.xaml.cs",
               "RelativeToolTip": "app2\\Views\\MainHealthPage.xaml.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T17:11:25.404Z"
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 20,
-=======
-              "DocumentIndex": 19,
-              "Title": "App.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\App.xaml",
-              "RelativeDocumentMoniker": "app2\\App.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\App.xaml",
-              "RelativeToolTip": "app2\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T16:56:48.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SliderPage.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\SliderPage.xaml.cs",
-              "RelativeDocumentMoniker": "app2\\Views\\SliderPage.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\SliderPage.xaml.cs",
-              "RelativeToolTip": "app2\\Views\\SliderPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:38:41.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SliderPageViewModel.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\ViewModels\\SliderPageViewModel.cs",
-              "RelativeDocumentMoniker": "app2\\ViewModels\\SliderPageViewModel.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\ViewModels\\SliderPageViewModel.cs",
-              "RelativeToolTip": "app2\\ViewModels\\SliderPageViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:35:18.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "SliderPageModel.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Models\\SliderPageModel.cs",
-              "RelativeDocumentMoniker": "app2\\Models\\SliderPageModel.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Models\\SliderPageModel.cs",
-              "RelativeToolTip": "app2\\Models\\SliderPageModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T11:33:49.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
->>>>>>> Stashed changes
               "Title": "Xamarin.Android.Aapt2.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Aapt2.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.Aapt2.targets",
@@ -759,11 +400,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 25,
               "Title": "Register.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Register.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Register.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\Register.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Register.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Register.xaml.cs",
               "RelativeToolTip": "app2\\Views\\Register.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -771,7 +412,6 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 18,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\App.xaml.cs",
@@ -797,13 +437,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
-=======
-              "DocumentIndex": 24,
->>>>>>> Stashed changes
               "Title": "Register.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Register.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Register.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\Register.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Register.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Register.xaml",
               "RelativeToolTip": "app2\\Views\\Register.xaml",
               "ViewState": "AgIAAIIAAAAAAAAAAAAIwJ0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -811,7 +448,6 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 23,
               "Title": "DefenseScore.xaml",
               "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\DefenseScore.xaml",
@@ -825,25 +461,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 24,
-=======
-              "DocumentIndex": 26,
-              "Title": "app2.csproj",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\app2.csproj",
-              "RelativeDocumentMoniker": "app2\\app2.csproj",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\app2.csproj",
-              "RelativeToolTip": "app2\\app2.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-04T15:01:18.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
->>>>>>> Stashed changes
               "Title": "DefenseScore.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\DefenseScore.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\DefenseScore.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\DefenseScore.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\DefenseScore.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\DefenseScore.xaml.cs",
               "RelativeToolTip": "app2\\Views\\DefenseScore.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -851,11 +472,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 21,
+              "Title": "BottomBar.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\BottomBar.xaml",
+              "RelativeDocumentMoniker": "app2\\Views\\BottomBar.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\BottomBar.xaml",
+              "RelativeToolTip": "app2\\Views\\BottomBar.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T03:23:17.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Profile.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Profile.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Profile.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\Profile.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Profile.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Profile.xaml",
               "RelativeToolTip": "app2\\Views\\Profile.xaml",
               "ViewState": "AgIAAIMAAAAAAAAAAAAmwIwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -863,11 +496,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 28,
               "Title": "EditProfilePage.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\EditProfilePage.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\EditProfilePage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\EditProfilePage.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\EditProfilePage.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\EditProfilePage.xaml.cs",
               "RelativeToolTip": "app2\\Views\\EditProfilePage.xaml.cs",
               "ViewState": "AgIAAEUAAAAAWWZmZmb+vy0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -875,11 +508,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 27,
               "Title": "Profile.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Profile.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Profile.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\Profile.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\Profile.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\Profile.xaml.cs",
               "RelativeToolTip": "app2\\Views\\Profile.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -887,11 +520,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 30,
               "Title": "ChangePasswordPage.xaml.cs",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\ChangePasswordPage.xaml.cs",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\ChangePasswordPage.xaml.cs",
               "RelativeDocumentMoniker": "app2\\Views\\ChangePasswordPage.xaml.cs",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\ChangePasswordPage.xaml.cs",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\ChangePasswordPage.xaml.cs",
               "RelativeToolTip": "app2\\Views\\ChangePasswordPage.xaml.cs",
               "ViewState": "AgIAAAAAAADg/////39JwCAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -899,11 +532,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 29,
               "Title": "EditProfilePage.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\EditProfilePage.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\EditProfilePage.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\EditProfilePage.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\EditProfilePage.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\EditProfilePage.xaml",
               "RelativeToolTip": "app2\\Views\\EditProfilePage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -911,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 33,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\.nuget\\packages\\plugin.mediamanager\\1.2.2\\readme.txt",
               "ToolTip": "C:\\Users\\DELL\\.nuget\\packages\\plugin.mediamanager\\1.2.2\\readme.txt",
@@ -920,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 32,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.8.1\\readme.txt",
               "ToolTip": "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.8.1\\readme.txt",
@@ -929,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 31,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\DELL\\.nuget\\packages\\xam.plugin.media\\6.0.2\\readme.txt",
               "ToolTip": "C:\\Users\\DELL\\.nuget\\packages\\xam.plugin.media\\6.0.2\\readme.txt",
@@ -938,11 +571,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 34,
               "Title": "ChangePasswordPage.xaml",
-              "DocumentMoniker": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\ChangePasswordPage.xaml",
+              "DocumentMoniker": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\ChangePasswordPage.xaml",
               "RelativeDocumentMoniker": "app2\\Views\\ChangePasswordPage.xaml",
-              "ToolTip": "G:\\Semester7\\FYP\\work\\app2\\app2\\Views\\ChangePasswordPage.xaml",
+              "ToolTip": "E:\\FYP\\Safezon-Safeguardian\\app2\\app2\\Views\\ChangePasswordPage.xaml",
               "RelativeToolTip": "app2\\Views\\ChangePasswordPage.xaml",
               "ViewState": "AgIAAAcAAAAgZmZmZmYkwBkAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",

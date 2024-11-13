@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("app2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+94fc0eff23817ea077e055bb3a9ae6597f7c5938")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
->>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("app2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("app2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

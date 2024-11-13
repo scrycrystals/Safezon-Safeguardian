@@ -43,25 +43,23 @@ namespace app2
         private void OnAboutClicked(object sender, EventArgs e)
         {
             // Handle About option click
-            //DisplayAlert("About", "You selected About", "OK");
-            Navigation.PushAsync(new Views.About());
+            DisplayAlert("About", "You selected About", "OK");
             DropdownMenu.IsVisible = false; // Hide the menu after selection
         }
 
         private void OnPrivacyPolicyClicked(object sender, EventArgs e)
         {
             // Handle Privacy Policy option click
-            //DisplayAlert("Privacy Policy", "You selected Privacy Policy", "OK");
-            Navigation.PushAsync(new Views.PrivacyPolicy());
+            DisplayAlert("Privacy Policy", "You selected Privacy Policy", "OK");
             DropdownMenu.IsVisible = false; // Hide the menu after selection
         }
 
-        //private void OnSettingsClicked(object sender, EventArgs e)
-        //{
-        //    // Handle Settings option click
-        //    DisplayAlert("Settings", "You selected Settings", "OK");
-        //    DropdownMenu.IsVisible = false; // Hide the menu after selection
-        //}
+        private void OnSettingsClicked(object sender, EventArgs e)
+        {
+            // Handle Settings option click
+            DisplayAlert("Settings", "You selected Settings", "OK");
+            DropdownMenu.IsVisible = false; // Hide the menu after selection
+        }
 
         public void OnCallPoliceClicked(object sender, EventArgs e)
         {
@@ -110,77 +108,5 @@ namespace app2
             PopupAddress.Text = "123 Main Street";
             PopupPhoneNumber.Text = "123-456-7890";
         }
-
-        // Setting Futher Menu 
-        private void OnSettingsArrowClicked(object sender, EventArgs e)
-        {
-            // Toggle the visibility of the Settings dropdown menu
-            SettingsDropdownMenu.IsVisible = !SettingsDropdownMenu.IsVisible;
-
-        }
-
-        private void OnDarkModeTapped(object sender, EventArgs e)
-        {
-            // Implement the logic for enabling Dark Mode
-            DisplayAlert("Dark Mode", "Dark Mode activated!", "OK");
-        }
-
-        private void OnOfflineModeTapped(object sender, EventArgs e)
-        {
-            // Implement the logic for enabling Offline Mode
-            DisplayAlert("Offline Mode", "Offline Mode activated!", "OK");
-        }
-
-        private void OnDeleteAccountTapped(object sender, EventArgs e)
-        {
-            // Implement the logic for deleting the account
-            DisplayAlert("Delete Account", "Are you sure you want to delete your account?", "Yes", "No");
-        }
-
-        // dark mode option 
-        private void OnDarkModeToggled(object sender, ToggledEventArgs e)
-        {
-            // Ensure Application.Current is not null
-            if (Application.Current is not null)
-            {
-                // Check if app supports user-defined themes
-                if (Application.Current is app2.App app)
-                {
-                    // Enable or disable dark mode based on switch value
-                    app.UserAppTheme = e.Value ? AppTheme.Dark : AppTheme.Light;
-                }
-            }
-            else
-            {
-                // Log or handle null case for Current (unlikely scenario)
-                Console.WriteLine("Application.Current is null. Unable to change theme.");
-            }
-        }
-
-        private void OnPageTapped(object sender, EventArgs e)
-        {
-            // Hide dropdown and popup menus if they are visible
-            if (DropdownMenu.IsVisible)
-            {
-                DropdownMenu.IsVisible = false;
-            }
-
-            if (DetailsPopup.IsVisible)
-            {
-                DetailsPopup.IsVisible = false;
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

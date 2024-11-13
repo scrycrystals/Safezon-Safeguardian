@@ -1,6 +1,5 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\arroba.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\arrow.png
-obj\Debug\net8.0-android\resizetizer\r\drawable\arrow_right.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\background.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\calendar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\evaluation.png
@@ -23,7 +22,6 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\loginbg.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\loop.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\menu.png
-obj\Debug\net8.0-android\resizetizer\r\drawable\moon.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\next.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\pen.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\phone.png
