@@ -89,7 +89,7 @@ public partial class BottomBar : ContentView
         }
         ResetButtonColors();
         ResetOtherButtons(LocationButton, HomeButton, HealthButton, ContactButton);
-        // await Navigation.PushAsync(new PolicePage());
+        await Navigation.PushAsync(new Views.VirtualGuardianPage());
     }
 
     private async void OnTelephoneButtonClicked(object sender, EventArgs e)

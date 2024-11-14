@@ -11,7 +11,7 @@
             <TapGestureRecognizer Tapped="OnPageTapped" />
         </Grid.GestureRecognizers>
 
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <!-- Main content -->

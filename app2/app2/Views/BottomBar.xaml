@@ -37,8 +37,7 @@
                      HeightRequest="25"
                      WidthRequest="25"
                      x:Name="HomeButton"
-                     Opacity="1.0"
-                     Scale="1.3"
+                     Opacity="0.5"
                      Clicked="OnHomeButtonClicked" />
         <ImageButton Source="policeman.png"
                      Grid.Column="3"

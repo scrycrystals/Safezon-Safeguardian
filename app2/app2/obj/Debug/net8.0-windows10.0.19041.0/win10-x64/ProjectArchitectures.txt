@@ -1,1 +1,1 @@
-G:\Semester7\FYP\work\app2\app2\app2.csproj;x64
+F:\Semester7\FYP\work\app2\app2\app2.csproj;x64
