@@ -40202,11 +40202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Semester7\\FYP\\work\\app2\\app2\\app2.csproj",
+      "projectUniqueName": "F:\\FYP\\Safezon-Safeguardian\\app2\\app2\\app2.csproj",
       "projectName": "app2",
-      "projectPath": "F:\\Semester7\\FYP\\work\\app2\\app2\\app2.csproj",
+      "projectPath": "F:\\FYP\\Safezon-Safeguardian\\app2\\app2\\app2.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "F:\\Semester7\\FYP\\work\\app2\\app2\\obj\\",
+      "outputPath": "F:\\FYP\\Safezon-Safeguardian\\app2\\app2\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
