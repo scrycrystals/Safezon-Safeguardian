@@ -1,0 +1,64 @@
+# Ignore build output directories
+app2/bin/
+app2/obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.pdb
+*.cache
+*.log
+*.ide
+
+# Ignore Visual Studio specific files
+.vs/
+.vscode/
+.vscode/settings.json
+
+# Ignore build artifacts and logs
+*.dll
+*.exe
+*.app
+*.apk
+*.aab
+*.msi
+*.dmg
+*.plist
+*.pfx
+
+# Ignore packages
+packages/
+*.nupkg
+*.snupkg
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore Windows-specific files
+Thumbs.db
+desktop.ini
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+*.lock
+*.gz
+*.zip
+
+# Ignore generated files from MAUI
+**/bin/
+**/obj/
+AppPackages/
+artifacts/
+
+# Ignore secrets
+secrets.json
+
+# Ignore Rider IDE files
+.idea/
+
+# Ignore JetBrains Rider-specific files
+.idea/
+*.iml

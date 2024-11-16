@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="app2.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <AbsoluteLayout>
+        <!-- MediaElement to play the video -->
+        <toolkit:MediaElement x:Name="SplashVideo"
+                              Source="embed://splashvdo.mp4"
+                              ShouldAutoPlay="True"
+                              ShouldShowPlaybackControls="False"
+                              ShouldLoopPlayback="False"
+                              AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                              AbsoluteLayout.LayoutFlags="All"
+                              MediaOpened="SplashVideo_MediaOpened"
+                              MediaFailed="SplashVideo_MediaFailed" />
+    </AbsoluteLayout>
+
+</ContentPage>
