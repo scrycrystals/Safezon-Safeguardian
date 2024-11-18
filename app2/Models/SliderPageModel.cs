@@ -9,5 +9,6 @@ namespace app2.Models
     public class SliderPageModel
     {
         public string SliderImage { get; set; }
+        public string SliderText { get; set; }
     }
 }

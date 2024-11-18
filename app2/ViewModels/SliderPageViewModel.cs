@@ -17,22 +17,26 @@ namespace app2.ViewModels
         {
             SliderScreens.Add(new SliderPageModel
             {
-                SliderImage = "slider1"
+                SliderImage = "slider1",
+                SliderText = "Welcome to SafeZone! We're here to keep you safe and connected—anytime, anywhere, with just a tap."
             });
 
             SliderScreens.Add(new SliderPageModel
             {
-                SliderImage = "slider2"
+                SliderImage = "slider2",
+                SliderText = "Your safety is our priority. Stay connected with SafeZone in any emergency."
             });
 
             SliderScreens.Add(new SliderPageModel
             {
-                SliderImage = "slider3"
+                SliderImage = "slider3",
+                SliderText = "Find help nearby with ease. SafeZone is your companion in times of need."
             });
 
             SliderScreens.Add(new SliderPageModel
             {
-                SliderImage = "slider4"
+                SliderImage = "slider4",
+                SliderText = "Join SafeZone and experience peace of mind, knowing help is just a tap away."
             });
         }
     }

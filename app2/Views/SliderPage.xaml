@@ -16,8 +16,28 @@
                       VerticalOptions="FillAndExpand">
             <CarouselView.ItemTemplate>
                 <DataTemplate x:DataType="models:SliderPageModel">
-                    <Image Source="{Binding SliderImage}"
-                           Aspect="AspectFill" />
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="1*" />
+                        </Grid.RowDefinitions>
+
+                        <Image Source="{Binding SliderImage}"
+                               Aspect="Fill"
+                               Grid.RowSpan="2" />
+
+                        <!-- Bind the Label text to the SliderText property -->
+                        <Label Text="{Binding SliderText}"
+                               Grid.Row="1"
+                               FontSize="28"
+                               Padding="25"
+                               Margin="13,0,0,0"
+                               FontFamily="Caladea"
+                               HorizontalOptions="Center"
+                               TextColor="White"
+                               FontAttributes="Italic" />
+                    </Grid>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
