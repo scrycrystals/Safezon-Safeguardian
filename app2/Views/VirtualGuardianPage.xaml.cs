@@ -6,34 +6,31 @@ public partial class VirtualGuardianPage : ContentPage
     {
         InitializeComponent();
     }
+
     private async void OnVoiceInputClicked(object sender, EventArgs e)
     {
-        // Simulate voice-to-text (you'd use a real voice API here)
+        await DisplayAlert("Recording", "Recording voice input...", "Stop");
         string voiceText = await SimulateVoiceToTextAsync();
         MessageInput.Text = voiceText;
-
-        // Show send button after voice input
-        var sendButton = new Button
-        {
-            Text = "Send",
-            BackgroundColor = Color.FromArgb("#21F490"),
-            TextColor = Colors.Black
-        };
-        sendButton.Clicked += OnSendButtonClicked;
-        ((StackLayout)MessageInput.Parent).Children.Add(sendButton);
     }
 
     private Task<string> SimulateVoiceToTextAsync()
     {
-        // Simulated voice-to-text result
-        return Task.FromResult("This is a sample voice input converted to text.");
+        return Task.FromResult("Simulated voice message");
     }
 
     private void OnSendButtonClicked(object sender, EventArgs e)
     {
-        // Send message logic
-        DisplayAlert("Message Sent", $"Message: {MessageInput.Text}", "OK");
-        ((StackLayout)MessageInput.Parent).Children.Remove((Button)sender);
+        string message = MessageInput.Text;
+        if (!string.IsNullOrWhiteSpace(message))
+        {
+            DisplayAlert("Message Sent", $"You sent: {message}", "OK");
+            MessageInput.Text = string.Empty;
+        }
+        else
+        {
+            DisplayAlert("Empty Message", "Please enter a message before sending.", "OK");
+        }
     }
 
     private async void OnNotifyContactsClicked(object sender, EventArgs e)
@@ -48,10 +45,48 @@ public partial class VirtualGuardianPage : ContentPage
 
         if (!string.IsNullOrEmpty(selectedContact) && selectedContact != "Cancel")
         {
-            // Simulate notifying the contact
             await DisplayAlert("Notification Sent", $"Notified {selectedContact}.", "OK");
         }
     }
 
+    private async void OnEmergencyServicesClicked(object sender, EventArgs e)
+    {
+        // List of emergency services
+        var emergencyNumbers = new List<(string Name, string Number)>
+        {
+            ("Police", "15"),
+            ("Ambulance", "112"),
+            ("Fire Brigade", "101")
+        };
 
+        // Display options
+        var actionSheet = await DisplayActionSheet(
+            "Emergency Services",
+            "Cancel",
+            null,
+            emergencyNumbers.Select(e => $"{e.Name} ({e.Number})").ToArray());
+
+        if (actionSheet != "Cancel" && actionSheet != null)
+        {
+            string selectedNumber = emergencyNumbers.First(e => actionSheet.Contains(e.Number)).Number;
+
+            var result = await DisplayActionSheet(
+                $"Emergency Service: {selectedNumber}",
+                "Cancel",
+                null,
+                "Call",
+                "Send Message");
+
+            if (result == "Call")
+            {
+                // Call logic (simulated)
+                await Launcher.OpenAsync($"tel:{selectedNumber}");
+            }
+            else if (result == "Send Message")
+            {
+                // Simulate sending an emergency message
+                await DisplayAlert("Message Sent", $"Message sent to {selectedNumber}.", "OK");
+            }
+        }
+    }
 }
