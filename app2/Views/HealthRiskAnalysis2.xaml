@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.Views.HealthRiskAnalysis2"
+             xmlns:local="clr-namespace:app2.Views"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Source="bghra.png"
+               Aspect="Fill"
+               Grid.RowSpan="3" />
+
+        <local:TopBar />
+
+        <Grid Grid.Row="1">
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*" />
+                <RowDefinition Height="0.2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="0.3*" />
+                <RowDefinition Height="0.2*" />
+                <RowDefinition Height="0.1*" />
+                <RowDefinition Height="1.3*" />
+                
+            </Grid.RowDefinitions>
+
+
+
+            <Label Text="Health Overview"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End"
+                   Margin="20,0,0,0" />
+
+            <Label Text="Normal"
+                   FontSize="15"
+                   BackgroundColor="LightGrey"
+                   FontAttributes="None"
+                   TextColor="Black"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End"
+                   Grid.Row="1"
+                   Margin="20,0,0,0" />
+
+            <Image Source="bplogo.png"
+                   Aspect="Center"
+                   Grid.Row="2" />
+
+            <Label Text="Blood Pressure"
+                   FontSize="15"
+                   FontAttributes="None"
+                   TextColor="Black"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End"
+                   Grid.Row="3"
+                   Margin="20,0,0,0" />
+
+            <Label Text="120/80 mmHg"
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"
+                   Grid.Row="4"
+                   Margin="20,5,0,0" />
+
+            <Label Text="Health Overview"
+                   FontSize="20"
+                   Grid.Row="5"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End"
+                   Margin="20,0,0,0" />
+
+            <Grid Grid.Row="6">
+                
+            </Grid>
+
+
+
+
+        </Grid>
+
+        <local:BottomBar Grid.Row="2" />
+
+
+
+    </Grid>
+
+
+</ContentPage>
