@@ -28,7 +28,7 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="0.3*" />
                 <RowDefinition Height="0.2*" />
-                <RowDefinition Height="0.1*" />
+                <RowDefinition Height="0.12*" />
                 <RowDefinition Height="1.3*" />
                 
             </Grid.RowDefinitions>
@@ -54,7 +54,7 @@
                    Margin="20,0,0,0" />
 
             <Image Source="bplogo.png"
-                   Aspect="Center"
+                   Aspect="AspectFit"
                    Grid.Row="2" />
 
             <Label Text="Blood Pressure"
@@ -64,7 +64,7 @@
                    HorizontalOptions="Start"
                    VerticalOptions="End"
                    Grid.Row="3"
-                   Margin="20,0,0,0" />
+                   Margin="40,0,0,0" />
 
             <Label Text="120/80 mmHg"
                    FontSize="15"
@@ -73,19 +73,85 @@
                    HorizontalOptions="Start"
                    VerticalOptions="Start"
                    Grid.Row="4"
-                   Margin="20,5,0,0" />
+                   Margin="40,5,0,0" />
 
-            <Label Text="Health Overview"
+            <Label Text="Health Risk Analysis"
                    FontSize="20"
                    Grid.Row="5"
                    TextColor="Black"
                    FontAttributes="Bold"
                    HorizontalOptions="Start"
-                   VerticalOptions="End"
-                   Margin="20,0,0,0" />
+                   VerticalOptions="Center"
+                   Margin="30,0,0,0" />
 
             <Grid Grid.Row="6">
-                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.01*" />
+                    <RowDefinition Height="0.2*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label Text="Individual Risk Factors"
+                       FontSize="16"
+                       TextColor="Black"
+                       Grid.Row="1"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Margin="20,0,0,0" />
+
+                <Grid Grid.Row="2" Padding="20,10,0,0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="0.2*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="hra2.png"
+                           Aspect="AspectFit"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Start"/>
+
+                    <VerticalStackLayout Grid.Column="1" Spacing="5">
+                        <Label Text="High Blood Pressure"
+                               FontSize="15"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="20,0,0,0" />
+
+                        <Label Text="Critical"
+                               FontSize="13"
+                               TextColor="DarkSlateGray"
+                               FontAttributes="None"
+                               HorizontalOptions="Start"
+                               Margin="20,0,0,0" />
+
+                        <Label Text="Low"
+                               FontSize="13"
+                               TextColor="Black"
+                               BackgroundColor="LightGreen"
+                               FontAttributes="None"
+                               HorizontalOptions="Start"
+                               Margin="23,0,0,0" />
+
+                        <Label Text="High Blood pressure increases the risk of heart disease."
+                               FontSize="13"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="23,0,0,0" />
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+
             </Grid>
 
 
