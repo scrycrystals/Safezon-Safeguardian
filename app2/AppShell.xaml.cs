@@ -6,7 +6,7 @@ namespace app2
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("LoginPage", typeof(HealthRiskAnalysis2));
+            Routing.RegisterRoute("LoginPage", typeof(HealthRiskAnalysisCombined));
         }
     }
 }
