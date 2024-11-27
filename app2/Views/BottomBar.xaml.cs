@@ -100,6 +100,6 @@ public partial class BottomBar : ContentView
         }
         ResetButtonColors();
         ResetOtherButtons(LocationButton, HomeButton, GuardButton, HealthButton);
-        // await Navigation.PushAsync(new CallPage());
+        await Navigation.PushAsync(new EmergencyContactPage());
     }
 }
