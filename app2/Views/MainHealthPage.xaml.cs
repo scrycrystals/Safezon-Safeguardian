@@ -9,12 +9,11 @@ public partial class MainHealthPage : ContentPage
 
     private void HealthChartBtn_Clicked(object sender, EventArgs e)
     {
-
     }
 
     private void HealthRiskAnalysis_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new HealthRiskAnalysisCombined());
     }
 
     private void HealthAlerts_Clicked(object sender, EventArgs e)
