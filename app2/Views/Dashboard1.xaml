@@ -31,7 +31,7 @@
                 </Grid.RowDefinitions>
 
                 <!-- Background Image -->
-                <Image Source="background.png"
+                <Image Source="bgg.png"
                        Aspect="AspectFill"
                        Grid.RowSpan="3" />
 
@@ -177,6 +177,7 @@
                          Padding="10"
                          Margin="0,0,0,10"
                          BackgroundColor="White"
+                         
                          VerticalOptions="StartAndExpand"
                          HorizontalOptions="Start">
 
@@ -198,6 +199,7 @@
                     </Grid.ColumnDefinitions>
 
                     <Image Source="user.png"
+                           
                            WidthRequest="20"
                            HeightRequest="20"
                            Grid.Column="0"

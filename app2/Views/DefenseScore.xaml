@@ -10,98 +10,140 @@
     </ContentPage.Background>
 
     <ScrollView>
-        <StackLayout Padding="20">
 
-            <!-- Username -->
-            <Label x:Name="UserNameLabel"
-                   Text="User Name"
-                   FontSize="30"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   TextColor="#4D4D4D"  
-                   FontFamily="PoppinsExtraBold"/>
+        <Grid>
+            <Image Source="bgg.png"
+                   Aspect="AspectFill"
+                    />
 
-            <!-- Profile Image -->
-            <Frame WidthRequest="150" HeightRequest="150"
-                   CornerRadius="75"
-                   BorderColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center">
-                <Image Source="user.png" Aspect="AspectFill" HeightRequest="50" WidthRequest="50" />
-            </Frame>
 
-            <!-- Defense Score -->
-            <Label x:Name="DefenseScoreLabel"
-                   Text="0"
-                   FontSize="48"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   TextColor="#4D4D4D"  />
+            <StackLayout Padding="20">
 
-            <!-- Questions with Checkboxes in front -->
-            <StackLayout>
-                <!-- Question 1 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Are you carrying a weapon with you?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="WeaponCheckBox" Grid.Column="1" />
-                </Grid>
 
-                <!-- Question 2 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Do you have a personal alarm device?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="AlarmCheckBox" Grid.Column="1" />
-                </Grid>
 
-                <!-- Question 3 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Are you accompanied by someone?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="CompanionCheckBox" Grid.Column="1" />
-                </Grid>
+                <!-- Username -->
+                <Label x:Name="UserNameLabel"
+                       Text="User Name"
+                       FontSize="30"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="#4D4D4D"
+                       FontFamily="PoppinsExtraBold" />
 
-                <!-- Question 4 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Do you have a fully charged phone?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="PhoneCheckBox" Grid.Column="1" />
-                </Grid>
+                <!-- Profile Image -->
+                <Frame WidthRequest="150"
+                       HeightRequest="150"
+                       CornerRadius="75"
+                       BorderColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Image Source="user.png"
+                           Aspect="AspectFill"
+                           HeightRequest="50"
+                           WidthRequest="50" />
+                </Frame>
 
-                <!-- Question 5 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Is your GPS activated?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="GPSCheckBox" Grid.Column="1" />
-                </Grid>
+                <!-- Defense Score -->
+                <Label x:Name="DefenseScoreLabel"
+                       Text="0"
+                       FontSize="48"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="#4D4D4D" />
 
-                <!-- Question 6 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Are you taking a safe and familiar route?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="SafeRouteCheckBox" Grid.Column="1" />
-                </Grid>
+                <!-- Questions with Checkboxes in front -->
+                <StackLayout>
+                    <!-- Question 1 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Are you carrying a weapon with you?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="WeaponCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
 
-                <!-- Question 7 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Have you informed your emergency contacts of your location?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="EmergencyContactsCheckBox" Grid.Column="1" />
-                </Grid>
+                    <!-- Question 2 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Do you have a personal alarm device?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="AlarmCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
 
-                <!-- Question 8 -->
-                <Grid ColumnDefinitions="*, Auto">
-                    <Label Text="Are you in a well-lit area?" FontSize="18" TextColor="#4D4D4D" />
-                    <CheckBox x:Name="WellLitAreaCheckBox" Grid.Column="1" />
-                </Grid>
+                    <!-- Question 3 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Are you accompanied by someone?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="CompanionCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <!-- Question 4 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Do you have a fully charged phone?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="PhoneCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <!-- Question 5 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Is your GPS activated?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="GPSCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <!-- Question 6 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Are you taking a safe and familiar route?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="SafeRouteCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <!-- Question 7 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Have you informed your emergency contacts of your location?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="EmergencyContactsCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <!-- Question 8 -->
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Text="Are you in a well-lit area?"
+                               FontSize="18"
+                               TextColor="#4D4D4D" />
+                        <CheckBox x:Name="WellLitAreaCheckBox"
+                                  Grid.Column="1" />
+                    </Grid>
+                </StackLayout>
+
+                <!-- Calculate Button -->
+                <Button Text="Calculate Defense Score"
+                        FontSize="18"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        Clicked="OnCalculateDefenseScoreClicked" />
+
+                <!-- Explanation of Defense Score -->
+                <Label Text="Defense Score indicates how safe you are based on your location and your personal safety precautions."
+                       FontSize="14"
+                       TextColor="#4D4D4D"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
             </StackLayout>
 
-            <!-- Calculate Button -->
-            <Button Text="Calculate Defense Score"
-                    FontSize="18"
-                    BackgroundColor="Black"
-                    TextColor="White"
-                    Clicked="OnCalculateDefenseScoreClicked" />
+        </Grid>
+        
 
-            <!-- Explanation of Defense Score -->
-            <Label Text="Defense Score indicates how safe you are based on your location and your personal safety precautions."
-                   FontSize="14"
-                   TextColor="#4D4D4D"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center" />
-        </StackLayout>
+        
     </ScrollView>
 </ContentPage>

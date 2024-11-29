@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app2.EditProfilePage"
              Title="Edit Profile"
-             BackgroundColor="FloralWhite">
+             BackgroundImageSource="bgg.png">
 
     <ContentPage.Content>
         <StackLayout Padding="20" Spacing="20">

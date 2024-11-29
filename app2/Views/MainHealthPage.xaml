@@ -13,7 +13,7 @@
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Image Source="healthbg.png"
+        <Image Source="bgg.png"
                Aspect="AspectFill"
                Grid.RowSpan="3"/>
 
@@ -25,6 +25,10 @@
                 <RowDefinition Height="1*"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
             </Grid.RowDefinitions>
+
+            <Image Source="hbg.png"
+                   Aspect="Center"
+                    />
 
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
@@ -38,14 +42,15 @@
 
                 <Button Text="Health Chart"
                         x:Name="HealthChartBtn"
+                        
                         ImageSource="h1.png"
                         HorizontalOptions="FillAndExpand"
-                        BackgroundColor="#21F490"
+                        BackgroundColor="#7BF4BB"
                         WidthRequest="360"
                         CornerRadius="13"
                         FontSize="17"
-                        BorderColor="#079D56"
-                        BorderWidth="3"
+                        BorderColor="Black"
+                        BorderWidth="1"
                         HeightRequest="50"
                         Margin="0,0,0,0"
                         TextColor="Black"
@@ -55,14 +60,15 @@
                 <Button Text="Health Risk Analysis"
                         Grid.Row="1"
                         ImageSource="h2.png"
+                        
                         x:Name="HealthRiskAnalysis"
                         HorizontalOptions="FillAndExpand"
-                        BackgroundColor="#21F490"
+                        BackgroundColor="#7BF4BB"
                         WidthRequest="360"
                         CornerRadius="13"
                         FontSize="17"
-                        BorderColor="#079D56"
-                        BorderWidth="3"
+                        BorderColor="Black"
+                        BorderWidth="1"
                         HeightRequest="50"
                         Margin="0,0,0,0"
                         TextColor="Black"
@@ -74,12 +80,12 @@
                         Grid.Row="2"
                         x:Name="HealthAlerts"
                         HorizontalOptions="FillAndExpand"
-                        BackgroundColor="#21F490"
+                        BackgroundColor="#7BF4BB"
                         WidthRequest="360"
                         CornerRadius="13"
                         FontSize="17"
-                        BorderColor="#079D56"
-                        BorderWidth="3"
+                        BorderColor="Black"
+                        BorderWidth="1"
                         HeightRequest="50"
                         Margin="0,0,0,0"
                         TextColor="Black"
@@ -91,12 +97,12 @@
                         ImageSource="h4.png"
                         x:Name="HealthScore"
                         HorizontalOptions="FillAndExpand"
-                        BackgroundColor="#21F490"
+                        BackgroundColor="#7BF4BB"
                         WidthRequest="360"
                         CornerRadius="13"
                         FontSize="17"
-                        BorderColor="#079D56"
-                        BorderWidth="3"
+                        BorderColor="Black"
+                        BorderWidth="1"
                         HeightRequest="50"
                         Margin="0,0,0,0"
                         TextColor="Black"
