@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:app2.Views"
              x:Class="app2.Views.VirtualGuardianPage"
-            BackgroundImageSource="background.png"
+            BackgroundImageSource="bgg.png"
              NavigationPage.HasNavigationBar="False">
     <Grid RowDefinitions="*, Auto">
 
@@ -35,9 +35,16 @@
 
             <!-- Buttons -->
             <StackLayout Grid.Row="2" Spacing="10">
-                <Button Text="Notify Emergency Contacts" BackgroundColor="White" TextColor="Black" BorderColor="Black" BorderWidth="1" Clicked="OnNotifyContactsClicked" />
-                <Button Text="Connect with Safety Map" BackgroundColor="White" TextColor="Black" BorderColor="Black" BorderWidth="1" />
-                <Button Text="Contact Emergency Services" BackgroundColor="Black" TextColor="White" Clicked="OnEmergencyServicesClicked" />
+                <Button Text="Notify Emergency Contacts" BackgroundColor="White" TextColor="Black" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" Clicked="OnNotifyContactsClicked" />
+                <Button Text="Connect with Safety Map"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        BorderColor="Black" BorderWidth="1" />
+                <Button Text="Contact Emergency Services"
+                        BackgroundColor="Black"
+                        FontAttributes="Bold"
+                        TextColor="White" Clicked="OnEmergencyServicesClicked" />
             </StackLayout>
         </Grid>
 

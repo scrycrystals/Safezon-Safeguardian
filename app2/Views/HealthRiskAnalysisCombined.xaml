@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app2.Views.HealthRiskAnalysisCombined"
-             xmlns:local="clr-namespace:app2.Views"
-             Shell.NavBarIsVisible="False">
+             xmlns:local="clr-namespace:app2.Views">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -13,7 +12,7 @@
         </Grid.RowDefinitions>
 
         <!-- Static Background Image -->
-        <Image Source="bghra.png"
+        <Image Source="bgg.png"
                Aspect="AspectFill"
                Grid.Row="0"
                Grid.RowSpan="2"
@@ -247,7 +246,7 @@
                                 <CarouselView.ItemTemplate>
                                     <DataTemplate>
                                         <Image Source="{Binding}"
-                                               Aspect="Fill" />
+                                               Aspect="AspectFit" />
                                     </DataTemplate>
                                 </CarouselView.ItemTemplate>
                             </CarouselView>
