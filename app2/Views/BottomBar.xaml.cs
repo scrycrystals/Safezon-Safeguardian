@@ -34,7 +34,7 @@ public partial class BottomBar : ContentView
         ResetButtonColors();
         ResetOtherButtons(HealthButton, HomeButton, GuardButton, ContactButton);
         // Implement navigation or other effects as needed
-        // await Navigation.PushAsync(new LocationPage());
+        await Navigation.PushAsync(new LocationPage());
     }
     private void ResetOtherButtons(ImageButton a, ImageButton b, ImageButton c, ImageButton d)
     {
