@@ -5,12 +5,36 @@
              BackgroundImageSource="bgg.png">
     <Grid RowDefinitions="Auto, *, Auto">
         <!-- Header Section -->
-        <Frame BackgroundColor="White" Padding="10">
-            <Label Text="Emergency Contacts" 
-                   FontSize="22" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="Start" 
-                   TextColor="Black" />
+        <Frame HasShadow="True"
+        CornerRadius="5"
+        Padding="0"
+        BackgroundColor="Transparent">
+            <Grid BackgroundColor="White"
+           Grid.Row="0"
+           Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Dropdown Menu Button -->
+                <Label Text="Emergency Contacts"
+                      TextColor="Black"
+                      BackgroundColor="Transparent"
+                      FontSize="16"
+                      VerticalOptions="Center"
+                      HorizontalOptions="Start"
+                       />
+
+                <!-- Watch Icon Button -->
+                <ImageButton Source="smartwatch.png"
+                      Grid.Column="2"
+                      HorizontalOptions="End"
+                      WidthRequest="30"
+                      HeightRequest="30"
+                      BackgroundColor="Transparent" />
+            </Grid>
         </Frame>
 
         <!-- Scrollable Content Section -->
@@ -71,7 +95,7 @@
                                 <Style TargetType="Label">
                                     <Setter Property="TextColor" Value="Black" />
                                 </Style>
-     
+
                             </StackLayout.Resources>
                         </StackLayout>
                     </VerticalStackLayout>

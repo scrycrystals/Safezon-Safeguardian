@@ -4,10 +4,14 @@
              x:Class="app2.Views.VirtualGuardianPage"
             BackgroundImageSource="bgg.png"
              NavigationPage.HasNavigationBar="False">
-    <Grid RowDefinitions="*, Auto">
+    <Grid RowDefinitions="Auto, *, Auto">
 
-        <!-- Row 0: Virtual Guardian Content -->
-        <Grid Grid.Row="0" Padding="10">
+
+        <!--Header Section-->
+        <local:TopBar Grid.Row="0" />
+
+        <!-- Row 1: Virtual Guardian Content -->
+        <Grid Grid.Row="1" Padding="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -48,8 +52,8 @@
             </StackLayout>
         </Grid>
 
-        <!-- Row 1: Bottom Navigation Bar -->
-        <Grid Grid.Row="1" BackgroundColor="White" HeightRequest="60">
+        <!-- Row 2: Bottom Navigation Bar -->
+        <Grid Grid.Row="2" BackgroundColor="White" HeightRequest="60">
             <local:BottomBar/>
         </Grid>
     </Grid>

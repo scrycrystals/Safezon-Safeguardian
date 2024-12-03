@@ -117,6 +117,7 @@ namespace app2
             // Toggle the visibility of the Settings dropdown menu
             SettingsDropdownMenu.IsVisible = !SettingsDropdownMenu.IsVisible;
 
+
         }
 
         private void OnDarkModeTapped(object sender, EventArgs e)
