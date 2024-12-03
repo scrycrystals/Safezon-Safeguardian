@@ -187,11 +187,13 @@
                              VerticalOptions="Start"
                              WidthRequest="20"
                              HeightRequest="20"
+                             Margin="0,0,0,10"
                              BackgroundColor="Transparent"
                              Clicked="OnCloseMenuClicked" />
+                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
 
                 <!-- Option 1 with Icon and Text -->
-                <Grid Padding="10"
+                <Grid Padding="10" 
                       BackgroundColor="Transparent">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
@@ -213,6 +215,8 @@
                         <TapGestureRecognizer Tapped="OnProfileClicked" />
                     </Grid.GestureRecognizers>
                 </Grid>
+                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
+
 
                 <!-- Option 2 with Icon and Text -->
                 <Grid Padding="10"
@@ -236,6 +240,8 @@
                         <TapGestureRecognizer Tapped="OnDefenseScoreClicked" />
                     </Grid.GestureRecognizers>
                 </Grid>
+                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
+
 
                 <!-- Option 3 with Icon and Text -->
                 <Grid Padding="10"
@@ -259,6 +265,8 @@
                         <TapGestureRecognizer Tapped="OnAboutClicked" />
                     </Grid.GestureRecognizers>
                 </Grid>
+                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
+
 
                 <!-- Option 4 with Icon and Text -->
                 <Grid Padding="10"
@@ -282,6 +290,8 @@
                         <TapGestureRecognizer Tapped="OnPrivacyPolicyClicked" />
                     </Grid.GestureRecognizers>
                 </Grid>
+                <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
+
 
                 <!-- Option 5 with Icon and Text -->
                 <Grid Padding="10"
@@ -309,18 +319,20 @@
                            BackgroundColor="Transparent"
                            Clicked="OnSettingsArrowClicked" />
                 </Grid>
+
                 <!-- Dropdown Menu for Settings -->
+
+
                 <StackLayout x:Name="SettingsDropdownMenu"
-             IsVisible="False"
-             Padding="10"
-             Margin="20,0,0,0"
-             BackgroundColor="White"
-             VerticalOptions="Start"
-             HorizontalOptions="Start">
+                 Padding="10"
+                 BackgroundColor="White"
+                 VerticalOptions="Start"
+                 HorizontalOptions="Start">
+
+                    <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
 
                     <!-- Option 1: Dark Mode -->
-                    <!-- Option 1: Dark Mode with Switch -->
-                    <Grid Padding="10" BackgroundColor="Transparent">
+                    <Grid BackgroundColor="Transparent">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
@@ -329,23 +341,24 @@
 
                         <!-- Dark Mode Icon -->
                         <Image Source="moon.png"
-           WidthRequest="20"
-           HeightRequest="20"
-           Grid.Column="0"
-           Margin="0,0,10,0" />
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   Grid.Column="0"
+                   Margin="0,0,10,0" />
 
                         <!-- Dark Mode Label -->
                         <Label Text="Dark Mode"
-           VerticalOptions="Center"
-           Grid.Column="1"
-           TextColor="Black" />
+                   VerticalOptions="Center"
+                   Grid.Column="1"
+                   TextColor="Black" />
 
                         <!-- Dark Mode Switch -->
                         <Switch IsToggled="False"
-            Toggled="OnDarkModeToggled"
-            Grid.Column="2"
-            VerticalOptions="Center" />
+                    Toggled="OnDarkModeToggled"
+                    Grid.Column="2"
+                    VerticalOptions="Center" />
                     </Grid>
+                    <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
 
 
                     <!-- Option 2: Offline Mode -->
@@ -354,19 +367,20 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Image Source="offline_mode.png"
-               WidthRequest="20"
-               HeightRequest="20"
-               Grid.Column="0"
-               Margin="0,0,10,0" />
+                        <Image Source="offline.png"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   Grid.Column="0"
+                   Margin="0,0,10,0" />
                         <Label Text="Offline Mode"
-               VerticalOptions="Center"
-               Grid.Column="1"
-               TextColor="Black" />
+                   VerticalOptions="Center"
+                   Grid.Column="1"
+                   TextColor="Black" />
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnOfflineModeTapped" />
                         </Grid.GestureRecognizers>
                     </Grid>
+                    <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" />
 
                     <!-- Option 3: Delete Account -->
                     <Grid Padding="10" BackgroundColor="Transparent">
@@ -374,15 +388,15 @@
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Image Source="delete_account.png"
-               WidthRequest="20"
-               HeightRequest="20"
-               Grid.Column="0"
-               Margin="0,0,10,0" />
+                        <Image Source="bin.png"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   Grid.Column="0"
+                   Margin="0,0,10,0" />
                         <Label Text="Delete Account"
-               VerticalOptions="Center"
-               Grid.Column="1"
-               TextColor="Black" />
+                   VerticalOptions="Center"
+                   Grid.Column="1"
+                   TextColor="Black" />
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnDeleteAccountTapped" />
                         </Grid.GestureRecognizers>
