@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.Views.BraceletOptions"
+             xmlns:local="clr-namespace:app2.Views"
+             BackgroundImageSource="bgg.png">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+
+        <ScrollView >
+            <Grid>
+                <!-- Combined Content -->
+                <StackLayout Grid.Row="1"
+                             Spacing="20"
+                             Padding="10">
+
+                    <Label Text="Bracelet Performance Dashboard"
+                           FontSize="22"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,0" />
+
+
+                    <StackLayout Spacing="8">
+
+                        <Label Text="Bracelet Performance Overview"
+                               FontSize="18"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="10,10,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame 
+                                   WidthRequest="38"
+                                   HeightRequest="38"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="batteryicon.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Battery Level"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="80%"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray" Margin="0,5,0,0"/>
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="hrt.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Overall Health Status"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Good"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray" Margin="0,5,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="kyy.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Component Performance"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="GPS: Good"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+
+
+                    </StackLayout>
+
+                    <StackLayout Spacing="8">
+
+                        <Label Text="Component Status and Details"
+                               FontSize="18"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="10,10,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="gps.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFill" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="GPS"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Signal Strength: Strong"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray"
+                                 Margin="0,5,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="hm.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Health Monitor"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Accuracy: High"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray"
+                                 Margin="0,5,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="sos.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="SOS button"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Status: Operational"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+
+
+                    </StackLayout>
+
+                    <StackLayout Spacing="8">
+
+                        <Label Text="App Connectivity"
+                               FontSize="18"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="10,10,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="ca.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Connected Apps"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="App A, App B"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray"
+                                 Margin="0,5,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="laa.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Link Another App"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="First bracelet is linked for free. Connect more with premium membership"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray"
+                                 Margin="0,5,0,0" />
+
+                    </StackLayout>
+
+                    <StackLayout Spacing="8">
+
+                        <Label Text="Bracelet Settings"
+                               FontSize="18"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="10,10,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="ac.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Action Configuration"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Define Button Actions"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray"
+                                 Margin="0,5,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="sp.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFill" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Single Press"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Send Location"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray"
+                                 Margin="0,5,0,0" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="dp.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Double Press"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Send Emergency Alert"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray" />
+
+
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="tp.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFill" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Triple Press"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Notify Authorities"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <!-- Divider -->
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="LightGray" />
+
+                        <Grid Padding="0,10,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,0"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="lp.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1">
+                                <Label Text="Long Press"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Turn Off Bracelet"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+
+                    </StackLayout>
+
+                    <StackLayout Spacing="8" BackgroundColor="White" Margin="0,100,0,0">
+
+                        <Label Text="Premium Upgrade and Membership"
+                               FontSize="18"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Start"
+                               Margin="10,10,0,0" />
+
+                        <Grid Padding="0,5,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="0.2*" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.4*" />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Frame WidthRequest="38"
+                                   HeightRequest="38"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   CornerRadius="20"
+                                   Padding="0"
+                                   Margin="10,0,0,10"
+                                   HasShadow="True"
+                                   BackgroundColor="LightGray">
+                                <Image Source="start.png"
+                                       WidthRequest="28"
+                                       Aspect="AspectFit" />
+                            </Frame>
+
+
+
+                            <VerticalStackLayout Grid.Column="1" Margin="0,0,0,10">
+                                <Label Text="Premium Membership"
+                                       FontSize="15"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+                                <Label Text="Connect multiple bracelets and access advanced features"
+                                       FontSize="13"
+                                       TextColor="DarkSlateGray"
+                                       FontAttributes="None"
+                                       HorizontalOptions="Start"
+                                       Margin="10,0,0,0" />
+
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+
+
+                    </StackLayout>
+
+
+                    <!-- Divider -->
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="LightGray" Margin="0,0,0,0" />
+
+
+                </StackLayout>
+
+
+            </Grid>
+        </ScrollView>
+
+
+        <local:BottomBar Grid.Row="1" />
+
+
+
+    </Grid>
+
+</ContentPage>
