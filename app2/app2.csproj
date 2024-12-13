@@ -57,6 +57,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\ac.png" />
+	  <None Remove="Resources\Images\batteryicon.png" />
+	  <None Remove="Resources\Images\bct.png" />
+	  <None Remove="Resources\Images\ca.png" />
+	  <None Remove="Resources\Images\dp.png" />
+	  <None Remove="Resources\Images\gps.png" />
+	  <None Remove="Resources\Images\hm.png" />
+	  <None Remove="Resources\Images\hrt.png" />
+	  <None Remove="Resources\Images\kyy.png" />
+	  <None Remove="Resources\Images\laa.png" />
+	  <None Remove="Resources\Images\lp.png" />
+	  <None Remove="Resources\Images\sos.png" />
+	  <None Remove="Resources\Images\sp.png" />
+	  <None Remove="Resources\Images\start.png" />
+	  <None Remove="Resources\Images\tp.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.1.1" />
 		<PackageReference Include="CommunityToolkit.Maui.MediaElement" Version="4.1.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.93" />
@@ -72,6 +90,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\BottomBar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BraceletOptions.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ChangePasswordPage.xaml">
