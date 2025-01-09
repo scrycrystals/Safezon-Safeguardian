@@ -5,6 +5,9 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="app2.Views.LoginPage"
              Title="LoginPage">
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel xmlns:viewModels="clr-namespace:app2.ViewModels" />
+    </ContentPage.BindingContext>
     <Grid>
         <Image Source="loginbg.png"
                Aspect="AspectFill" />
@@ -66,7 +69,7 @@
                 </Grid.RowDefinitions>
 
                 <!-- Username Label -->
-                <Label Text="Username"
+                <Label Text="Email"
                        FontSize="16"
                        TextColor="White"
                        FontAttributes="Bold"
@@ -82,7 +85,15 @@
                        CornerRadius="5"
                        HasShadow="False"
                        Margin="0,0,0,0">
-                    <Entry Placeholder="Enter your username"
+                    <!--
+                    <Entry Placeholder="Enter your Email"
+                           x:Name="txtEmail"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="White"
+                           BackgroundColor="Transparent"
+                           PlaceholderColor="White" />-->
+                    <Entry Placeholder="Enter your Email"
+                           Text="{Binding Email}"
                            HorizontalOptions="FillAndExpand"
                            TextColor="White"
                            BackgroundColor="Transparent"
@@ -108,7 +119,16 @@
                        CornerRadius="5"
                        HasShadow="False"
                        Margin="0,0,0,0">
+                    <!--
                     <Entry Placeholder="Enter your password"
+                           x:Name="Password"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="White"
+                           BackgroundColor="Transparent"
+                           PlaceholderColor="White" />-->
+                    <Entry Placeholder="Enter your Password"
+                           Text="{Binding Password}"
+                           IsPassword="True"
                            HorizontalOptions="FillAndExpand"
                            TextColor="White"
                            BackgroundColor="Transparent"
@@ -126,7 +146,9 @@
                         VerticalOptions="End"
                         TextColor="Black"
                         FontAttributes="Bold"
-                        Clicked="LoginBtn_Clicked" />
+                        Command="{Binding LoginCommand}" />
+                <!--
+                        Clicked="LoginBtn_Clicked" />-->
 
                 <!-- Forgot Password -->
                 <Button Text="Forgot Password? "

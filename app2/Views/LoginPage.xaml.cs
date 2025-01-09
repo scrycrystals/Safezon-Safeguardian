@@ -6,11 +6,11 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
-    private void LoginBtn_Clicked(object sender, EventArgs e)
+    /*private void LoginBtn_Clicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new SliderPage());
 
-    }
+    }*/
 
    
 

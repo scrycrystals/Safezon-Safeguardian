@@ -60,6 +60,7 @@
            Grid.Row="2"
            VerticalOptions="End">
             <Entry Placeholder="Enter your username"
+                   x:Name="txtUsername"
                TextColor="White"
                PlaceholderColor="White"
                Margin="10, 0"/>
@@ -79,6 +80,7 @@
            Grid.Row="3"
            VerticalOptions="End">
             <Entry Placeholder="Enter your email"
+                   x:Name="txtEmail"
                TextColor="White"
                PlaceholderColor="White"
                Margin="10, 0"/>
@@ -99,6 +101,7 @@
            VerticalOptions="End">
 
             <Entry Placeholder="Enter your password"
+                   x:Name="txtPassword"
                TextColor="White"
                PlaceholderColor="White"
                IsPassword="True"
@@ -119,6 +122,7 @@
            Grid.Row="5"
            VerticalOptions="End">
             <Entry Placeholder="Enter your phone number"
+                   x:Name="txtPhoneNumber"
                TextColor="White"
                PlaceholderColor="White"
                Margin="10, 0"/>
