@@ -51,8 +51,8 @@
        Padding="0">
                 <!-- Test with a placeholder image URL to check visibility -->
                 <Image Source="{Binding ProfileImage}"
-           HeightRequest="80"
-           WidthRequest="80"
+           HeightRequest="30"
+           WidthRequest="30"
            HorizontalOptions="Center"
            VerticalOptions="Center"/>
             </Frame>
