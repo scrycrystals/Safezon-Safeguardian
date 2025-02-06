@@ -2,6 +2,7 @@ using System;
 using Microsoft.Maui.Controls;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using app2.ViewModels;
 
 namespace app2
 {
@@ -10,6 +11,14 @@ namespace app2
         public EditProfilePage()
         {
             InitializeComponent();
+            BindingContext = new ProfileViewModel();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            // Load the profile data when the page is about to appear
+            await ((ProfileViewModel)BindingContext).LoadProfileData();
         }
 
         // Handle profile image upload
@@ -80,17 +89,40 @@ namespace app2
         // Save changes
         private async void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            string username = UsernameEntry.Text;
-            string phoneNumber = PhoneNumberEntry.Text;
-            string instagram = InstagramEntry.Text;
-            string email = GmailEntry.Text;
-            DateTime dateOfBirth = DateOfBirthPicker.Date;
+            try
+            {
+                string username = UsernameEntry.Text;
+                string phoneNumber = PhoneNumberEntry.Text;
+                string instagram = InstagramEntry.Text;
+                string email = GmailEntry.Text;
+                string profileImage = ProfileImage.Source?.ToString();
+                DateTime? dateOfBirth = DateOfBirthPicker.Date != default ? DateOfBirthPicker.Date : (DateTime?)null;
 
-            // Add validation and save logic here
+                if (BindingContext is ProfileViewModel viewModel)
+                {
+                    bool isUpdated = await viewModel.UpdateData(username, email, phoneNumber, instagram, profileImage, dateOfBirth);
 
-            await DisplayAlert("Profile Updated", "Your profile changes have been saved!", "OK");
-            await Navigation.PopAsync(); // Go back to the previous page
+                    if (isUpdated)
+                    {
+                        await DisplayAlert("Profile Updated", "Your profile changes have been saved!", "OK");
+                        await Navigation.PopAsync();
+                    }
+                    else
+                    {
+                        await DisplayAlert("Update Failed", "No changes were made or an error occurred.", "OK");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Error", "BindingContext is not set properly.", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+            }
         }
+
 
         // Cancel and go back
         private async void OnCancelButtonClicked(object sender, EventArgs e)

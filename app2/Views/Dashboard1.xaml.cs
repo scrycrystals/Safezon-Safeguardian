@@ -27,7 +27,7 @@ namespace app2
         {
             // Handle Profile option click
             //DisplayAlert("Profile", "You selected Profile", "OK");
-            Navigation.PushAsync(new Profile());
+            Navigation.PushAsync(new Views.Profile());
             DropdownMenu.IsVisible = false; // Hide the menu after selection
         }
 

@@ -1,5 +1,6 @@
 using System;
 using Microsoft.Maui.Controls;
+using app2.ViewModels;
 
 namespace app2
 {
@@ -9,7 +10,7 @@ namespace app2
         {
             InitializeComponent();
             // Show the old password in the entry
-            OldPasswordEntry.Text = currentPassword;
+            BindingContext = new ProfileViewModel();
         }
 
         // Password Strength Checker
@@ -41,11 +42,26 @@ namespace app2
 
             if (newPassword == reEnteredPassword)
             {
-                // Save the new password logic here, for example:
-                // SaveNewPassword(newPassword);
+                if (BindingContext is ProfileViewModel viewModel)
+                {
+                    bool isUpdated = await viewModel.UpdatePassword(newPassword);
 
-                await DisplayAlert("Success", "Your password has been changed!", "OK");
-                await Navigation.PopAsync(); // Go back to the original page
+                    if (isUpdated)
+                    {
+                        await DisplayAlert("Success", "Your password has been changed!", "OK");
+                        await Navigation.PopAsync(); // Go back to the original page
+                    }
+                    else
+                    {
+                        await DisplayAlert("Failed", "Your password has not been changed!", "OK");
+                    }
+
+                }
+                else
+                {
+                    await DisplayAlert("Error", "Binding Not Possible", "OK");
+
+                }
             }
             else
             {
