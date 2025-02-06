@@ -197,5 +197,39 @@ namespace app2.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public async Task<bool> UpdatePassword(string newPassword)
+        {
+            try
+            {
+                int userId = UserSession.UserId;
+                if (userId == 0) return false;
+
+                using (var connection = DatabaseConnection.GetConnection())
+                {
+                    if (connection.State != System.Data.ConnectionState.Open)
+                        await connection.OpenAsync();
+
+                    string query = @"
+            UPDATE UserProfile 
+            SET Password = @NewPassword
+            WHERE RegistrationId = @UserId";
+
+                    int rowsAffected = await connection.ExecuteAsync(query, new
+                    {
+                        NewPassword = newPassword,
+                        UserId = userId
+                    });
+
+                    return rowsAffected > 0; // Return true if update was successful
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error updating password: {ex.Message}");
+                return false;
+            }
+        }
+
     }
 }
