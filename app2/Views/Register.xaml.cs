@@ -2,6 +2,7 @@
 namespace app2;
 using app2.Models;
 using app2.ViewModels;
+using app2.Views;
 using System;
 using System.Text.RegularExpressions;
 
@@ -50,7 +51,7 @@ public partial class Register : ContentPage
         if (isRegistered)
         {
             DisplayAlert("Success", "User registered successfully.", "OK");
-            Navigation.PushAsync(new Dashboard1());
+            Navigation.PushAsync(new LoginPage());
         }
         else
         {

@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using app2.Database;
 using app2.Models;
-using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
 
 namespace app2.ViewModels
@@ -18,23 +14,79 @@ namespace app2.ViewModels
             {
                 using (var connection = DatabaseConnection.GetConnection())
                 {
-                    string query = "INSERT INTO Register (Username, Email, Password, PhoneNumber) VALUES (@Username, @Email, @Password, @PhoneNumber)";
-                    using (var command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@Username", user.Username);
-                        command.Parameters.AddWithValue("@Email", user.Email);
-                        command.Parameters.AddWithValue("@Password", user.Password);
-                        command.Parameters.AddWithValue("@PhoneNumber", user.PhoneNumber);
 
-                        int result = command.ExecuteNonQuery();
-                        return result > 0; // Return true if insertion is successful
+                    using (var transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insert user into Register table and get the inserted UserID
+                            string registerQuery = "INSERT INTO Register (Username, Email, Password, PhoneNumber) OUTPUT INSERTED.UserId VALUES (@Username, @Email, @Password, @PhoneNumber)";
+
+                            int userId; // Variable to store the inserted UserId
+                            using (var registerCommand = new SqlCommand(registerQuery, connection, transaction))
+                            {
+                                registerCommand.Parameters.AddWithValue("@Username", user.Username);
+                                registerCommand.Parameters.AddWithValue("@Email", user.Email);
+                                registerCommand.Parameters.AddWithValue("@Password", user.Password);
+                                registerCommand.Parameters.AddWithValue("@PhoneNumber", user.PhoneNumber);
+
+                                userId = (int)registerCommand.ExecuteScalar(); // Get the generated UserId
+                            }
+
+                            // Call the separate function to create UserProfile
+                            bool profileCreated = CreateUserProfile(connection, transaction, userId, user.Username, user.Password, user.Email, user.PhoneNumber);
+
+                            if (!profileCreated)
+                            {
+                                throw new Exception("User profile creation failed.");
+                            }
+
+                            // Commit transaction if everything succeeds
+                            transaction.Commit();
+                            return true; // Return true to indicate registration was successful
+                        }
+                        catch (Exception ex)
+                        {
+                            // Rollback transaction if any query fails
+                            transaction.Rollback();
+                            Console.WriteLine($"Error during registration: {ex.Message}");
+                            return false; // Return false to indicate failure
+                        }
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error during registration: {ex.Message}");
-                return false;
+                Console.WriteLine($"Database connection error: {ex.Message}");
+                return false; // Return false to indicate failure
+            }
+        }
+
+        /// <summary>
+        /// Inserts a new user into the UserProfile table.
+        /// </summary>
+        private bool CreateUserProfile(SqlConnection connection, SqlTransaction transaction, int registrationId, string userName, string password, string email, string phoneNumber)
+        {
+            try
+            {
+                string profileQuery = "INSERT INTO UserProfile (RegistrationId, UserName, Password, Email, PhoneNumber) VALUES (@RegistrationId, @UserName, @Password, @Email, @PhoneNumber)";
+
+                using (var profileCommand = new SqlCommand(profileQuery, connection, transaction))
+                {
+                    profileCommand.Parameters.AddWithValue("@RegistrationId", registrationId); // Use the UserId from Register table
+                    profileCommand.Parameters.AddWithValue("@UserName", userName);
+                    profileCommand.Parameters.AddWithValue("@Password", password);
+                    profileCommand.Parameters.AddWithValue("@Email", email);
+                    profileCommand.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+
+                    int result = profileCommand.ExecuteNonQuery(); // Execute the query to insert into UserProfile table
+                    return result > 0; // Return true if insertion is successful
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating user profile: {ex.Message}");
+                return false; // Return false if there was an error
             }
         }
     }

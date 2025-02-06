@@ -57,28 +57,30 @@ namespace app2.ViewModels
             string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
 
             bool validemail = Regex.IsMatch(email, regex);
-            if (!validemail) {
+            if (!validemail)
+            {
                 await App.Current.MainPage.DisplayAlert("Error", "Email format is not correct!", "OK");
                 return;
             }
-
 
             try
             {
                 using (var connection = DatabaseConnection.GetConnection())
                 {
-                    string query = "SELECT COUNT(1) FROM Register WHERE Email = @Email AND Password = @Password";
+                    string query = "SELECT UserId FROM Register WHERE Email = @Email AND Password = @Password";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Email", Email);
                         command.Parameters.AddWithValue("@Password", Password);
 
-                        int userExists = (int)await command.ExecuteScalarAsync();
+                        var userId = command.ExecuteScalar(); // Get UserId if email and password match
 
-                        if (userExists == 1)
+                        if (userId != null)
                         {
-                            await App.Current.MainPage.DisplayAlert("Success", "Login Successful!", "OK");
+                            // Store UserId in UserSession
+                            UserSession.UserId = (int)userId;
 
+                            await App.Current.MainPage.DisplayAlert("Success", "Login Successful!", "OK");
                             await App.Current.MainPage.Navigation.PushAsync(new SliderPage());
                         }
                         else
