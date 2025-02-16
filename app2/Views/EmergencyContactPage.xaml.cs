@@ -1,34 +1,94 @@
 using Microsoft.Maui.Controls;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using XamarinEssentials = Xamarin.Essentials;
+using MauiApplicationModel = Microsoft.Maui.ApplicationModel;
+using Communication = Microsoft.Maui.ApplicationModel.Communication;
+using app2.ViewModels;
+using app2.Models;
+
+
 
 namespace app2.Views
 {
     public partial class EmergencyContactPage : ContentPage
     {
+        private EmergencyContactsViewModel _viewModel; // Declare it
+
         public EmergencyContactPage()
         {
             InitializeComponent();
+            _viewModel = new EmergencyContactsViewModel(); // Initialize it
+            BindingContext = _viewModel;
         }
+        
+        protected override async void OnAppearing()
+{
+    base.OnAppearing();
+    await _viewModel.LoadPrimaryContacts();
+}
 
         // Import primary contacts
         private async void ImportPrimaryContactsClicked(object sender, EventArgs e)
         {
-            var availableContacts = new[]
+            try
             {
-                "John Doe - 123-456-7890",
-                "Jane Smith - 987-654-3210",
-                "Alice Johnson - 456-789-1234"
-            };
+                // Request permission to read contacts
+                var status = await Permissions.RequestAsync<Permissions.ContactsRead>();
 
-            string selectedContact = await DisplayActionSheet("Select Contact to Add", "Cancel", null, availableContacts);
+                if (status != PermissionStatus.Granted)
+                {
+                    await DisplayAlert("Permission Denied", "Cannot access contacts. Please enable contact permissions.", "OK");
+                    return;
+                }
 
-            if (!string.IsNullOrEmpty(selectedContact) && selectedContact != "Cancel")
-            {
+                // Let user pick a contact
+                var contact = await Communication.Contacts.PickContactAsync();
+
+                if (contact == null || contact.Phones == null || !contact.Phones.Any())
+                {
+                    await DisplayAlert("No Contact Selected", "No valid contact was selected.", "OK");
+                    return;
+                }
+
+                // Extract contact details
+                string displayName = contact.DisplayName;
+                string phoneNumber = contact.Phones.FirstOrDefault()?.PhoneNumber;
+
+                var selecteddatabaseContact = new PrimaryContact
+                {
+                    UserId = UserSession.UserId, // Get logged-in user ID
+                    ContactName = contact.DisplayName,
+                    ContactNumber = phoneNumber,
+                    SingleTap = false,
+                    DoubleTap = false,
+                    Always = true
+                };
+                _viewModel.AddPrimaryContact(selecteddatabaseContact);
+
+
+
+
+                if (string.IsNullOrEmpty(phoneNumber))
+                {
+                    await DisplayAlert("Invalid Contact", "Selected contact has no phone number.", "OK");
+                    return;
+                }
+
+                // Add selected contact
+                string selectedContact = $"{displayName} - {phoneNumber}";
                 AddPrimaryContact(selectedContact);
+                // Send the selected contact to ViewModel
+                _viewModel.AddPrimaryContact(selecteddatabaseContact);
                 NoPrimaryContactsLabel.IsVisible = false;
             }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", "An error occurred while selecting a contact.", "OK");
+            }
         }
+
 
         private void AddPrimaryContact(string contact)
         {
@@ -69,6 +129,8 @@ namespace app2.Views
             }
         }
 
+        // Rest of your code remains unchanged...
+ 
         // Notification settings
         private void NotificationSettingsClicked(object sender, EventArgs e)
         {
@@ -331,5 +393,8 @@ namespace app2.Views
             public string Name { get; set; } = string.Empty; // Provide default value to avoid null warnings
             public bool IsSelected { get; set; }
         }
+
+       
     }
 }
+
