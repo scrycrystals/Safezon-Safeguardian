@@ -2,7 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app2.Views.EmergencyContactPage"
              xmlns:local="clr-namespace:app2.Views"
-             BackgroundImageSource="bgg.png">
+             BackgroundImageSource="bgg.png"
+             xmlns:vm="clr-namespace:app2.ViewModels">
+    
+    <ContentPage.BindingContext>
+        <vm:EmergencyContactsViewModel />
+    </ContentPage.BindingContext>
+
     <Grid RowDefinitions="Auto, *, Auto">
         <!-- Header Section -->
         <Frame HasShadow="True"
@@ -49,6 +55,17 @@
                         <StackLayout x:Name="PrimaryContactsStack" Spacing="15">
                             <Label x:Name="NoPrimaryContactsLabel" Text="There are no contacts" FontSize="16" TextColor="#757575" HorizontalOptions="Center" />
                         </StackLayout>
+                        <!-- Contact List that is already -->
+                        <CollectionView ItemsSource="{Binding PrimaryContacts}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Orientation="Horizontal" Padding="10">
+                                        <Label Text="{Binding ContactName}" FontSize="16"/>
+                                        <Label Text="{Binding ContactNumber}" FontSize="16" Margin="10,0,0,0"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
 
                         <!-- Buttons -->
                         <Button Text="Import from Contacts"
@@ -126,7 +143,6 @@
                         <Label Text="Notify on Double Tap" FontSize="16" VerticalOptions="Center" />
                         <Slider x:Name="DoubleTapNotifySlider" Minimum="0" Maximum="1" Value="0" HorizontalOptions="EndAndExpand" />
                     </StackLayout>
-
                     <!-- Save and Cancel Buttons -->
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,0">
                         <Button Text="Save" Clicked="SaveNotificationSettingsClicked" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" WidthRequest="80" BackgroundColor="#21F490" TextColor="Black" FontAttributes="Bold"/>
