@@ -16,7 +16,8 @@ namespace app2
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("Poppins-ExtraBold.ttf", "PoppinsExtraBold");
 
-                }).UseMauiCommunityToolkit();
+                }).UseMauiCommunityToolkit()
+                .UseMauiMaps();
 
 #if DEBUG
             builder.Logging.AddDebug();
