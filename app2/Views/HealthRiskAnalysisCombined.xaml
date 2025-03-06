@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app2.Views.HealthRiskAnalysisCombined"
+             xmlns:vm="clr-namespace:app2.ViewModels"
              xmlns:local="clr-namespace:app2.Views">
+    <ContentPage.BindingContext>
+        <vm:BraceletDataViewModel />
+    </ContentPage.BindingContext>
+
 
     <Grid>
         <Grid.RowDefinitions>
@@ -39,12 +44,21 @@
                                TextColor="Black"
                                HorizontalOptions="Start"
                                Margin="20,20,0,0" />
-                        <Label Text="75 bpm"
-                               FontSize="15"
-                               FontAttributes="Bold"
-                               TextColor="Black"
-                               HorizontalOptions="Start"
-                               Margin="20,5,0,0" />
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding Data.BPM}"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalOptions="Start"
+                                   Margin="20,5,0,0" />
+                            <Label Text="bpm"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalOptions="Start"
+                                   Margin="5,5,0,0" />
+                        </HorizontalStackLayout>
+                        
                         <Label Text="Normal"
                                FontSize="15"
                                BackgroundColor="LightGrey"
@@ -77,22 +91,31 @@
                                TextColor="Black"
                                HorizontalOptions="Start"
                                Margin="20,20,0,0" />
-                        <Image Source="bpp.png"
+                        <Image Source="temp.svg"
                                Aspect="AspectFit"
-                               WidthRequest="240"
-                               HeightRequest="220"
-                               Margin="0,-20,0,0" />
-                        <Label Text="Blood Pressure"
+                               WidthRequest="190"
+                               HeightRequest="190"
+                               Margin="0,0,0,0" />
+                        <Label Text="Temperature"
                                FontSize="15"
                                TextColor="Black"
                                HorizontalOptions="Start"
-                               Margin="40,0,0,0" />
-                        <Label Text="120/80 mmHg"
-                               FontSize="15"
-                               FontAttributes="Bold"
-                               TextColor="Black"
-                               HorizontalOptions="Start"
-                               Margin="40,5,0,0" />
+                               Margin="20,10,0,0" />
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding Data.Temp}"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalOptions="Start"
+                                   Margin="20,5,0,0" />
+                            <Label Text="°F"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"
+                                   HorizontalOptions="Start"
+                                   Margin="20,5,0,0" />
+                        </HorizontalStackLayout>
+                        
                     </StackLayout>
 
                     <!-- Divider -->
