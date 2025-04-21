@@ -1,17 +1,71 @@
-using Microsoft.Maui.Controls;
+﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.ApplicationModel.Communication;
+using app2.Models;
+using Microsoft.Maui.ApplicationModel;
+using CommunityToolkit.Maui.Core;
 
 namespace app2
 {
+
     public partial class Dashboard1 : ContentPage
     {
-              public Dashboard1()
+        private RegisterModel currentUser = new RegisterModel
+        {
+            // Not secure, just for mockup
+            Username = "esha",
+            Email = "emanesha@gmail.com",
+            Password = "esha123",  
+            PhoneNumber = "" // actual SMS will be sent by the device's SIM number — that’s how SMS works.
+        };
+
+        private List<PrimaryContact> primaryContacts = new List<PrimaryContact>
+        {
+            // change it before testing
+              new PrimaryContact { ContactName = "esha", ContactNumber = "+923038838123" },
+              new PrimaryContact { ContactName = "Zoha", ContactNumber = "+923081608946" },
+              //new PrimaryContact { ContactName = "addname", ContactNumber = "" }
+        };
+
+        public Dashboard1()
         {
             InitializeComponent();
             BindingContext = this;  // Set the BindingContext for data binding
         }
 
+        // Send RED Button alert
+        private void OnSendAlertClicked(object sender, EventArgs e)
+        {
+            try
+            {
+            #if ANDROID
+            if (primaryContacts == null || primaryContacts.Count == 0)
+            {
+                DisplayAlert("Error", "No primary contacts found.", "OK");
+                return;
+            }
 
-        private void OnMenuClicked(object sender, EventArgs e)
+            string userPhone = currentUser.Username;
+            string message = $"🚨 Emergency Alert!\nThis message was sent by {userPhone}. Please check on them immediately.";
+
+            foreach (var contact in primaryContacts)
+            {
+                if (contact.ContactNumber != userPhone) // 👈 Skip sending to self
+                {
+                    app2.Platforms.Android.SmsService.SendSMS(contact.ContactNumber, message);
+                }
+            }
+
+            DisplayAlert("Alert", "Alert SMS sent to all primary contacts.", "OK");
+            #else
+                DisplayAlert("Platform Not Supported", "SMS sending only works on Android real devices.", "OK");
+            #endif
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Error", $"Failed to send SMS: {ex.Message}", "OK");
+            }
+        }
+    private void OnMenuClicked(object sender, EventArgs e)
         {
             // Toggle the visibility of the dropdown menu
             DropdownMenu.IsVisible = !DropdownMenu.IsVisible;
