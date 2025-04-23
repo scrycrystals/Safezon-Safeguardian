@@ -80,7 +80,9 @@
                         HeightRequest="200"
                         VerticalOptions="StartAndExpand"
                         HorizontalOptions="Center"
-                        Grid.Row="1" />
+                        Grid.Row="1" 
+                        Clicked="OnSendAlertClicked"
+                        />
 
                 <!-- Nearby Help Stations Section -->
                 <StackLayout Grid.Row="1"
