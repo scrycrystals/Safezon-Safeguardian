@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient; // ✅ Correct for MySQL
 using app2.Database;
 using Xamarin.Essentials;
 using Dapper;
@@ -155,7 +155,7 @@ namespace app2.ViewModels
                 using (var connection = DatabaseConnection.GetConnection())
                 {
                     string query = "SELECT UserName, Email, PhoneNumber, DateOfBirth, InstaId, ProfileImage, Password FROM UserProfile WHERE RegistrationId = @UserId";
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (var command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@UserId", userId);
 

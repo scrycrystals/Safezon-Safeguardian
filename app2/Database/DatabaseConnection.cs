@@ -1,28 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient; // ✅ Correct namespace for MySQL
 
 namespace app2.Database
 {
     public class DatabaseConnection
     {
-        private static readonly string serverName = "database-1.c38ecky2q5jm.eu-north-1.rds.amazonaws.com,1433";
-        private static readonly string databaseName = "Safezone";
-        private static readonly string username = "admin";
-        private static readonly string password = "admin1234&";
+        private static readonly string serverName = "mysql-391d0718-kanzulzoha2003-safezine.l.aivencloud.com";
+        private static readonly int port = 16446;
+        private static readonly string databaseName = "defaultdb";
+        private static readonly string username = "avnadmin";
+        private static readonly string password = "AVNS_d3pDYPIsAGwLHme_eyx";
 
         private static readonly string connectionString =
-            $"Server={serverName};Database={databaseName};User Id={username};Password={password};TrustServerCertificate=true";
+            $"Server={serverName};Port={port};Database={databaseName};User Id={username};Password={password};SslMode=Required;";
 
-        public static SqlConnection GetConnection()
+        public static MySqlConnection GetConnection()
         {
             try
             {
-                SqlConnection connection = new SqlConnection(connectionString);
+                MySqlConnection connection = new MySqlConnection(connectionString);
                 connection.Open();
                 return connection;
             }
@@ -32,6 +28,5 @@ namespace app2.Database
                 throw;
             }
         }
-
     }
 }

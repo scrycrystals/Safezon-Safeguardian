@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using app2.Models;
-using System.Data.SqlClient;
-using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient; // ✅ Correct for MySQL
 using System.ComponentModel;
 using app2.Database;
 using System.Windows.Input;
-using System.Net.Mail;
-using app2.Views;
 using System.Text.RegularExpressions;
+using app2.Views;
 
 namespace app2.ViewModels
 {
@@ -56,8 +54,8 @@ namespace app2.ViewModels
 
             string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
 
-            bool validemail = Regex.IsMatch(email, regex);
-            if (!validemail)
+            bool validEmail = Regex.IsMatch(email, regex);
+            if (!validEmail)
             {
                 await App.Current.MainPage.DisplayAlert("Error", "Email format is not correct!", "OK");
                 return;
@@ -67,18 +65,18 @@ namespace app2.ViewModels
             {
                 using (var connection = DatabaseConnection.GetConnection())
                 {
-                    string query = "SELECT UserId FROM Register WHERE Email = @Email AND Password = @Password";
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    string query = "SELECT idRegister FROM Register WHERE Email = @Email AND Password = @Password";
+                    using (var command = new MySqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Email", Email);
                         command.Parameters.AddWithValue("@Password", Password);
 
-                        var userId = command.ExecuteScalar(); // Get UserId if email and password match
+                        var userId = command.ExecuteScalar();
 
                         if (userId != null)
                         {
                             // Store UserId in UserSession
-                            UserSession.UserId = (int)userId;
+                            UserSession.UserId = Convert.ToInt32(userId);
 
                             await App.Current.MainPage.DisplayAlert("Success", "Login Successful!", "OK");
                             await App.Current.MainPage.Navigation.PushAsync(new SliderPage());
