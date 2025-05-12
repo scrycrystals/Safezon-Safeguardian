@@ -65,7 +65,17 @@ namespace app2.Views
         private void OnSettingsClicked(object sender, EventArgs e)
         {
             // Navigate to the SettingsPage
-           Navigation.PushAsync(new SettingsPage());
+            Navigation.PushAsync(new SettingsPage());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddRiskyLocation(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddRiskyLocation());
         }
     }
 }

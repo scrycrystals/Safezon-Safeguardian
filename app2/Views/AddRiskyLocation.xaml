@@ -1,0 +1,56 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:app2.ViewModels"
+             xmlns:models="clr-namespace:app2.Models"
+             x:Class="app2.Views.AddRiskyLocation"
+             x:DataType="viewmodels:AddRiskyLocationViewModel">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="20">
+
+            <!-- Search Bar -->
+            <Entry Placeholder="Enter location to search"
+                   Text="{Binding SearchQuery}" />
+
+            <Button Text="Search"
+                    Command="{Binding SearchLocationCommand}" />
+
+            <!-- List of Locations -->
+            <CollectionView ItemsSource="{Binding LocationResults}"
+                SelectionMode="Single"
+                SelectedItem="{Binding SelectedLocation}"
+                            HeightRequest="350" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:LocationResult">
+                        <Frame BorderColor="LightGray" Padding="10" Margin="5">
+                            <!-- Add TapGestureRecognizer for item click -->
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:AddRiskyLocationViewModel}}, Path=SelectLocationCommand}"
+                                           CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
+                            <Label Text="{Binding DisplayName}" />
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+            <!-- Load More Button -->
+            <Button Text="Load More"
+        Command="{Binding LoadMoreCommand}"
+       />
+
+            <!-- Add Selected Location Button -->
+            <Button Text="Add Location"
+                    Margin="0,10,0,10"
+             Command="{Binding AddLocationToDatabaseCommand}"
+            IsEnabled="{Binding SelectedLocation, Converter={StaticResource NullToBooleanConverter}}" />
+
+            <Button Text="Add Manual Location"
+        Command="{Binding AddManualLocationCommand}" />
+
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
