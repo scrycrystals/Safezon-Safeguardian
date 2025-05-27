@@ -1,5 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using app2.Services;
+
+
+#if ANDROID
+using app2.Platforms.Android; // Namespace where NotificationManagerService.cs is created
+#endif
 
 namespace app2
 {
@@ -18,6 +24,10 @@ namespace app2
 
                 }).UseMauiCommunityToolkit()
                 .UseMauiMaps();
+
+#if ANDROID
+            builder.Services.AddSingleton<INotificationManagerService, NotificationManagerService>();
+#endif
 
 #if DEBUG
             builder.Logging.AddDebug();

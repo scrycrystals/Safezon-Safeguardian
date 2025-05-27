@@ -3,12 +3,14 @@ using Microsoft.Maui.ApplicationModel.Communication;
 using app2.Models;
 using Microsoft.Maui.ApplicationModel;
 using CommunityToolkit.Maui.Core;
+using app2.Services;
 
 namespace app2
 {
 
     public partial class Dashboard1 : ContentPage
     {
+        private readonly INotificationManagerService _notificationManager;
         private RegisterModel currentUser = new RegisterModel
         {
             // Not secure, just for mockup
@@ -22,7 +24,7 @@ namespace app2
         {
             // change it before testing
               new PrimaryContact { ContactName = "esha", ContactNumber = "+923038838123" },
-              new PrimaryContact { ContactName = "Zoha", ContactNumber = "+923081608946" },
+              new PrimaryContact { ContactName = "Appa", ContactNumber = "+923088985262" },
               //new PrimaryContact { ContactName = "addname", ContactNumber = "" }
         };
 
@@ -30,11 +32,22 @@ namespace app2
         {
             InitializeComponent();
             BindingContext = this;  // Set the BindingContext for data binding
+            _notificationManager = DependencyInjectionService();
+        }
+
+        private INotificationManagerService DependencyInjectionService()
+        {
+#if ANDROID
+        return ServiceHelper.GetService<INotificationManagerService>();
+#else
+            return null;
+#endif
         }
 
         // Send RED Button alert
         private void OnSendAlertClicked(object sender, EventArgs e)
         {
+            _notificationManager?.SendNotification("Alert", "Your Emergency Contacts Have been Notified!.");
             try
             {
             #if ANDROID

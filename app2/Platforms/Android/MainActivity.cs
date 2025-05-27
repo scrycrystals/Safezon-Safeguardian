@@ -16,13 +16,21 @@ namespace app2
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
-            // Request both ReadContacts and SendSMS permissions
+            // Request SMS and Phone permissions
             RequestPermissions(new string[]
-{
-    Android.Manifest.Permission.SendSms,
-    Android.Manifest.Permission.ReadPhoneState
-}, 0);
+            {
+                Manifest.Permission.SendSms,
+                Manifest.Permission.ReadPhoneState
+            }, 0);
 
+            // Request POST_NOTIFICATIONS permission only on Android 13+ (API 33)
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.Tiramisu)
+            {
+                if (CheckSelfPermission(Manifest.Permission.PostNotifications) != Permission.Granted)
+                {
+                    RequestPermissions(new string[] { Manifest.Permission.PostNotifications }, 1);
+                }
+            }
         }
     }
 }
