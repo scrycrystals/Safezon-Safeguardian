@@ -16,17 +16,10 @@ namespace app2
             // Not secure, just for mockup
             Username = "esha",
             Email = "emanesha@gmail.com",
-            Password = "esha123",  
+            Password = "esha123",
             PhoneNumber = "" // actual SMS will be sent by the device's SIM number — that’s how SMS works.
         };
 
-        private List<PrimaryContact> primaryContacts = new List<PrimaryContact>
-        {
-            // change it before testing
-              new PrimaryContact { ContactName = "esha", ContactNumber = "+923038838123" },
-              new PrimaryContact { ContactName = "Appa", ContactNumber = "+923088985262" },
-              //new PrimaryContact { ContactName = "addname", ContactNumber = "" }
-        };
 
         public Dashboard1()
         {
@@ -45,40 +38,47 @@ namespace app2
         }
 
         // Send RED Button alert
+        // ✅ Send RED Button alert using saved emergency contacts
         private void OnSendAlertClicked(object sender, EventArgs e)
         {
             _notificationManager?.SendNotification("Alert", "Your Emergency Contacts Have been Notified!.");
+
+#if ANDROID
             try
             {
-            #if ANDROID
-            if (primaryContacts == null || primaryContacts.Count == 0)
-            {
-                DisplayAlert("Error", "No primary contacts found.", "OK");
-                return;
-            }
+                var contacts = UserSession.PrimaryContacts;
 
-            string userPhone = currentUser.Username;
-            string message = $"🚨 Emergency Alert!\nThis message was sent by {userPhone}. Please check on them immediately.";
-
-            foreach (var contact in primaryContacts)
-            {
-                if (contact.ContactNumber != userPhone) // 👈 Skip sending to self
+                if (contacts == null || contacts.Count == 0)
                 {
-                    app2.Platforms.Android.SmsService.SendSMS(contact.ContactNumber, message);
+                    DisplayAlert("Error", "No emergency contacts found. Please add them in the Contact page.", "OK");
+                    return;
                 }
-            }
 
-            DisplayAlert("Alert", "Alert SMS sent to all primary contacts.", "OK");
-            #else
-                DisplayAlert("Platform Not Supported", "SMS sending only works on Android real devices.", "OK");
-            #endif
+                string userName = currentUser.Username;
+                string message = $"🚨 Emergency Alert!\nThis message was sent by {userName}. Please check on them immediately.";
+
+                foreach (var contact in contacts)
+                {
+                    if (!string.IsNullOrWhiteSpace(contact.ContactNumber) && contact.ContactNumber != currentUser.PhoneNumber)
+                    {
+                        app2.Platforms.Android.SmsService.SendSMS(contact.ContactNumber, message);
+                    }
+                }
+
+                DisplayAlert("Alert Sent", "SMS sent to your emergency contacts.", "OK");
             }
             catch (Exception ex)
             {
                 DisplayAlert("Error", $"Failed to send SMS: {ex.Message}", "OK");
             }
+#else
+            DisplayAlert("Platform Not Supported", "SMS sending only works on Android real devices.", "OK");
+#endif
         }
-    private void OnMenuClicked(object sender, EventArgs e)
+
+
+
+        private void OnMenuClicked(object sender, EventArgs e)
         {
             // Toggle the visibility of the dropdown menu
             DropdownMenu.IsVisible = !DropdownMenu.IsVisible;

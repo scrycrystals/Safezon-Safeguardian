@@ -22,19 +22,25 @@ namespace app2.Views
             _viewModel = new EmergencyContactsViewModel(); // Initialize it
             BindingContext = _viewModel;
         }
-        
+
         protected override async void OnAppearing()
-{
-    base.OnAppearing();
-    await _viewModel.LoadPrimaryContacts();
-}
+        {
+            base.OnAppearing();
+            await _viewModel.LoadPrimaryContacts();
+
+            PrimaryContactsStack.Children.Clear();
+            foreach (var contact in _viewModel.PrimaryContacts)
+            {
+                string display = $"{contact.ContactName} - {contact.ContactNumber}";
+                AddPrimaryContact(display);
+            }
+        }
 
         // Import primary contacts
         private async void ImportPrimaryContactsClicked(object sender, EventArgs e)
         {
             try
             {
-                // Request permission to read contacts
                 var status = await Permissions.RequestAsync<Permissions.ContactsRead>();
 
                 if (status != PermissionStatus.Granted)
@@ -43,7 +49,6 @@ namespace app2.Views
                     return;
                 }
 
-                // Let user pick a contact
                 var contact = await Communication.Contacts.PickContactAsync();
 
                 if (contact == null || contact.Phones == null || !contact.Phones.Any())
@@ -52,23 +57,8 @@ namespace app2.Views
                     return;
                 }
 
-                // Extract contact details
                 string displayName = contact.DisplayName;
                 string phoneNumber = contact.Phones.FirstOrDefault()?.PhoneNumber;
-
-                var selecteddatabaseContact = new PrimaryContact
-                {
-                    UserId = UserSession.UserId, // Get logged-in user ID
-                    ContactName = contact.DisplayName,
-                    ContactNumber = phoneNumber,
-                    SingleTap = false,
-                    DoubleTap = false,
-                    Always = true
-                };
-                _viewModel.AddPrimaryContact(selecteddatabaseContact);
-
-
-
 
                 if (string.IsNullOrEmpty(phoneNumber))
                 {
@@ -76,11 +66,20 @@ namespace app2.Views
                     return;
                 }
 
-                // Add selected contact
+                var selecteddatabaseContact = new PrimaryContact
+                {
+                    UserId = UserSession.UserId,
+                    ContactName = displayName,
+                    ContactNumber = phoneNumber,
+                    SingleTap = false,
+                    DoubleTap = false,
+                    Always = true
+                };
+
+                _viewModel.AddPrimaryContact(selecteddatabaseContact);
+
                 string selectedContact = $"{displayName} - {phoneNumber}";
                 AddPrimaryContact(selectedContact);
-                // Send the selected contact to ViewModel
-                _viewModel.AddPrimaryContact(selecteddatabaseContact);
                 NoPrimaryContactsLabel.IsVisible = false;
             }
             catch (Exception ex)
@@ -100,7 +99,7 @@ namespace app2.Views
                     new ColumnDefinition { Width = GridLength.Star },
                     new ColumnDefinition { Width = 30 }
                 },
-                Margin = new Thickness(0, 5, 0, 5)
+                Margin = new Thickness(0, 2, 0, 2)
             };
 
             var phoneIcon = new Image { Source = "phone.png", HeightRequest = 20, WidthRequest = 20, VerticalOptions = LayoutOptions.Center };
@@ -112,25 +111,32 @@ namespace app2.Views
             Grid.SetColumn(contactLabel, 1);
 
             var deleteButton = new ImageButton { Source = "arrow.png", HeightRequest = 20, WidthRequest = 20, BackgroundColor = Colors.Transparent, VerticalOptions = LayoutOptions.Center };
-            deleteButton.Clicked += (s, e) => RemovePrimaryContact(contactLayout);
+            deleteButton.Clicked += async (s, e) => await RemovePrimaryContactAsync(contactLayout);
             contactLayout.Children.Add(deleteButton);
             Grid.SetColumn(deleteButton, 2);
 
             PrimaryContactsStack.Children.Add(contactLayout);
         }
 
-        private void RemovePrimaryContact(Grid contactLayout)
+        private async Task RemovePrimaryContactAsync(Grid contactLayout)
         {
-            PrimaryContactsStack.Children.Remove(contactLayout);
+            var label = contactLayout.Children.OfType<Label>().FirstOrDefault();
+            if (label == null) return;
 
-            if (PrimaryContactsStack.Children.Count == 0)
+            var text = label.Text;
+            var contact = _viewModel.PrimaryContacts.FirstOrDefault(c =>
+                $"{c.ContactName} - {c.ContactNumber}" == text);
+
+            if (contact != null)
             {
-                NoPrimaryContactsLabel.IsVisible = true;
+                await _viewModel.DeletePrimaryContactFromDatabase(contact.Id);
+                _viewModel.PrimaryContacts.Remove(contact);
             }
+
+            PrimaryContactsStack.Children.Remove(contactLayout);
+            NoPrimaryContactsLabel.IsVisible = PrimaryContactsStack.Children.Count == 0;
         }
 
-        // Rest of your code remains unchanged...
- 
         // Notification settings
         private void NotificationSettingsClicked(object sender, EventArgs e)
         {
@@ -191,7 +197,7 @@ namespace app2.Views
                     new ColumnDefinition { Width = GridLength.Star },
                     new ColumnDefinition { Width = 30 }
                 },
-                Margin = new Thickness(0, 5, 0, 5)
+                Margin = new Thickness(0, 1, 0, 1)
             };
 
             var phoneIcon = new Image { Source = "phone.png", HeightRequest = 20, WidthRequest = 20, VerticalOptions = LayoutOptions.Center };
@@ -394,7 +400,7 @@ namespace app2.Views
             public bool IsSelected { get; set; }
         }
 
-       
+
     }
 }
 
