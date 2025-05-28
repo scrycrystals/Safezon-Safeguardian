@@ -9,5 +9,6 @@ namespace app2.Models
     public static class UserSession
     {
         public static int UserId { get; set; }
+        public static List<PrimaryContact> PrimaryContacts { get; set; } = new();
     }
 }

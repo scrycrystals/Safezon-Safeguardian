@@ -2,10 +2,10 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using Microsoft.Data.SqlClient;
-using Dapper;
+using MySql.Data.MySqlClient;
 using app2.Database;
 using app2.Models;
+using System.Data;
 
 namespace app2.ViewModels
 {
@@ -13,14 +13,11 @@ namespace app2.ViewModels
     {
         public ObservableCollection<PrimaryContact> PrimaryContacts { get; set; } = new();
 
-        public EmergencyContactsViewModel() 
+        public EmergencyContactsViewModel()
         {
-
-            Task.Run(async () => await LoadPrimaryContacts()); // Load contacts on initialization
-                                                               
         }
 
-            public async void AddPrimaryContact(PrimaryContact contact)
+        public async Task AddPrimaryContact(PrimaryContact contact)
         {
             if (contact == null) return;
 
@@ -28,25 +25,36 @@ namespace app2.ViewModels
             await SavePrimaryContactToDatabase(contact);
         }
 
-        private async Task SavePrimaryContactToDatabase(PrimaryContact contact)
+        public async Task SavePrimaryContactToDatabase(PrimaryContact contact)
         {
             try
             {
                 using (var connection = DatabaseConnection.GetConnection())
                 {
-                    if (connection.State != System.Data.ConnectionState.Open)
+                    if (connection.State != ConnectionState.Open)
                         await connection.OpenAsync();
 
                     string query = @"
-                    INSERT INTO PrimaryContacts (UserId, ContactName, ContactNumber, SingleTap, DoubleTap, Always)
-                    VALUES (@UserId, @ContactName, @ContactNumber, @SingleTap, @DoubleTap, @Always)";
+                        INSERT INTO PrimaryContacts (UserId, ContactName, ContactNumber, SingleTap, DoubleTap, Always)
+                        VALUES (@UserId, @ContactName, @ContactNumber, @SingleTap, @DoubleTap, @Always)";
 
-                    await connection.ExecuteAsync(query, contact);
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserId", contact.UserId);
+                        command.Parameters.AddWithValue("@ContactName", contact.ContactName);
+                        command.Parameters.AddWithValue("@ContactNumber", contact.ContactNumber);
+                        command.Parameters.AddWithValue("@SingleTap", contact.SingleTap);
+                        command.Parameters.AddWithValue("@DoubleTap", contact.DoubleTap);
+                        command.Parameters.AddWithValue("@Always", contact.Always);
+
+                        int rows = await command.ExecuteNonQueryAsync();
+                        Console.WriteLine($"Rows affected: {rows}");
+                    }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Database Error: {ex.Message}");
+                Console.WriteLine($"Database Error (Insert): {ex.Message}");
             }
         }
 
@@ -56,25 +64,66 @@ namespace app2.ViewModels
             {
                 using (var connection = DatabaseConnection.GetConnection())
                 {
-                    if (connection.State != System.Data.ConnectionState.Open)
+                    if (connection.State != ConnectionState.Open)
                         await connection.OpenAsync();
 
                     string query = "SELECT * FROM PrimaryContacts WHERE UserId = @UserId";
-                    var contacts = await connection.QueryAsync<PrimaryContact>(query, new { UserId = UserSession.UserId });
 
-                    PrimaryContacts.Clear(); // Clear old data
-                    foreach (var contact in contacts)
+                    using (var command = new MySqlCommand(query, connection))
                     {
-                        PrimaryContacts.Add(contact);
+                        command.Parameters.AddWithValue("@UserId", UserSession.UserId);
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            PrimaryContacts.Clear();
+
+                            while (await reader.ReadAsync())
+                            {
+                                PrimaryContact contact = new PrimaryContact
+                                {
+                                    Id = reader.GetInt32("Id"),
+                                    UserId = reader.GetInt32("UserId"),
+                                    ContactName = reader.GetString("ContactName"),
+                                    ContactNumber = reader.GetString("ContactNumber"),
+                                    SingleTap = reader.GetBoolean("SingleTap"),
+                                    DoubleTap = reader.GetBoolean("DoubleTap"),
+                                    Always = reader.GetBoolean("Always")
+                                };
+
+                                PrimaryContacts.Add(contact);
+                            }
+                        }
                     }
                 }
+
+                // ✅ Only update UserSession after loading all
+                UserSession.PrimaryContacts.Clear();
+                UserSession.PrimaryContacts.AddRange(PrimaryContacts);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Database Error: {ex.Message}");
+                Console.WriteLine($"Database Error (Load): {ex.Message}");
             }
         }
 
+        public async Task DeletePrimaryContactFromDatabase(int contactId)
+        {
+            try
+            {
+                using var connection = DatabaseConnection.GetConnection();
+                if (connection.State != ConnectionState.Open)
+                    await connection.OpenAsync();
+
+                string query = "DELETE FROM PrimaryContacts WHERE Id = @Id";
+                using var command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Id", contactId);
+                await command.ExecuteNonQueryAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("DB delete error: " + ex.Message);
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
