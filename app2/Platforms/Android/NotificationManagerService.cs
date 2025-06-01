@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -23,6 +19,7 @@ namespace app2.Platforms.Android
         NotificationManagerCompat notificationManager;
 
         public event EventHandler NotificationReceived;
+        public event EventHandler NotificationTapped;
 
         public NotificationManagerService()
         {
@@ -45,20 +42,41 @@ namespace app2.Platforms.Android
             channelInitialized = true;
         }
 
-        public void SendNotification(string title, string message, DateTime? notifyTime = null)
+        public void SendNotification(string title, string message, double latitude = 0, double longitude = 0)
         {
+            var intent = new Intent(Platform.AppContext, typeof(MainActivity));
+            intent.SetAction("NOTIFICATION_TAP");
+            intent.PutExtra("lat", latitude);
+            intent.PutExtra("lng", longitude);
+            intent.AddFlags(ActivityFlags.ClearTop | ActivityFlags.NewTask);
+
+            var pendingIntent = PendingIntent.GetActivity(
+                Platform.AppContext,
+                0,
+                intent,
+                PendingIntentFlags.Immutable | PendingIntentFlags.UpdateCurrent
+            );
+
             var builder = new NotificationCompat.Builder(Platform.AppContext, channelId)
                 .SetContentTitle(title)
                 .SetContentText(message)
-                .SetSmallIcon(Resource.Drawable.ic_notification) // add this icon later
-                .SetAutoCancel(true);
+                .SetSmallIcon(Resource.Drawable.ic_notification) // add this icon
+                .SetAutoCancel(true)
+                .SetContentIntent(pendingIntent);
 
             notificationManager.Notify(messageId++, builder.Build());
         }
 
+        // 🔁 Called from MainActivity when notification is tapped
+        public void RaiseTapped()
+        {
+            NotificationTapped?.Invoke(this, EventArgs.Empty);
+        }
+
         public void ReceiveNotification(string title, string message)
         {
-            // Not used yet
+            // Optionally raise NotificationReceived
+            NotificationReceived?.Invoke(this, EventArgs.Empty);
         }
     }
 }

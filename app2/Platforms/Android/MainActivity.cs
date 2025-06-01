@@ -2,6 +2,13 @@
 using Android.Content.PM;
 using Android.OS;
 using Android;
+using app2.Platforms.Android;
+using app2.Services;
+using Android.Content;
+using Microsoft.Maui.Devices.Sensors;
+using Microsoft.Maui.ApplicationModel;
+
+
 
 namespace app2
 {
@@ -32,5 +39,64 @@ namespace app2
                 }
             }
         }
+
+        public async Task<string> ResolveAddressAsync(double lat, double lng)
+        {
+            try
+            {
+                var placemarks = await Geocoding.GetPlacemarksAsync(lat, lng);
+                var placemark = placemarks?.FirstOrDefault();
+
+                if (placemark != null)
+                {
+                    return $"{placemark.Thoroughfare}, {placemark.Locality}, {placemark.AdminArea}, {placemark.CountryName}";
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Reverse Geocoding failed: {ex.Message}");
+            }
+
+            return "Unknown Location";
+        }
+
+
+        protected override void OnNewIntent(Intent intent)
+        {
+            base.OnNewIntent(intent);
+
+            if (intent?.Action == "NOTIFICATION_TAP")
+            {
+                double lat = intent.GetDoubleExtra("lat", 0);
+                double lng = intent.GetDoubleExtra("lng", 0);
+
+                // Access BraceletDataViewModel.Instance or directly call method to show dialog
+                MainThread.BeginInvokeOnMainThread(async () =>
+                {
+                    var placemarks = await Geocoding.GetPlacemarksAsync(lat, lng);
+                    var place = placemarks?.FirstOrDefault();
+
+                    string address = place != null
+                        ? $"{place.Thoroughfare}, {place.Locality}, {place.CountryName}"
+                        : "Unknown location";
+
+                    bool openMaps = await Shell.Current.CurrentPage.DisplayAlert(
+                    "Emergency Location",
+                    $"User is at:\n\n{address}\n\nDo you want to navigate there?",
+                    "Navigate",
+                    "Cancel");
+
+
+                    if (openMaps)
+                    {
+                        string mapsUri = $"https://www.google.com/maps/dir/?api=1&destination={lat},{lng}";
+                        await Launcher.OpenAsync(mapsUri);
+                    }
+                });
+            }
+        }
+
+
+
     }
 }

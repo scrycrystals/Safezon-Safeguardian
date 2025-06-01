@@ -28,6 +28,19 @@
         {
             Console.WriteLine("Video failed to play.");
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+
+            if (status != PermissionStatus.Granted)
+            {
+                await DisplayAlert("Permission Needed", "Location permission is required for emergency location access.", "OK");
+            }
+        }
+
     }
 
 }

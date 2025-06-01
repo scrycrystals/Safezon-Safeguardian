@@ -20,6 +20,9 @@ namespace app2
             PhoneNumber = "" // actual SMS will be sent by the device's SIM number — that’s how SMS works.
         };
 
+        bool hasNotified = false;
+        bool previousState = false;
+
 
         public Dashboard1()
         {
@@ -239,16 +242,32 @@ namespace app2
             }
         }
 
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            int value = 1;
+            CheckButtonState(value);
+           
+        }
 
+        void CheckButtonState(int buttonState)
+        {
+            bool currentState = (buttonState == 1);
 
+            if (currentState && !previousState && !hasNotified)
+            {
+                // Rising edge detected: 0 -> 1
+                _notificationManager?.SendNotification("Emergency Alert", "Emergency Button Pressed on Bracelet!");
+                hasNotified = true;
+            }
 
+            if (!currentState && previousState)
+            {
+                // Falling edge detected: 1 -> 0 (button released)
+                hasNotified = false;
+            }
 
-
-
-
-
-
-
-
+            // Save state for next call
+            previousState = currentState;
+        }
     }
 }

@@ -13,12 +13,17 @@ using app2.Database;
 using app2.Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using app2.Services; // Make sure this namespace includes your INotificationManagerService
 
 namespace app2.ViewModels
 {
     public class BraceletDataViewModel : INotifyPropertyChanged
     {
+        // 🔒 Static instance to access data globally (e.g. in App.xaml.cs)
+        public static BraceletDataViewModel Instance { get; private set; }
+
         FirebaseConnection conn = new FirebaseConnection();
+        private readonly INotificationManagerService _notificationManager;
 
         private BraceletDataModel _data;
         public BraceletDataModel Data
@@ -30,29 +35,30 @@ namespace app2.ViewModels
                 OnPropertyChanged();
             }
         }
-        /*public BraceletDataModel LoadData()
-        {
-            try
-            {
-                FirebaseResponse response = conn.client.Get("/"); // Fetch data from root
-                BraceletDataModel data = JsonConvert.DeserializeObject<BraceletDataModel>(response.Body.ToString());
-                return data;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error retrieving data: " + ex.Message);
-                return null;
-            }
-        }*/
+
+        bool hasNotified = false;
+        bool previousState = false;
 
         public BraceletDataViewModel()
         {
+            Instance = this; // ✅ Set static instance
+
+            _notificationManager = DependencyInjectionService();
             Data = new BraceletDataModel();
-            //FetchDataOnce();  
-            
+
             SubscribeToFirebaseUpdates();
             StartFirebaseListener();
         }
+
+        private INotificationManagerService DependencyInjectionService()
+        {
+#if ANDROID
+            return ServiceHelper.GetService<INotificationManagerService>();
+#else
+            return null;
+#endif
+        }
+
         private async void StartFirebaseListener()
         {
             while (true)
@@ -61,8 +67,6 @@ namespace app2.ViewModels
                 await Task.Delay(15000); // Reconnect every 15 seconds
             }
         }
-
-
 
         private async void FetchDataOnce()
         {
@@ -93,6 +97,30 @@ namespace app2.ViewModels
                 Console.WriteLine("Error fetching Firebase data: " + ex.Message);
             }
         }
+
+        int CheckButtonState(int buttonState, double longitude, double latitude)
+        {
+            bool currentState = (buttonState == 1);
+
+            if (currentState && !previousState && !hasNotified)
+            {
+                // Rising edge detected: 0 -> 1
+                _notificationManager?.SendNotification("Emergency Alert", "Emergency Button Pressed on Bracelet!", latitude, longitude);
+                hasNotified = true;
+                return 0;
+            }
+
+            if (!currentState && previousState)
+            {
+                // Falling edge detected: 1 -> 0 (button released)
+                hasNotified = false;
+            }
+
+            // Save state for next call
+            previousState = currentState;
+            return 0;
+        }
+
         private async void FetchFullData()
         {
             try
@@ -101,14 +129,39 @@ namespace app2.ViewModels
                 if (response.Body != "null")
                 {
                     Data = JsonConvert.DeserializeObject<BraceletDataModel>(response.Body);
+
                     Console.WriteLine("Updated Data from Firebase:");
                     Console.WriteLine("BPM: " + Data.BPM);
-                    Console.WriteLine("BPM: " + Data.Temp);
-                    Console.WriteLine("BPM: " + Data.Button);
-                    Console.WriteLine("BPM: " + Data.X_Angl);
-                    Console.WriteLine("BPM: " + Data.Y_Angl);
-                    Console.WriteLine("BPM: " + Data.GPS.f_longitude);
-                    Console.WriteLine("BPM: " + Data.GPS.f_latitude);
+                    Console.WriteLine("Temp: " + Data.Temp);
+                    Console.WriteLine("Button: " + Data.Button);
+                    Console.WriteLine("X_Angl: " + Data.X_Angl);
+                    Console.WriteLine("Y_Angl: " + Data.Y_Angl);
+                    Console.WriteLine("Longitude: " + Data.GPS.f_longitude);
+                    Console.WriteLine("Latitude: " + Data.GPS.f_latitude);
+                    // ✅ Emergency Notification Logic (only once per press)
+                    //Data.Button = CheckButtonState(Data.Button, Data.GPS.f_longitude, Data.GPS.f_latitude);
+                    if (Data.Button == 1)
+                    {
+                        _notificationManager?.SendNotification(
+                            "Emergency Alert",
+                            "Emergency Button Pressed on Bracelet!",
+                            Data.GPS.f_latitude,
+                            Data.GPS.f_longitude
+                        );
+
+                        // 🔄 Update Button = 0 back to Firebase
+                        try
+                        {
+                            //var updateData = new { Button = 0 };
+                            var resetResponse = await conn.client.SetAsync("Button", 0); 
+                            Console.WriteLine("Button state reset to 0 in Firebase.");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Failed to reset button in Firebase: " + ex.Message);
+                        }
+                    }
+
                 }
             }
             catch (Exception ex)
@@ -116,10 +169,6 @@ namespace app2.ViewModels
                 Console.WriteLine("Error fetching full data: " + ex.Message);
             }
         }
-
-
-
-
 
         private void SubscribeToFirebaseUpdates()
         {
@@ -134,8 +183,7 @@ namespace app2.ViewModels
             conn.client.OnAsync("/", (sender, args, context) =>
             {
                 Console.WriteLine("Firebase data change detected!");
-                FetchFullData();  
-
+                FetchFullData();
             });
         }
 
@@ -144,8 +192,5 @@ namespace app2.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
-
     }
 }
