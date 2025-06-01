@@ -63,7 +63,8 @@
                                      HorizontalOptions="End"
                                      WidthRequest="30"
                                      HeightRequest="30"
-                                     BackgroundColor="Transparent" />
+                                     BackgroundColor="Transparent"
+                                     Clicked="ImageButton_Clicked"/>
                     </Grid>
                 </Frame>
 

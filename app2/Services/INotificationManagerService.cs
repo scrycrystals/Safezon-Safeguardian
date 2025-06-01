@@ -10,8 +10,12 @@ namespace app2.Services
     {
         event EventHandler NotificationReceived;
 
-        void SendNotification(string title, string message, DateTime? notifyTime = null);
-
+        //void SendNotification(string title, string message, DateTime? notifyTime = null);
         void ReceiveNotification(string title, string message);
+
+        void SendNotification(string title, string message, double latitude = 0, double longitude = 0);
+
+
+        event EventHandler NotificationTapped;
     }
 }
