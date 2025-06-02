@@ -1,0 +1,82 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:app2.ViewModels"
+             x:Class="app2.EditProfilePage"
+             Title="Edit Profile"
+             BackgroundImageSource="bgg.png">
+
+    
+    <ContentPage.Content>
+     
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Profile Image Section -->
+            <Frame HeightRequest="120" WidthRequest="120" 
+                   BorderColor="Gray" CornerRadius="60"
+                   HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="user.png" 
+                       x:Name="ProfileImage"
+                       HeightRequest="100" WidthRequest="100"
+                       HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+
+            <!-- Pencil Icon for Editing Profile Image -->
+            <ImageButton Source="pen.png"
+                         HorizontalOptions="Center"
+                         Clicked="OnEditProfileImageClicked"
+                         HeightRequest="20"
+                         WidthRequest="20"/>
+
+            <!-- Username Field -->
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="{Binding Name}"
+                   TextColor="Black"
+                   FontSize="16"/>
+
+            <!-- Date of Birth Field (with DatePicker) -->
+            <DatePicker x:Name="DateOfBirthPicker"
+                        Date="{Binding DateOfBirth}"
+                        TextColor="Black"
+                        FontSize="16"/>
+
+            <!-- Phone Number Field (Prefixed with +92) -->
+            <StackLayout Orientation="Horizontal"  >
+                <Label Text="+92" 
+                       VerticalOptions="Center" 
+                       FontSize="16" 
+                       TextColor="Black"/>
+                <Entry x:Name="PhoneNumberEntry"
+                       Keyboard="Numeric"
+                       MaxLength="10"
+                       Placeholder="{Binding Phone}"
+                       FontSize="16"
+                       TextColor="Black"/>
+            </StackLayout>
+
+            <!-- Instagram Account Field -->
+            <Entry x:Name="InstagramEntry"
+                   Placeholder="{Binding Instagram}"
+                   TextColor="Black"
+                   FontSize="16"/>
+
+            <!-- Gmail Account Field (with validation) -->
+            <Entry x:Name="GmailEntry"
+                   Placeholder="{Binding Email}"
+                   TextColor="Black"
+                   FontSize="16"
+                   TextChanged="OnGmailTextChanged"/>
+
+            <!-- Save and Cancel Buttons -->
+            <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="CenterAndExpand">
+                <Button Text="Save Changes"
+                        BackgroundColor="Green"
+                        TextColor="White"
+                        Clicked="OnSaveButtonClicked"/>
+                <Button Text="Cancel"
+                        BackgroundColor="Gray"
+                        TextColor="White"
+                        Clicked="OnCancelButtonClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

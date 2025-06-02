@@ -1,0 +1,134 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:app2.Views"
+             x:Class="app2.Views.LocationPage"
+             Title="LocationPage">
+
+    <Grid RowDefinitions="Auto, *">
+        <!-- Row 0: Top Bar -->
+        <ContentView Grid.Row="0">
+            <local:TopBar />
+        </ContentView>
+
+        <!-- Row 1: Main Content -->
+        <Grid Grid.Row="1">
+            <!-- Fixed Background Image -->
+            <Image Source="map.png" Aspect="AspectFill" Opacity="1" />
+
+            <!-- Scrollable Content Section -->
+            <Grid RowDefinitions="*, Auto">
+                <!-- Row 0: Scrollable Content -->
+                <ScrollView Grid.Row="0" VerticalOptions="FillAndExpand">
+                    <StackLayout Spacing="0">
+                        <Grid HeightRequest="600" BackgroundColor="Transparent" />
+
+                        <!-- Buttons Section -->
+                        <StackLayout Padding="20" BackgroundColor="White" VerticalOptions="CenterAndExpand">
+                            <BoxView HeightRequest="5" WidthRequest="100" BackgroundColor="LightGray"
+                                     HorizontalOptions="Center" CornerRadius="10" Margin="0,10" />
+
+                            <Button Text="Safety Map"
+                                    FontSize="18"
+                                    BackgroundColor="#21F490"
+                                    CornerRadius="25"
+                                    BorderColor="#079D56"
+                                    BorderWidth="3"
+                                    TextColor="Black"
+                                    HeightRequest="50"
+                                    Margin="0,10" />
+                            <Button Text="Share Live Location"
+                                    FontSize="18"
+                                    BackgroundColor="#21F490"
+                                    CornerRadius="25"
+                                    BorderColor="#079D56"
+                                    BorderWidth="3"
+                                    TextColor="Black"
+                                    HeightRequest="50"
+                                    Margin="0,10"
+                                    Clicked="OnShareLocationClicked" />
+                            <Button Text="Share Location with VGardian"
+                                    FontSize="18"
+                                    BackgroundColor="#21F490"
+                                    CornerRadius="25"
+                                    BorderColor="#079D56"
+                                    BorderWidth="3"
+                                    TextColor="Black"
+                                    HeightRequest="50"
+                                    Margin="0,10" />
+                            <Button Text="Setting"
+                                    FontSize="18"
+                                    BackgroundColor="#21F490"
+                                    CornerRadius="25"
+                                    BorderColor="#079D56"
+                                    BorderWidth="3"
+                                    TextColor="Black"
+                                    HeightRequest="50"
+                                    Margin="0,10"
+                                    Clicked="OnSettingsClicked" />
+                            <Button Text="AddRiskyLocation"
+                                    FontSize="18"
+                                    BackgroundColor="#21F490"
+                                    CornerRadius="25"
+                                    BorderColor="#079D56"
+                                    BorderWidth="3"
+                                    TextColor="Black"
+                                    HeightRequest="50"
+                                    Margin="0,10" 
+                                    Clicked="AddRiskyLocation"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+
+                <!-- Bottom Navigation Bar -->
+                <Grid Grid.Row="1" BackgroundColor="White" HeightRequest="60">
+                    <local:BottomBar />
+                </Grid>
+            </Grid>
+
+            <!-- Popup Window -->
+            <Grid x:Name="Popup" IsVisible="False" BackgroundColor="#80000000">
+                <Frame BackgroundColor="Black"
+                       Padding="20"
+                       CornerRadius="10"
+                       WidthRequest="300"
+                       HeightRequest="330"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                    <Grid>
+                        <!-- Close Icon -->
+                        <ImageButton Source="close_icon.png"
+                                     WidthRequest="30"
+                                     HeightRequest="30"
+                                     HorizontalOptions="End"
+                                     VerticalOptions="Start"
+                                     BackgroundColor="Black"
+                                     Clicked="ClosePopup" />
+
+                        <!-- Content Section -->
+                        <StackLayout Spacing="10" VerticalOptions="FillAndExpand" Padding="10, 5, 10, 10">
+                            <Label Text="Live Location" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" />
+                            <Label Text="Latitude: 37.7749, Longitude: -122.4194" TextColor="White" FontSize="14" HorizontalOptions="Center" />
+                            <Editor Placeholder="Add a comment..."
+                                    PlaceholderColor="Gray"
+                                    TextColor="Black"
+                                    HeightRequest="90"
+                                    BackgroundColor="#F5F5F5"
+                                    Margin="0,10" />
+
+                            <!-- Share Button -->
+                            <Button Text="Share"
+                                    FontSize="18"
+                                    BackgroundColor="#82E3A8"
+                                    CornerRadius="10"
+                                    TextColor="Black"
+                                    WidthRequest="200"
+                                    HeightRequest="50"
+                                    HorizontalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</ContentPage>

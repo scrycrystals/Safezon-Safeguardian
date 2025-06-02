@@ -1,0 +1,160 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app2.Views.EmergencyContactPage"
+             xmlns:local="clr-namespace:app2.Views"
+             BackgroundImageSource="bgg.png"
+             xmlns:vm="clr-namespace:app2.ViewModels">
+    
+    <ContentPage.BindingContext>
+        <vm:EmergencyContactsViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto, *, Auto">
+        <!-- Header Section -->
+        <Frame HasShadow="True"
+        CornerRadius="5"
+        Padding="0"
+        BackgroundColor="Transparent">
+            <Grid BackgroundColor="White"
+           Grid.Row="0"
+           Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Dropdown Menu Button -->
+                <Label Text="Emergency Contacts"
+                      TextColor="Black"
+                      BackgroundColor="Transparent"
+                      FontSize="16"
+                      VerticalOptions="Center"
+                      HorizontalOptions="Start"
+                       />
+
+                <!-- Watch Icon Button -->
+                <ImageButton Source="smartwatch.png"
+                      Grid.Column="2"
+                      HorizontalOptions="End"
+                      WidthRequest="30"
+                      HeightRequest="30"
+                      BackgroundColor="Transparent" />
+            </Grid>
+        </Frame>
+
+        <!-- Scrollable Content Section -->
+        <ScrollView Grid.Row="1" Padding="10">
+            <VerticalStackLayout Spacing="20">
+                <!-- Primary Contacts Section -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Primary Emergency Contacts" FontAttributes="Bold" FontSize="18" TextColor="#000000" />
+
+                        <!-- Contact List -->
+                        <StackLayout x:Name="PrimaryContactsStack" Spacing="15">
+                            <Label x:Name="NoPrimaryContactsLabel" Text="There are no contacts" FontSize="16" TextColor="#757575" HorizontalOptions="Center" />
+                        </StackLayout>
+                        <!-- Contact List that is already -->
+                        <CollectionView ItemsSource="{Binding PrimaryContacts}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Orientation="Horizontal" Padding="10">
+                                        <Label Text="{Binding ContactName}" FontSize="16"/>
+                                        <Label Text="{Binding ContactNumber}" FontSize="16" Margin="10,0,0,0"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                        <!-- Buttons -->
+                        <Button Text="Import from Contacts"
+                                BackgroundColor="#7BF4BB" TextColor="Black" Clicked="ImportPrimaryContactsClicked" FontAttributes="Bold" />
+                        <Button Text="Notification Settings" BackgroundColor="Black" TextColor="White" Clicked="NotificationSettingsClicked" />
+                        <Button Text="Sync and Import" BackgroundColor="Black" TextColor="White" Clicked="SyncAndImportClicked" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Secondary Contacts Section -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Secondary Emergency Contacts" FontAttributes="Bold" FontSize="18" TextColor="#000000" />
+                        <StackLayout x:Name="SecondaryContactsStack" Spacing="15">
+                            <Label x:Name="NoSecondaryContactsLabel" Text="There are no contacts" FontSize="16" TextColor="#757575" HorizontalOptions="Center" />
+                        </StackLayout>
+                        <Button Text="Import from Contacts"
+                                BackgroundColor="#7BF4BB" TextColor="Black" Clicked="ImportSecondaryContactsClicked" FontAttributes="Bold" />
+                        <Button Text="Notification Settings" BackgroundColor="Black" TextColor="White" Clicked="NotificationSettingsClicked" />
+                        <Button Text="Sync and Import" BackgroundColor="Black" TextColor="White" Clicked="SyncAndImportClicked" />
+
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Contact Groups Section -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="15" HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Contact Groups" FontAttributes="Bold" FontSize="18" TextColor="#000000" />
+                        <StackLayout>
+                            <!-- Label for no groups -->
+                            <Label x:Name="NoGroupsLabel" Text="No Groups Found" HorizontalOptions="Center" IsVisible="True" TextColor="Black"/>
+
+                            <!-- Button to create group -->
+                            <Button Text="Create Group"
+                                    Clicked="CreateGroupClicked"
+                                    BackgroundColor="#7BF4BB" TextColor="Black" Margin="0,10,0,0" FontAttributes="Bold" />
+                            <Button Text="Notification Settings" BackgroundColor="Black" TextColor="White" Clicked="NotificationSettingsClicked"  Margin="0,10,0,0"/>
+                            <Button Text="Sync and Import" BackgroundColor="Black" TextColor="White" Clicked="SyncAndImportClicked"  Margin="0,10,0,0" />
+
+
+                            <!-- Stack for dynamically added groups -->
+                            <StackLayout x:Name="GroupsStack" BackgroundColor="Transparent" Margin="0,10,0,10" Padding="10" />
+                            <StackLayout.Resources>
+                                <Style TargetType="Label">
+                                    <Setter Property="TextColor" Value="Black" />
+                                </Style>
+
+                            </StackLayout.Resources>
+                        </StackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Notification Settings Popup -->
+        <Grid x:Name="NotificationSettingsPopup" IsVisible="False" BackgroundColor="#000000AA" Grid.RowSpan="3">
+            <Frame BackgroundColor="Grey" CornerRadius="10" Padding="40,40,40,40" HorizontalOptions="Center" VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="Notification Settings" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+
+                    <!-- Always Notify -->
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="0,10">
+                        <Label Text="Always Notify" FontSize="16" VerticalOptions="Center" />
+                        <Slider x:Name="AlwaysNotifySlider" Minimum="0" Maximum="1" Value="0" HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <!-- Notify on Single Tap -->
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="0,10">
+                        <Label Text="Notify on Single Tap" FontSize="16" VerticalOptions="Center" />
+                        <Slider x:Name="SingleTapNotifySlider" Minimum="0" Maximum="1" Value="0" HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+
+                    <!-- Notify on Double Tap -->
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="0,10">
+                        <Label Text="Notify on Double Tap" FontSize="16" VerticalOptions="Center" />
+                        <Slider x:Name="DoubleTapNotifySlider" Minimum="0" Maximum="1" Value="0" HorizontalOptions="EndAndExpand" />
+                    </StackLayout>
+                    <!-- Save and Cancel Buttons -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,0">
+                        <Button Text="Save" Clicked="SaveNotificationSettingsClicked" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" WidthRequest="80" BackgroundColor="#21F490" TextColor="Black" FontAttributes="Bold"/>
+                        <Button Text="Cancel" Clicked="CancelNotificationSettingsClicked" HorizontalOptions="FillAndExpand" Margin="0,0,20,0" WidthRequest="80"  BackgroundColor="#21F490" TextColor="Black" FontAttributes="Bold" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </Grid>
+
+        <!-- Bottom Navigation Bar -->
+        <ContentView Grid.Row="2">
+            <local:BottomBar />
+        </ContentView>
+    </Grid>
+</ContentPage>
